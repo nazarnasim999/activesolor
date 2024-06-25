@@ -473,7 +473,8 @@ button.part-2-btn-a:hover {
 }
 
 .nav-2-card {
-    display: flex;align-items: flex-start;flex-direction: column;width: 25%;
+    display: flex;align-items: center !important;
+    flex-direction: column;width: 25%;
 }
 
 .nav-2-card h3 {

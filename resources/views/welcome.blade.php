@@ -48,7 +48,7 @@
                         <ul>
                             <li><a href="#">Dashboard</a></li>
                             <li>
-                                <div class="dropdown">
+                           <div class="dropdown display"  >
                                     <button class="dropdown-toggle" type="button" data-toggle="dropdown">
                                         <p>Profile</p>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9"
@@ -64,7 +64,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="dropdown">
+                                <div class="dropdown display">
                                     <button class="dropdown-toggle" type="button" data-toggle="dropdown">
                                         <p>Switch Account</p>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9"
@@ -88,13 +88,18 @@
 
                     <div class="nav-2-box">
                         <div class="nav-2-card left-boder ">
-                            <h3>Fri, May 17 2024, 14:11:58</h3>
-                            <button>New Yourk</button>
+                            <!-- <h3>Fri, May 17 2024, 14:11:58</h3> -->
+                            <h3>{{ now()->format('D, M d Y, H:i:s') }}</h3>
+
                         </div>
 
                         <div class="nav-2-card ">
-                            <h3>Brain Heelan</h3>
-                            <button>Logout</button>
+                            <h3>{{auth()->user()->name}}</h3>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+    @csrf
+</form>
+<button onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</button>
                         </div>
                     </div>
                 </div>
@@ -108,7 +113,7 @@
         <div class="Container">
             <div class="main-brayn">
                 <div class="Jessica-box">
-                    <h1>Jessica Keane</h1>
+                    <h1>{{auth()->user()->name}}</h1>
                     <div class="Jessica-card">
                         <div class="Version-box">
                             <span class="span-1">
@@ -134,72 +139,79 @@
                                 </svg>
                             </span>
                         </div>
-                        <button class="Version-add-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
-                                fill="none">
-                                <path
-                                    d="M37.5 27.0792H27.0833V37.4958C27.0833 38.0484 26.8638 38.5783 26.4731 38.969C26.0824 39.3597 25.5525 39.5792 25 39.5792C24.4475 39.5792 23.9176 39.3597 23.5269 38.969C23.1362 38.5783 22.9167 38.0484 22.9167 37.4958V27.0792H12.5C11.9475 27.0792 11.4176 26.8597 11.0269 26.469C10.6362 26.0783 10.4167 25.5484 10.4167 24.9958C10.4167 24.4433 10.6362 23.9134 11.0269 23.5227C11.4176 23.132 11.9475 22.9125 12.5 22.9125H22.9167V12.4958C22.9167 11.9433 23.1362 11.4134 23.5269 11.0227C23.9176 10.632 24.4475 10.4125 25 10.4125C25.5525 10.4125 26.0824 10.632 26.4731 11.0227C26.8638 11.4134 27.0833 11.9433 27.0833 12.4958V22.9125H37.5C38.0525 22.9125 38.5824 23.132 38.9731 23.5227C39.3638 23.9134 39.5833 24.4433 39.5833 24.9958C39.5833 25.5484 39.3638 26.0783 38.9731 26.469C38.5824 26.8597 38.0525 27.0792 37.5 27.0792Z"
-                                    fill="white" />
-                            </svg>
-                        </button>
+
                     </div>
                 </div>
 
 
 
                 <div class="entry-form">
-                    <form action="">
-                    <!-- Basic Info form Start -->
+                    <form action="{{ route('store') }}" method="post">
+
+                    @csrf
+
                     <div class="brayn-box aling-left">
                         <h1>Basic Info</h1>
                         <div class="brayn-form">
                             <div class="brayn-in-grouop">
                                 <label for="#">Installer</label>
-                                <select name="cars" id="cars">
+                                <select name="installer" id="cars">
                                     <option value="" disabled selected hidden>Infinity</option>
                                     <option value="Infinity">Infinity</option>
-                                    <option value="Infinity">Infinity</option>
+                                    <option value="Patriot">Patriot</option>
+                                    <option value="Skyline">Skyline</option>
+
                                 </select>
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">State</label>
-                                <select name="cars" id="cars">
+                                <select name="state" id="cars">
                                     <option value="" disabled selected hidden>CT</option>
-                                    <option value="CT">CT1</option>
-                                    <option value="CT">CT2</option>
+                                    <option value="CT">CT</option>
+                                    <option value="NY">NY</option>
+                                    <option value="NJ">NJ</option>
+
                                 </select>
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">Utility Providers</label>
-                                <select name="cars" id="cars">
+                                <select name="providers" id="cars">
                                     <option value="" disabled selected hidden>ConEd</option>
-                                    <option value="ConEd">ConEd1</option>
-                                    <option value="ConEd">ConEd2</option>
+                                    <option value="ConEd">ConEd</option>
+                                    <option value="National Grid">National Grid</option>
+                                    <option value="O&R">O&R</option>
+                                    <option value="Central Hudson">Central Hudson</option>
+                                    <option value="EVERSOURCE">EVERSOURCE</option>
+                                    <option value="UI">UI</option>
+
+
+
+
                                 </select>
                             </div>
                             <div class="brayn-in-grouop">
-                                <label for="#">Type Here...</label>
-                                <input type="text" placeholder="Average Monthly Utility Cost">
+                                <label for="#">Average Monthly Utility Cost</label>
+                                <input type="number" placeholder="Type Here.." name='average'>
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">Basic Service Package</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="packeage" >
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">System Size</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="size" >
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">Panel Type</label>
-                                <select name="cars" id="cars">
-                                    <option value="" disabled selected hidden>ConEd</option>
-                                    <option value="ConEd">ConEd1</option>
-                                    <option value="ConEd">ConEd2</option>
+                                <select name="panel" id="cars">
+                                    <option value="" disabled selected hidden>SEG410</option>
+                                    <option value="SEG410">SEG410</option>
+
                                 </select>
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">System Production</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="text" placeholder="Type Here..." name="production">
                             </div>
                         </div>
                     </div>
@@ -212,63 +224,63 @@
                         <div class="brayn-form">
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">January</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="january" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">February</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="february">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">March</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="march">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">April</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="april" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">May</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="may" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">June</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="june" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">July</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..."  name="july" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">August</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="august">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">September</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="september">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">October</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="octobar">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">November</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="november" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">December</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="december" >
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">Estimated Yearly Consumption</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="yearly_consumption">
                             </div>
                             <div class="brayn-in-grouop ">
                                 <label for="#">Estimated Yearly Production</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="yearly_production" >
                             </div>
                             <div class="brayn-in-grouop ">
                                 <label for="#">Offset</label>
-                                <input type="text" placeholder="">
+                                <input type="number" placeholder="" name="offset" >
                             </div>
                         </div>
                     </div>
@@ -280,67 +292,71 @@
                         <div class="brayn-form">
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Deal Type</label>
-                                <select name="cars" id="cars">
+                                <select name="loan" id="cars">
                                     <option value="" disabled selected hidden>Loan</option>
-                                    <option value="Loan1">Loan1</option>
-                                    <option value="Loan2">Loan2</option>
+                                    <option value="Loan1">Loan</option>
+                                    <option value="Loan2">PPA</option>
+                                    <option value="Loan2">Cash</option>
+
                                 </select>
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Lender</label>
-                                <select name="cars" id="cars">
+                                <select name="lender" id="cars">
                                     <option value="" disabled selected hidden>Good Leap</option>
-                                    <option value="Loan1">Loan1</option>
-                                    <option value="Loan2">Loan2</option>
+                                    <option value="Loan1">Goodleap</option>
+                                    <option value="Loan2">Dividend</option>
+                                    <option value="Loan2">Sunnova</option>
+
                                 </select>
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Loan Term</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="loan_term">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">APR</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="apr" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Cash Down</label>
-                                <input type="number" placeholder="0">
+                                <input type="number" placeholder="0" name="cash" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Solar PPW</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="solar" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Total System Cost</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..."  name="system_cost">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Rebate Level</label>
-                                <input type="number" placeholder="0.2">
+                                <input type="number" placeholder="0.2"  name="rebate">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">State Rebate</label>
-                                <input type="number" placeholder="1,018.44">
+                                <input type="number" placeholder="1,018.44" name="state_rebate">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Federal Tax Credit</label>
-                                <input type="number" placeholder="8,747.27">
+                                <input type="number" placeholder="8,747.27" name="federal_tax" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">State Tax Credit</label>
-                                <input type="number" placeholder="5000.00">
+                                <input type="number" placeholder="5000.00"  name="state_tax">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Total Tax Credit</label>
-                                <input type="number" placeholder="13,747.27">
+                                <input type="number" placeholder="13,747.27"  name="total_tax" >
                             </div>
                             <div class="brayn-in-grouop part-3">
-                                <label for="#">Total Financed Amoutn</label>
-                                <input type="number" placeholder="29,157.56">
+                                <label for="#">Total Financed Amount</label>
+                                <input type="number" placeholder="29,157.56"  name="total_finance">
                             </div>
                             <div class="brayn-in-grouop part-3">
                                 <label for="#">Net Cost</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..."   name="net_cost">
                             </div>
                         </div>
                     </div>
@@ -353,41 +369,38 @@
                         <div class="brayn-form">
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Reamorization Loan</label>
-                                <select name="cars" id="cars">
-                                    <option value="" disabled selected hidden>Type Here...</option>
-                                    <option value="Loan1">Loan1</option>
-                                    <option value="Loan2">Loan2</option>
-                                </select>
+                                <input type="number" placeholder="201.00"  name="Reamorization">
+
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Ream Loan + Basic Service Charge</label>
-                                <input type="number" placeholder="201.00">
+                                <input type="number" placeholder="201.00"  name="basic_service_charge">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Option A - Keep Tax Credit</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="keep_tax_credit">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Option B - Allocate Tax Credit</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..."  name="allocate_tax_credit">
                             </div>
                             <div class="brayn-in-grouop ">
                                 <label for="#">Total Cost Staying with util</label>
-                                <input type="number" placeholder="0">
+                                <input type="number" placeholder="0" name="total_cost_util">
                             </div>
                             <div class="brayn-in-grouop ">
                                 <label for="#">Total Cost  switching to solar</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..." name="switching_solar" >
                             </div>
                             <div class="brayn-in-grouop ">
                                 <label for="#">30 Year Savings</label>
-                                <input type="text" placeholder="Type Here...">
+                                <input type="number" placeholder="Type Here..."  name="year_saving">
                             </div>
                         </div>
                     </div>
-                    <!-- Monthly Payment Form End -->
+
                     <div class="brayn-btn-box">
-                        <button>Generate Report</button>
+                        <button  type="submit">Generate Report</button>
                     </div>
                     </form>
                 </div>
@@ -403,7 +416,7 @@
     <footer>
         <div class="Container">
             <div class="main-footer">
-                <a href="#">Active Solar © 202r - All Rights Reserved</a>
+                <a href="#">Active Solar © 2024 - All Rights Reserved</a>
             </div>
         </div>
     </footer>
@@ -461,3 +474,12 @@
 </body>
 
 </html>
+
+<style>
+
+
+
+    .display{
+        opacity: 0;
+    }
+</style>

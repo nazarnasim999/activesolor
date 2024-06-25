@@ -487,7 +487,7 @@ button.part-2-btn-a:hover {
 }
 
 .nav-2-card {
-    display: flex;align-items: flex-start;flex-direction: column;width: 25%;
+    display: flex;align-items: center !important;flex-direction: column;width: 25%;
 }
 
 .nav-2-card h3 {
@@ -518,7 +518,7 @@ button.part-2-btn-a:hover {
 
 .left-boder {
     border-right: 1px solid #000;
-    width: 50%;
+    width: 55%;
 }
 /* 
 .brayn-box.aling-left form {
