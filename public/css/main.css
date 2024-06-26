@@ -397,8 +397,7 @@ img.google {
   width: 100%;
 }
 
-.section-6-logo a {
-}
+.section-6-logo a {}
 
 .section-6-logo a img {
   width: 6%;
@@ -1573,8 +1572,7 @@ section.secton-25 {
   height: 100%;
 }
 
-.logo-section-23 {
-}
+.logo-section-23 {}
 
 .section-25-part-box {
   width: 100%;
@@ -3676,8 +3674,7 @@ section.section-sixty {
   padding: 30px 50px;
 }
 
-.logo-section-25 {
-}
+.logo-section-25 {}
 
 .dash-site-list-2 {
   width: 80%;
@@ -3792,2228 +3789,2272 @@ section.section-sixty {
   text-transform: capitalize;
 }
 
+
+
+
+.section-infinite {
+  width: 100%;
+  background-image: url(../images/best-performing-system-bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 2%;
+}
+
+.section-best-img img {
+  width: 500px;
+}
+
+.section-best-img {
+  padding-top: 0px;
+}
+
+
+
 @media only screen and (max-width: 1440px) {
   .best-looking-system h3 {
-      margin: 0px;
+    margin: 0px;
   }
 
   .site-1-dash-p h3 {
-      font-size: 35px;
+    font-size: 35px;
   }
 
   .site-box-card {
-      width: 100%;
+    width: 100%;
   }
 
   .Cost-btn-box button {
-      font-size: 25px;
-      padding: 12px 42px;
+    font-size: 25px;
+    padding: 12px 42px;
   }
 
   .cost-btn-listing button {
-      padding: 14px 24px;
+    padding: 14px 24px;
   }
 
   .cost-btn-listing button h2 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .map-child-1 {
-      height: 50vh;
+    height: 50vh;
   }
 }
 
 @media only screen and (max-width: 1300px) {
   .map-child-1 {
-      height: 45vh;
+    height: 45vh;
   }
 
   img.btn-1 {
-      right: 210px;
+    right: 210px;
   }
 
   .or-part h2 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .or-span {
-      padding: 14px 0px;
+    padding: 14px 0px;
   }
 
   img.btn-2 {
-      left: 240px;
+    left: 240px;
   }
 
   img.btn-3 {
-      left: -85px;
+    left: -85px;
   }
 
   img.btn-4 {
-      right: -130px;
+    right: -130px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .AGENDA-box {
-      padding: 20px 30px 25px;
+    padding: 20px 30px 25px;
   }
 
   .AGENDA-box ul li {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .AGENDA-box h2 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .section-4-card h2 {
-      font-size: 16px;
-      line-height: 18px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .part-2-38-bt button {
-      font-size: 24px;
-      padding: 8px 65px;
+    font-size: 24px;
+    padding: 8px 65px;
   }
 
   .part-2-38-bt {
-      left: -150px;
+    left: -150px;
   }
 
   .map-child-1 {
-      height: 32vh;
+    height: 32vh;
   }
 
   img.btn-1 {
-      right: 170px;
+    right: 170px;
   }
 
   img.btn-2 {
-      left: 185px;
+    left: 185px;
   }
 
   img.btn-3 {
-      left: -70px;
+    left: -70px;
   }
 
   img.btn-4 {
-      right: -100px;
+    right: -100px;
   }
 
   .sec-38-btn button {
-      padding: 8px 14px 8px 20%;
+    padding: 8px 14px 8px 20%;
   }
 
   .sec-38-btn span {
-      height: 46px;
-      padding: 10px;
+    height: 46px;
+    padding: 10px;
   }
 
   .sec-38-btn button p {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .sec-38-btn button h3 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .section-38-part-1 {
-      gap: 35px;
+    gap: 35px;
   }
 
   .sec-box-38-btn button {
-      height: 40px;
-      width: 38%;
-      font-size: 15px;
+    height: 40px;
+    width: 38%;
+    font-size: 15px;
   }
 
   .section-4 {
-      padding: 2% 3%;
+    padding: 2% 3%;
   }
 
   .section-5-card {
-      width: 75%;
+    width: 75%;
   }
 
   .section-6-card {
-      width: 58%;
+    width: 58%;
   }
 
   .section-6-card p {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .section-6-list p {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .section-6-card img {
-      width: 12%;
+    width: 12%;
   }
 
   .section-6-card ul li {
-      font-size: 18px;
-      line-height: 22px;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .section-6-list {
-      width: 20%;
+    width: 20%;
   }
 
   .section-6-card h3 {
-      font-size: 20px;
-      line-height: 30px;
-      padding: 10px 0px 4px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 0px 4px;
   }
 
   .mb-box {
-      flex-direction: column;
-      gap: 10px;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .jaduhe-box {
-      width: 98%;
+    width: 98%;
   }
 
   .btn-39 button {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .section-39-box {
-      width: 68%;
+    width: 68%;
   }
 
   .section-39-boxing {
-      gap: 30px;
-      padding-top: 52px;
+    gap: 30px;
+    padding-top: 52px;
   }
 
   .list-box-39 span {
-      width: 8%;
+    width: 8%;
   }
 
   .list-box-39 button {
-      font-size: 15px;
-      padding: 5px 10px 5px 78px;
-      width: 45%;
+    font-size: 15px;
+    padding: 5px 10px 5px 78px;
+    width: 45%;
   }
 
   .section-6-box {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
   .section-6 {
-      height: 10%;
+    height: 10%;
   }
 
   .section-9-list {
-      width: 78%;
-      padding: 18px 18px 18px 145px;
+    width: 78%;
+    padding: 18px 18px 18px 145px;
   }
 
   .section-9-list p {
-      font-size: 20px;
-      line-height: 30px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .section-9-span {
-      width: 24%;
-      left: 4px;
+    width: 24%;
+    left: 4px;
   }
 
   .section-9-span h2 {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   .section-10-box p {
-      font-size: 16px;
-      padding-top: 65px;
+    font-size: 16px;
+    padding-top: 65px;
   }
 
   .section-11-box-card h2 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .section-37-card {
-      width: 48%;
+    width: 48%;
   }
 
   .section-37-btn {
-      width: 45%;
+    width: 45%;
   }
 
   .section-37-btn button {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .section-11-box-card p {
-      font-size: 18px;
-      padding-top: 34px;
+    font-size: 18px;
+    padding-top: 34px;
   }
 
   .section-11-box-card {
-      height: 40vh;
-      width: 100%;
+    height: 40vh;
+    width: 100%;
   }
 
   section.section-12 {
-      height: 100%;
+    height: 100%;
   }
 
   img.btn-1 {
-      top: 40px;
-      right: 160px;
+    top: 40px;
+    right: 160px;
   }
 
   img.btn-2 {
-      left: 200px;
-      top: 45px;
+    left: 200px;
+    top: 45px;
   }
 
   img.btn-4 {
-      bottom: 75px;
-      right: -110px;
+    bottom: 75px;
+    right: -110px;
   }
 
   img.btn-3 {
-      bottom: 32px;
-      left: -60px;
+    bottom: 32px;
+    left: -60px;
   }
 
   .map-child-1 {
-      width: 28%;
-      height: 54vh;
+    width: 28%;
+    height: 54vh;
   }
 
   .map-child-2 button {
-      width: 320px;
-      font-size: 16px;
+    width: 320px;
+    font-size: 16px;
   }
 
   .section-22-list-1 p {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .section-22-list-1 h2 {
-      font-size: 24px;
-      line-height: 29px;
+    font-size: 24px;
+    line-height: 29px;
   }
 
   .section-22-card p {
-      font-size: 16px;
-      line-height: 18px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .section-22-card span h2 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   section.section-23 {
-      height: 100%;
+    height: 100%;
   }
 
   .card-23 {
-      width: 44%;
+    width: 44%;
   }
 
   .box-btn-23 button {
-      width: 32%;
+    width: 32%;
   }
 
   .section-23-para h3 {
-      font-size: 24px;
-      padding-bottom: 30px;
+    font-size: 24px;
+    padding-bottom: 30px;
   }
 
   .or-part-1 p {
-      font-size: 16px;
-      line-height: 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .or-part-1 h3 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .or-part-1 h2 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .or-part h2 {
-      font-size: 25px;
+    font-size: 25px;
   }
 
   .or-span {
-      padding: 12px 0px;
+    padding: 12px 0px;
   }
 
   .or-part {
-      width: 6%;
+    width: 6%;
   }
 
   .or-part-2 p {
-      font-size: 16px;
-      line-height: 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .part-25-card h2 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .part-25-list h3 {
-      font-size: 14px;
-      line-height: 32px;
+    font-size: 14px;
+    line-height: 32px;
   }
 
   .part-25-box {
-      padding-top: 14px;
+    padding-top: 14px;
   }
 
   .part-25-card {
-      top: 99px;
-      height: 74vh;
+    top: 99px;
+    height: 74vh;
   }
 
   .part-25-listing p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .part-25-listing-2 span p {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .part-25-listing-2 span h3 {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .solar-list h2 {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .solar-box {
-      gap: 15px;
+    gap: 15px;
   }
 
   .Solar-card {
-      height: 48vh;
+    height: 48vh;
   }
 
   .solar-lilst-1 h2 {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .card-28 h2 {
-      font-size: 24px;
-      line-height: 30px;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .card-28 p {
-      font-size: 18px;
-      line-height: 20px;
+    font-size: 18px;
+    line-height: 20px;
   }
 
   .btn-28 button p {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .btn-28 button {
-      padding-left: 40px;
+    padding-left: 40px;
   }
 
   .btn-28 span {
-      width: 14%;
+    width: 14%;
   }
 
   .btn-28 button h2 {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .dash-list.black h2 {
-      font-size: 15px;
-      padding-bottom: 5px;
+    font-size: 15px;
+    padding-bottom: 5px;
   }
 
   .dash-box span h3 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .dash-box svg {
-      width: 45px;
-      height: 45px;
+    width: 45px;
+    height: 45px;
   }
 
   .box-30 {
-      padding-left: 8%;
+    padding-left: 8%;
   }
 
   .list-30-1 {
-      width: 44%;
-      height: 425px;
+    width: 44%;
+    height: 425px;
   }
 
   .list-30-1 h3 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .list-30-1 h5 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .section-35-list-1 button {
-      font-size: 22px;
-      padding: 5px;
+    font-size: 22px;
+    padding: 5px;
   }
 
   .section-35-list-1 {
-      padding-top: 20px;
+    padding-top: 20px;
   }
 
   .list-30-1 p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .inn-col-2 h6 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .inner-col {
-      gap: 15px;
-      padding: 25px 0px;
+    gap: 15px;
+    padding: 25px 0px;
   }
 
   p.para-1 {
-      font-size: 11px;
+    font-size: 11px;
   }
 
   .col-1-btn button {
-      width: 54%;
+    width: 54%;
   }
 
   .state h2 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .state h4 {
-      font-size: 18px;
-      padding-top: 5px;
+    font-size: 18px;
+    padding-top: 5px;
   }
 
   .state p {
-      font-size: 18px;
-      padding-top: 5px;
-      line-height: 24px;
+    font-size: 18px;
+    padding-top: 5px;
+    line-height: 24px;
   }
 
   .state-2-child h3 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .state-2 p {
-      font-size: 18px;
-      line-height: 20px;
+    font-size: 18px;
+    line-height: 20px;
   }
 
   .state button {
-      font-size: 16px;
-      padding: 12px 50px;
+    font-size: 16px;
+    padding: 12px 50px;
   }
 
   .state-2 {
-      padding-top: 20px;
-      padding-left: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
   }
 
   .state {
-      padding-top: 35px;
+    padding-top: 35px;
   }
 
   .section-36-btn button {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .section-36-btn {
-      width: 38%;
+    width: 38%;
   }
 
   .section-36-list-1 {
-      width: 30%;
+    width: 30%;
   }
 
   .best-looking-system {
-      right: 50%;
+    right: 50%;
   }
 
   .best-looking-points ul li:nth-child(1)::after {
-      width: 290px;
+    width: 290px;
   }
 
   .best-looking-points ul li:nth-child(1)::before {
-      height: 50px;
-      right: 610px;
+    height: 50px;
+    right: 610px;
   }
 
   .best-looking-points ul li:nth-child(1) span {
-      right: 598px;
-      top: 80px;
+    right: 598px;
+    top: 80px;
   }
 
   .best-looking-points ul li:nth-child(3)::after {
-      width: 380px;
+    width: 380px;
   }
 
   .best-looking-points ul li:nth-child(3)::before {
-      right: 700px;
-      bottom: 24px;
+    right: 700px;
+    bottom: 24px;
   }
 
   .best-looking-points ul li:nth-child(3) span {
-      right: 687px;
-      bottom: 125px;
+    right: 687px;
+    bottom: 125px;
   }
 
   .best-looking-points ul li:nth-child(4)::after {
-      width: 460px;
+    width: 460px;
   }
 
   .best-looking-points ul li:nth-child(4)::before {
-      right: 780px;
+    right: 780px;
   }
 
   .best-looking-points ul li:nth-child(4) span {
-      border-radius: 50px;
-      right: 768px;
+    border-radius: 50px;
+    right: 768px;
   }
 
   .proposed_cost_box {
-      width: 100%;
+    width: 100%;
   }
 
   .proposed_cost_box h4 {
-      font-size: 21px;
+    font-size: 21px;
   }
 
   .proposed_monthly_payment_sec::before {
-      width: 300px;
+    width: 300px;
   }
 
   .financed-txt {
-      padding: 0px 20px 10px;
-      margin: 20px 0px 10px;
+    padding: 0px 20px 10px;
+    margin: 20px 0px 10px;
   }
 
   .financed-txt h5 {
-      color: rgb(18, 38, 170);
-      font-size: 18px;
+    color: rgb(18, 38, 170);
+    font-size: 18px;
   }
 
   .federal-tax-txt {
-      padding: 0px 20px 8px;
-      margin: 10px 0px 1px;
+    padding: 0px 20px 8px;
+    margin: 10px 0px 1px;
   }
 
   .federal-tax-txt h5 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .total-credi-txt {
-      padding: 10px 20px;
+    padding: 10px 20px;
   }
 
   .total-credi-txt h5 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .net-cost h5 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .net-cost {
-      padding: 10px 20px;
+    padding: 10px 20px;
   }
 
   .plan-terms {
-      justify-content: space-between;
-      padding: 10px 20px;
+    justify-content: space-between;
+    padding: 10px 20px;
   }
 
   .plan-terms h5 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .apr-txt {
-      padding: 10px 20px;
+    padding: 10px 20px;
   }
 
   .apr-txt h5 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .monthly-payment-txt {
-      gap: 10px;
-      margin: 20px 0px 20px 60px;
+    gap: 10px;
+    margin: 20px 0px 20px 60px;
   }
 
   .monthly-payment-txt h4 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .intial-term p {
-      font-size: 18px;
-      margin: 0px;
+    font-size: 18px;
+    margin: 0px;
   }
 
   .payment-amortize-box {
-      padding: 10px 0px;
-      margin: 0px 0px 0px 30px;
+    padding: 10px 0px;
+    margin: 0px 0px 0px 30px;
   }
 
   .tax-incentives-txt {
-      margin: 150px 0px 0px 30px;
+    margin: 150px 0px 0px 30px;
   }
 
   .payment-option h4 {
-      width: 350px;
-      padding: 12px 30px;
+    width: 350px;
+    padding: 12px 30px;
   }
 
   .payment-option {
-      justify-content: flex-end;
+    justify-content: flex-end;
   }
 
   .payment-option span {
-      width: 80px;
-      height: 80px;
-      left: 22%;
+    width: 80px;
+    height: 80px;
+    left: 22%;
   }
 
   .payment-option h4 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .monthly-payment-txt h4 {
-      width: 200px;
+    width: 200px;
   }
 
   .payment-prior h4 {
-      width: 400px;
+    width: 400px;
   }
 
   .intial-term p {
-      padding: 0px;
+    padding: 0px;
   }
 
   .dash-site-list-1 {
-      padding: 25px 30px;
-      width: 24%;
+    padding: 25px 30px;
+    width: 24%;
   }
 
   .dash-site-list-2 {
-      width: 76%;
+    width: 76%;
   }
 
   .site-box-card {
-      padding: 40px 35px;
+    padding: 40px 35px;
   }
 
   .Cost-btn-box button {
-      font-size: 20px;
-      padding: 10px 34px;
+    font-size: 20px;
+    padding: 10px 34px;
   }
 
   .cost-btn-listing button {
-      padding: 12px 20px;
+    padding: 12px 20px;
   }
 
   .cost-btn-listing button h2 {
-      font-size: 24px;
+    font-size: 24px;
   }
+
+  .section-best-img img {
+    width: 400px;
+}
+
+
 }
 
 @media screen and (max-width: 768px) {
   .section-3-list {
-      width: 58%;
+    width: 58%;
   }
 
   .section-11-box-card ul li {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .section-3-list p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .section-4-boxing {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
 
   .section-4-card {
-      width: 24%;
+    width: 24%;
   }
 
   .section-4 {
-      padding-bottom: 40px;
-      height: 100%;
+    padding-bottom: 40px;
+    height: 100%;
   }
 
   .section-5-card {
-      width: 100%;
+    width: 100%;
   }
 
   .section-6-card {
-      width: 100%;
+    width: 100%;
   }
 
   .section-6-list {
-      width: 26%;
+    width: 26%;
   }
 
   .section-9-box {
-      flex-direction: column;
-      gap: 20px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .section-9-span {
-      position: relative;
+    position: relative;
   }
 
   .section-9-list {
-      width: 100%;
-      padding: 18px;
+    width: 100%;
+    padding: 18px;
   }
 
   .section-38-part-1 {
-      width: 32%;
+    width: 32%;
   }
 
   .main-section-38 {
-      padding-top: 100px;
+    padding-top: 100px;
   }
 
   .part-2-38-bt {
-      left: -154px;
-      top: -90px;
+    left: -154px;
+    top: -90px;
   }
 
   .sec-box-38-btn button {
-      height: 39px;
-      width: 40%;
-      font-size: 13px;
+    height: 39px;
+    width: 40%;
+    font-size: 13px;
   }
 
   .section-10-box {
-      width: 48%;
+    width: 48%;
   }
 
   .section-11-box-card h2 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .section-11-box-card p {
-      font-size: 16px;
-      padding-top: 24px;
+    font-size: 16px;
+    padding-top: 24px;
   }
 
   .section-11-box-card {
-      height: 32vh;
+    height: 32vh;
   }
 
   img.btn-1 {
-      top: 40px;
-      right: 105px;
+    top: 40px;
+    right: 105px;
   }
 
   img.btn-2 {
-      left: 124px;
-      top: 45px;
+    left: 124px;
+    top: 45px;
   }
 
   .section-37-card {
-      width: 65%;
+    width: 65%;
   }
 
   .section-37-btn {
-      width: 65%;
+    width: 65%;
   }
 
   img.btn-4 {
-      bottom: 75px;
-      right: -65px;
+    bottom: 75px;
+    right: -65px;
   }
 
   img.btn-3 {
-      bottom: 32px;
-      left: -34px;
+    bottom: 32px;
+    left: -34px;
   }
 
   .map-child-1 {
-      width: 28%;
-      height: 25vh;
+    width: 28%;
+    height: 25vh;
   }
 
   .map-child-2 button {
-      width: 240px;
-      font-size: 14px;
+    width: 240px;
+    font-size: 14px;
   }
 
   .section-15-box {
-      flex-direction: column;
-      gap: 24px;
+    flex-direction: column;
+    gap: 24px;
   }
 
   .section-15-btn-box button {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .section-15-btn-box {
-      width: 48%;
+    width: 48%;
   }
 
   .section-15-card h2 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .section-39-box {
-      width: 100%;
+    width: 100%;
   }
 
   .main-section-39 {
-      padding-top: 70px;
+    padding-top: 70px;
   }
 
   .btn-39 {
-      left: 0px;
+    left: 0px;
   }
 
   .section-15-card ul li {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   section.section-15 {
-      height: 100%;
+    height: 100%;
   }
 
   .section-15-imger {
-      width: 44%;
+    width: 44%;
   }
 
   .section-22-list-1 {
-      width: 35%;
+    width: 35%;
   }
 
   .card-23 {
-      width: 75%;
+    width: 75%;
   }
 
   .state {
-      width: 100%;
+    width: 100%;
   }
 
   .state-2 {
-      width: 100%;
-      background: none;
-      padding-top: 65px;
+    width: 100%;
+    background: none;
+    padding-top: 65px;
   }
 
   section.section-go-3 {
-      background: none;
+    background: none;
   }
 
   .box-btn-23 button {
-      width: 50%;
+    width: 50%;
   }
 
   .box-btn-23 span {
-      width: 8%;
+    width: 8%;
   }
 
   .or-part h2 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .or-span {
-      padding: 5px 0px;
+    padding: 5px 0px;
   }
 
   .section-25-part-box {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .section-25-part-1 {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   .section-25-part-2 {
-      width: 100%;
-      padding: 31px;
+    width: 100%;
+    padding: 31px;
   }
 
   .part-25-card {
-      position: relative;
-      width: 68%;
-      top: 0px;
-      height: 65vh;
+    position: relative;
+    width: 68%;
+    top: 0px;
+    height: 65vh;
   }
 
   .part-25-listing img {
-      width: 60%;
+    width: 60%;
   }
 
   .logo-section-25 {
-      width: 100%;
-      padding-bottom: 34px;
+    width: 100%;
+    padding-bottom: 34px;
   }
 
   .logo-section-25 img {
-      width: 8%;
+    width: 8%;
   }
 
   h2.with {
-      width: 50%;
+    width: 50%;
   }
 
   .section-36-btn button {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .section-36-btn {
-      width: 58%;
-      padding: 0px;
+    width: 58%;
+    padding: 0px;
   }
 
   .section-36-list-1 {
-      width: 52%;
+    width: 52%;
   }
 
   .main-section-36 {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
   section.section-36 {
-      height: 100%;
+    height: 100%;
   }
 
   .card-28 h2 {
-      font-size: 20px;
-      line-height: 30px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .card-28 p {
-      font-size: 16px;
-      line-height: 16px;
-      padding: 5px 12px 0px 0px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 5px 12px 0px 0px;
   }
 
   .btn-28 button p {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .btn-28 button {
-      padding-left: 60px;
+    padding-left: 60px;
   }
 
   .btn-28 span {
-      width: 14%;
+    width: 14%;
   }
 
   .dash-bol {
-      flex-direction: column;
-      gap: 30px;
+    flex-direction: column;
+    gap: 30px;
   }
 
   .dash-list.black {
-      width: 100%;
+    width: 100%;
   }
 
   .box-btn-28 {
-      gap: 34px;
-      padding-top: 45px;
-      padding-bottom: 30px;
+    gap: 34px;
+    padding-top: 45px;
+    padding-bottom: 30px;
   }
 
   .btn-28 button h2 {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .dash-list.black h2 {
-      font-size: 15px;
-      padding-bottom: 5px;
+    font-size: 15px;
+    padding-bottom: 5px;
   }
 
   .dash-box span h3 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .dash-box svg {
-      width: 45px;
-      height: 45px;
+    width: 45px;
+    height: 45px;
   }
 
   .list-28-1 {
-      width: 40%;
+    width: 40%;
   }
 
   .list-28-2 {
-      width: 60%;
+    width: 60%;
   }
 
   .box-30 {
-      flex-direction: column;
-      gap: 20px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .list-30-1 {
-      width: 75%;
+    width: 75%;
   }
 
   section.section-go-2 {
-      height: 100%;
+    height: 100%;
   }
 
   .list-30-2 {
-      width: 54%;
+    width: 54%;
   }
 
   .inn-col-1 {
-      width: 12%;
+    width: 12%;
   }
 
   .header-logo img {
-      width: 100px;
+    width: 100px;
   }
 
   .best-looking-sec::before {
-      width: 350px;
+    width: 350px;
   }
 
   .best-looking-system {
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      margin: 0px 0px 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 0px 0px 0px 100px;
   }
 
   .best-looking-points {
-      justify-content: end;
-      margin: 30px 30px 0px 0px;
+    justify-content: end;
+    margin: 30px 30px 0px 0px;
   }
 
   .best-looking-points ul li {
-      width: 280px;
-      font-size: 18px;
+    width: 280px;
+    font-size: 18px;
   }
 
   .best-looking-system {
-      right: 0%;
-      margin: 0px;
+    right: 0%;
+    margin: 0px;
   }
 
   .best-looking-system h3 {
-      width: 375px;
-      font-size: 25px;
-      margin: 0px 100px 0px 0px;
+    width: 375px;
+    font-size: 25px;
+    margin: 0px 100px 0px 0px;
   }
 
   .best-looking-points ul li:nth-child(1)::before {
-      height: 38px;
-      right: 530px;
+    height: 38px;
+    right: 530px;
   }
 
   .best-looking-points ul li:nth-child(1) span {
-      right: 518px;
-      top: 60px;
+    right: 518px;
+    top: 60px;
   }
 
   .best-looking-points ul li:nth-child(2)::before {
-      right: 460px;
+    right: 460px;
   }
 
   .best-looking-points ul li:nth-child(2) span {
-      right: 448px;
+    right: 448px;
   }
 
   .best-looking-points ul li:nth-child(3)::before {
-      right: 660px;
-      bottom: 21px;
+    right: 660px;
+    bottom: 21px;
   }
 
   .best-looking-points ul li:nth-child(3) span {
-      right: 647px;
-      bottom: 125px;
+    right: 647px;
+    bottom: 125px;
   }
 
   .best-looking-points ul li:nth-child(3)::after {
-      width: 320px;
+    width: 320px;
   }
 
   .best-looking-points ul li:nth-child(3)::before {
-      right: 600px;
-      bottom: 21px;
+    right: 600px;
+    bottom: 21px;
   }
 
   .best-looking-points ul li:nth-child(3) span {
-      right: 587px;
-      bottom: 125px;
+    right: 587px;
+    bottom: 125px;
   }
 
   .best-looking-points ul li:nth-child(4)::after {
-      width: 390px;
+    width: 390px;
   }
 
   .best-looking-points ul li:nth-child(4)::before {
-      right: 670px;
-      bottom: 21px;
+    right: 670px;
+    bottom: 21px;
   }
 
   .best-looking-points ul li:nth-child(4) span {
-      border-radius: 50px;
-      right: 658px;
+    border-radius: 50px;
+    right: 658px;
   }
 
   .best-looking-points ul li:nth-child(1)::after {
-      width: 250px;
+    width: 250px;
   }
 
   .proposed_cost_box {
-      width: 90%;
-      margin: 30px auto;
+    width: 90%;
+    margin: 30px auto;
   }
 
   .payment-option h4 {
-      background: rgb(255, 255, 255);
-      width: 300px;
-      font-size: 16px;
+    background: rgb(255, 255, 255);
+    width: 300px;
+    font-size: 16px;
   }
 
   .payment-option span {
-      width: 70px;
-      height: 70px;
-      left: 10%;
+    width: 70px;
+    height: 70px;
+    left: 10%;
   }
 
   .payment-option span img {
-      width: 50px;
+    width: 50px;
   }
 
   .payment-end img {
-      width: 60px;
+    width: 60px;
   }
 
   .proposed_monthly_payment_sec::before {
-      height: 100%;
+    height: 100%;
   }
 
   .payment-amortize-box {
-      position: relative;
+    position: relative;
   }
 
   .payment-option-box {
-      padding: 10px 0px;
-      background: rgb(255, 255, 255);
-      position: relative;
-      margin: 10px 30px;
-      box-shadow: rgba(0, 0, 0, 0.17) 0px 0px 7px 3px;
+    padding: 10px 0px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    margin: 10px 30px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px 0px 7px 3px;
   }
 
   .payment-amortize-box {
-      position: relative;
-      margin: 20px 30px;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 7px 3px;
+    position: relative;
+    margin: 20px 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 7px 3px;
   }
 
   .tax-incentives-txt {
-      margin: 0px 30px 30px;
-      background: rgb(255, 255, 255);
-      position: relative;
-      padding: 10px 20px;
-      box-shadow: rgba(0, 0, 0, 0.17) 0px 0px 7px 3px;
+    margin: 0px 30px 30px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px 0px 7px 3px;
   }
 
   .expectional_service::before {
-      height: 600px;
-      width: 100%;
-      background-position: center bottom;
+    height: 600px;
+    width: 100%;
+    background-position: center bottom;
   }
 
   .expectional_logo {
-      margin: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 20px;
   }
 
   .expectional_txt h3 {
-      padding: 40px;
-      height: 530px;
+    padding: 40px;
+    height: 530px;
   }
 
   .upfront-cost-box {
-      margin: 20px 50px;
+    margin: 20px 50px;
   }
 
   section.expectional_service {
-      height: 100%;
+    height: 100%;
   }
 
   .site-1-dash-p h3 {
-      font-size: 28px;
+    font-size: 28px;
   }
+
+  .section-best-img img {
+    width: 400px;
+  }
+
+  
+
+
 }
 
 @media screen and (max-width: 600px) {
   section.section-1 {
-      height: 100%;
-      padding-top: 30px;
+    height: 100%;
+    padding-top: 30px;
   }
 
   .main-section-1 {
-      flex-wrap: wrap;
-      gap: 34px;
+    flex-wrap: wrap;
+    gap: 34px;
   }
 
   .section-1-imger {
-      width: 100%;
+    width: 100%;
   }
 
   .section-1-tital {
-      width: 100%;
+    width: 100%;
   }
 
   .main-section-38 {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .section-38-part-1 {
-      width: 80%;
-      padding-top: 60px;
+    width: 80%;
+    padding-top: 60px;
   }
 
   .section-38-part-2 {
-      width: 97%;
+    width: 97%;
   }
 
   section.section-38 {
-      background: none rgb(18, 38, 170);
-      height: 100%;
+    background: none rgb(18, 38, 170);
+    height: 100%;
   }
 
   .section-39-box {
-      width: 100%;
+    width: 100%;
   }
 
   .main-section-39 {
-      padding-top: 70px;
+    padding-top: 70px;
   }
 
   .btn-39 {
-      left: 0px;
+    left: 0px;
   }
 
   .btn-39 button {
-      font-size: 20px;
-      width: 100%;
+    font-size: 20px;
+    width: 100%;
   }
 
   .btn-39 {
-      position: relative;
-      width: 100%;
+    position: relative;
+    width: 100%;
   }
 
   .list-box-39 button {
-      width: 77%;
-      padding: 5px 10px 5px 61px;
+    width: 77%;
+    padding: 5px 10px 5px 61px;
   }
 
   .list-box-39 span {
-      width: 13%;
+    width: 13%;
   }
 
   .section-39-boxing {
-      gap: 30px;
-      padding-top: 8px;
+    gap: 30px;
+    padding-top: 8px;
   }
 
   .part-2-38-bt button {
-      font-size: 18px;
-      padding: 10px 12px;
+    font-size: 18px;
+    padding: 10px 12px;
   }
 
   .part-2-38-bt {
-      width: 100%;
-      left: 0px;
-      top: -400px;
+    width: 100%;
+    left: 0px;
+    top: -400px;
   }
 
   .sec-box-38-btn button {
-      width: 48%;
+    width: 48%;
   }
 
   .section-1-tital a {
-      width: 40%;
+    width: 40%;
   }
 
   .AGENDA-box {
-      width: 100%;
+    width: 100%;
   }
 
   .AGENDA-list {
-      padding-left: 0px;
+    padding-left: 0px;
   }
 
   .section-2-logo {
-      width: 12%;
+    width: 12%;
   }
 
   .section-3-logo a {
-      width: 12%;
+    width: 12%;
   }
 
   .Discovery {
-      width: 52% !important;
+    width: 52% !important;
   }
 
   .section-36-list-1 {
-      width: 100%;
+    width: 100%;
   }
 
   .section-36-btn {
-      width: 100%;
+    width: 100%;
   }
 
   .section-3-list {
-      width: 94%;
+    width: 94%;
   }
 
   .section-4-logo img {
-      width: 12%;
+    width: 12%;
   }
 
   .state {
-      width: 100%;
+    width: 100%;
   }
 
   .state-2 {
-      width: 100%;
-      background: none;
-      padding-top: 65px;
+    width: 100%;
+    background: none;
+    padding-top: 65px;
   }
 
   .section-37-card {
-      width: 100%;
+    width: 100%;
   }
 
   .section-37-btn {
-      width: 100%;
+    width: 100%;
   }
 
   .section-37-box {
-      padding-left: 0px;
-      padding-top: 20px;
+    padding-left: 0px;
+    padding-top: 20px;
   }
 
   .section-37-card h2 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .section-37-card p {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .section-37-card h3 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .section-37-btn button {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .state-2 {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      padding-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
   }
 
   .state-2-child {
-      width: 75%;
+    width: 75%;
   }
 
   .state-2-child-2 {
-      width: 75%;
+    width: 75%;
   }
 
   .state-2-child-3 {
-      width: 75%;
+    width: 75%;
   }
 
   .section-4-box {
-      padding-top: 80px;
+    padding-top: 80px;
   }
 
   section.section-12 {
-      height: 100%;
+    height: 100%;
   }
 
   .section-12-box {
-      flex-direction: column;
-      gap: 40px;
+    flex-direction: column;
+    gap: 40px;
   }
 
   .section-12-list {
-      width: 100%;
+    width: 100%;
   }
 
   .section-12-logo img {
-      width: 12%;
+    width: 12%;
   }
 
   .section-4-btn img {
-      width: 54%;
+    width: 54%;
   }
 
   .section-4-card {
-      width: 60%;
+    width: 60%;
   }
 
   .section-4-card span {
-      width: 19%;
+    width: 19%;
   }
 
   .section-5-card {
-      width: 100%;
+    width: 100%;
   }
 
   .section-5-box {
-      padding-left: 8px;
+    padding-left: 8px;
   }
 
   .section-5-card p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .section-5-card h2 {
-      font-size: 25px;
+    font-size: 25px;
   }
 
   .section-5-logo img {
-      width: 12%;
+    width: 12%;
   }
 
   .section-6-box {
-      padding-left: 0px;
+    padding-left: 0px;
   }
 
   .section-6-card h2 {
-      font-size: 25px;
+    font-size: 25px;
   }
 
   .or-part h2 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .or-span {
-      padding: 5px 0px;
+    padding: 5px 0px;
   }
 
   .section-23-para h3 {
-      font-size: 18px;
-      line-height: 20px;
-      padding-bottom: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 15px;
   }
 
   .logo-section-24 {
-      width: 12%;
+    width: 12%;
   }
 
   .competitors img {
-      width: 54%;
-      cursor: pointer;
+    width: 54%;
+    cursor: pointer;
   }
 
   .or {
-      flex-direction: column;
-      gap: 15px;
+    flex-direction: column;
+    gap: 15px;
   }
 
   .part-25-card {
-      height: 52vh;
-      width: 100%;
-      padding: 14px;
+    height: 52vh;
+    width: 100%;
+    padding: 14px;
   }
 
   .Solar-card {
-      width: 100%;
+    width: 100%;
   }
 
   .section-25-part-2 {
-      padding: 8px;
+    padding: 8px;
   }
 
   .solar-list h2 {
-      font-size: 12px;
-      width: 12%;
+    font-size: 12px;
+    width: 12%;
   }
 
   .solar-lilst-1 h2 {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   h2.with {
-      width: 58%;
+    width: 58%;
   }
 
   .part-25-card h2 {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   .part-25-box {
-      padding-top: 0px;
+    padding-top: 0px;
   }
 
   .part-25-list.go h3 {
-      line-height: 24px;
+    line-height: 24px;
   }
 
   .part-25-list h3 {
-      line-height: 24px;
+    line-height: 24px;
   }
 
   .logo-section-25 img {
-      width: 12%;
+    width: 12%;
   }
 
   .or-part-1 {
-      width: 100%;
+    width: 100%;
   }
 
   .or-part {
-      width: 11%;
+    width: 11%;
   }
 
   .or-part-2 {
-      width: 100%;
+    width: 100%;
   }
 
   .or-imger img {
-      width: 90%;
+    width: 90%;
   }
 
   .or-imger {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
   }
 
   .section-6-card p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .card-28 h2 {
-      font-size: 20px;
-      line-height: 30px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .card-28 p {
-      font-size: 16px;
-      line-height: 16px;
-      padding: 5px 12px 0px 0px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 5px 12px 0px 0px;
   }
 
   .btn-28 button p {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .btn-28 button {
-      padding-left: 84px;
+    padding-left: 84px;
   }
 
   .box-30 {
-      flex-direction: column;
-      gap: 20px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .list-30-1 {
-      width: 75%;
+    width: 75%;
   }
 
   section.section-go-2 {
-      height: 100%;
+    height: 100%;
   }
 
   .list-30-2 {
-      width: 54%;
+    width: 54%;
   }
 
   .inn-col-1 {
-      width: 12%;
+    width: 12%;
   }
 
   .box-30 {
-      padding: 20px 0px;
+    padding: 20px 0px;
   }
 
   .list-30-1 {
-      width: 100%;
+    width: 100%;
   }
 
   .list-30-2 {
-      width: 100%;
+    width: 100%;
   }
 
   .btn-28 span {
-      width: 14%;
+    width: 14%;
   }
 
   .btn-28 button h2 {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .dash-list.black h2 {
-      font-size: 15px;
-      padding-bottom: 5px;
+    font-size: 15px;
+    padding-bottom: 5px;
   }
 
   .dash-box span h3 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .dash-box svg {
-      width: 45px;
-      height: 45px;
+    width: 45px;
+    height: 45px;
   }
 
   .list-28-1 {
-      width: 40%;
+    width: 40%;
   }
 
   .list-28-2 {
-      width: 60%;
+    width: 60%;
   }
 
   .dash-bol {
-      flex-direction: column;
-      gap: 20px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .dash-list.black {
-      width: 100%;
+    width: 100%;
   }
 
   .main-section-28 {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .list-28-1 {
-      width: 100%;
-      padding-bottom: 55px;
+    width: 100%;
+    padding-bottom: 55px;
   }
 
   .list-28-2 {
-      width: 100%;
-      padding-bottom: 30px;
+    width: 100%;
+    padding-bottom: 30px;
   }
 
   .board {
-      width: 90%;
+    width: 90%;
   }
 
   .dash {
-      width: 90%;
+    width: 90%;
   }
 
   .section-6-card ul li {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .section-6-list {
-      width: 44%;
+    width: 44%;
   }
 
   .section-6-list p {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .section-22-box {
-      flex-direction: column;
-      gap: 23px;
+    flex-direction: column;
+    gap: 23px;
   }
 
   .section-22-list-1 {
-      width: 100%;
+    width: 100%;
   }
 
   .section-22-list-2 {
-      width: 100%;
+    width: 100%;
   }
 
   section.section-22 {
-      height: 100%;
-      background-color: rgb(21, 40, 170);
-      background-size: 0%;
+    height: 100%;
+    background-color: rgb(21, 40, 170);
+    background-size: 0%;
   }
 
   .logo-section-22 img {
-      width: 12%;
+    width: 12%;
   }
 
   .section-22-cards {
-      flex-direction: column;
-      gap: 20px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .section-22-card {
-      width: 55%;
+    width: 55%;
   }
 
   .section-6-logo a img {
-      width: 12%;
+    width: 12%;
   }
 
   .section-9-box {
-      flex-direction: column;
-      gap: 20px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .section-9-span {
-      position: relative;
+    position: relative;
   }
 
   .section-9-list {
-      width: 100%;
-      padding: 18px;
-      height: 100%;
+    width: 100%;
+    padding: 18px;
+    height: 100%;
   }
 
   .section-9-span {
-      width: 54%;
+    width: 54%;
   }
 
   .section-9-span h2 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .section-9-list p {
-      font-size: 16px;
-      line-height: 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .section-9-logo a img {
-      width: 12%;
+    width: 12%;
   }
 
   .section-10-logo img {
-      width: 12%;
+    width: 12%;
   }
 
   .section-10-box {
-      width: 100%;
+    width: 100%;
   }
 
   .section-10-box a {
-      left: 0px;
-      top: -30px;
+    left: 0px;
+    top: -30px;
   }
 
   .section-11-box-card h2 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .section-11-box-card p {
-      font-size: 16px;
-      padding-top: 24px;
+    font-size: 16px;
+    padding-top: 24px;
   }
 
   .section-11-box-card {
-      height: 32vh;
+    height: 32vh;
   }
 
   .section-11-box {
-      width: 100%;
+    width: 100%;
   }
 
   .main-section-11 {
-      flex-direction: column;
-      gap: 20px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .section-11-imger {
-      flex-direction: column;
-      width: 100%;
+    flex-direction: column;
+    width: 100%;
   }
 
   .section-bill {
-      width: 100%;
+    width: 100%;
   }
 
   .section-11-logo img {
-      width: 15%;
+    width: 15%;
   }
 
   .section-11-box-card ul li {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   img.images-with {
-      width: 100% !important;
+    width: 100% !important;
   }
 
   .jaduhe-box {
-      height: 46vh;
+    height: 46vh;
   }
 
   .section-14-boxing {
-      flex-direction: column;
-      gap: 20px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .map-child-1 {
-      width: 58%;
-      height: 28vh;
+    width: 58%;
+    height: 28vh;
   }
 
   img.btn-1 {
-      right: 153px;
+    right: 153px;
   }
 
   img.btn-3 {
-      left: -68px;
+    left: -68px;
   }
 
   img.btn-2 {
-      left: 162px;
+    left: 162px;
   }
 
   img.btn-4 {
-      right: -78px;
+    right: -78px;
   }
 
   .section-35-list-1 button {
-      font-size: 12px;
-      padding: 5px;
+    font-size: 12px;
+    padding: 5px;
   }
 
   .map-child-2 {
-      width: 75%;
+    width: 75%;
   }
 
   section.section-14 {
-      height: 100%;
+    height: 100%;
   }
 
   .section-14-logo a img {
-      width: 12%;
+    width: 12%;
   }
 
   .section-14-btn a {
-      width: 74%;
+    width: 74%;
   }
 
   .section-15-box {
-      flex-direction: column;
-      gap: 24px;
+    flex-direction: column;
+    gap: 24px;
   }
 
   section.section-35 {
-      height: 100vh;
+    height: 100vh;
   }
 
   .mian-section-35 {
-      height: 100%;
+    height: 100%;
   }
 
   .section-15-btn-box button {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .section-15-btn-box {
-      width: 70%;
+    width: 70%;
   }
 
   .section-15-card h2 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .section-15-card ul li {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   section.section-15 {
-      height: 100%;
+    height: 100%;
   }
 
   .section-15-imger {
-      width: 44%;
+    width: 44%;
   }
 
   .section-15-list {
-      width: 100%;
+    width: 100%;
   }
 
   .section-15-card ul {
-      margin-left: 8px;
+    margin-left: 8px;
   }
 
   .section-15-logo img {
-      width: 12%;
+    width: 12%;
   }
 
   .section-15-imger {
-      width: 50%;
+    width: 50%;
   }
 
   .section-23-box {
-      padding-left: 0px;
+    padding-left: 0px;
   }
 
   .card-23 {
-      width: 100%;
+    width: 100%;
   }
 
   .box-btn-23 button {
-      width: 75%;
+    width: 75%;
   }
 
   .box-btn-23 span {
-      width: 12%;
+    width: 12%;
   }
 
   .logo-section-23 {
-      width: 12%;
+    width: 12%;
   }
 
   .best-looking-sec::before {
-      display: none;
+    display: none;
   }
 
   .header-logo {
-      margin: 0px 0px 50px;
-      text-align: center;
+    margin: 0px 0px 50px;
+    text-align: center;
   }
 
   .best-looking-points {
-      justify-content: center;
-      margin: 30px 0px 0px;
+    justify-content: center;
+    margin: 30px 0px 0px;
   }
 
   .best-looking-system h3 {
-      text-align: center;
-      margin: 0px;
+    text-align: center;
+    margin: 0px;
   }
 
   .best-looking-points ul {
-      padding: 0px;
+    padding: 0px;
   }
 
   .best-looking-points ul li {
-      text-align: center;
-      width: 100%;
+    text-align: center;
+    width: 100%;
   }
 
   .best-looking-system {
-      right: 0%;
-      justify-content: center;
-      margin: 0px;
+    right: 0%;
+    justify-content: center;
+    margin: 0px;
   }
 
   .best-looking-points ul li:nth-child(1)::after {
-      display: none;
+    display: none;
   }
 
   .best-looking-points ul li:nth-child(1)::before {
-      display: none;
+    display: none;
   }
 
   .best-looking-points ul li:nth-child(1) span {
-      display: none;
+    display: none;
   }
 
   .best-looking-points ul li:nth-child(2)::after {
-      display: none;
+    display: none;
   }
 
   .best-looking-points ul li:nth-child(2)::before {
-      display: none;
+    display: none;
   }
 
   .best-looking-points ul li:nth-child(2) span {
-      display: none;
+    display: none;
   }
 
   .best-looking-points ul li:nth-child(3)::after {
-      display: none;
+    display: none;
   }
 
   .best-looking-points ul li:nth-child(3)::before {
-      display: none;
+    display: none;
   }
 
   .best-looking-points ul li:nth-child(3) span {
-      display: none;
+    display: none;
   }
 
   .best-looking-points ul li:nth-child(4)::after {
-      display: none;
+    display: none;
   }
 
   .best-looking-points ul li:nth-child(4)::before {
-      display: none;
+    display: none;
   }
 
   .best-looking-points ul li:nth-child(4) span {
-      display: none;
+    display: none;
   }
 
   .payment-option-box {
-      margin: 10px 20px;
+    margin: 10px 20px;
   }
 
   .payment-amortize-box {
-      margin: 20px;
+    margin: 20px;
   }
 
   .tax-incentives-txt {
-      margin: 0px 20px 30px;
+    margin: 0px 20px 30px;
   }
 
   .monthly-payment-txt {
-      gap: 10px;
-      margin: 20px 0px 20px 10px;
-      flex-direction: column;
+    gap: 10px;
+    margin: 20px 0px 20px 10px;
+    flex-direction: column;
   }
 
   .monthly-payment-txt h4 {
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
   }
 
   .intial-term p {
-      margin: 0px 10px;
-      text-align: center;
+    margin: 0px 10px;
+    text-align: center;
   }
 
   .intial-term {
-      text-align: center;
+    text-align: center;
   }
 
   .tax-incentives-txt p {
-      text-align: center;
+    text-align: center;
   }
 
   .payment-option {
-      display: none;
+    display: none;
   }
 
   u .payment-end img {
-      width: 45px;
+    width: 45px;
   }
 
   .expectional_service::before {
-      height: 600px;
-      width: 100%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center bottom;
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
   }
 
   .expectional_txt h3 {
-      margin: 120px 0px 100px;
-      font-size: 50px;
+    margin: 120px 0px 100px;
+    font-size: 50px;
   }
 
   .upfront-cost-box {
-      margin: 200px 20px 0px;
+    margin: 200px 20px 0px;
   }
 
   section.expectional_service {
-      height: 100%;
+    height: 100%;
   }
 
   .work-contract-box {
-      margin: 60px 0px 10px;
-      padding: 30px 20px 20px;
+    margin: 60px 0px 10px;
+    padding: 30px 20px 20px;
   }
 
   .lifetime-logo img {
-      width: 200px;
+    width: 200px;
   }
 
   .lifetime-logo h5 {
-      font-size: 25px;
-      padding: 0px 0px 0px 50px;
+    font-size: 25px;
+    padding: 0px 0px 0px 50px;
   }
 
   .lifetime-logo {
-      padding: 0px;
-      position: relative;
+    padding: 0px;
+    position: relative;
   }
 
   .work-contract-box h6 {
-      padding: 10px 0px 10px 10px;
+    padding: 10px 0px 10px 10px;
   }
 
   .work-contract-box p {
-      padding: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 10px;
   }
 
   .upfront-cost-box p {
-      font-size: 18px;
-      padding: 0px;
+    font-size: 18px;
+    padding: 0px;
   }
 
   .lifetime-logo::before {
-      left: 40%;
+    left: 40%;
   }
 
   .site-1-dash-p h3 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .main-dasborad-site {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   section.section-sixty {
-      height: 100%;
+    height: 100%;
   }
 
   .site-1-dash-p {
-      padding: 40px 0px;
+    padding: 40px 0px;
   }
 
   .dash-site-list-2 {
-      width: 100%;
-      padding: 100px 30px;
+    width: 100%;
+    padding: 100px 30px;
   }
 
   .site-box-card {
-      padding: 25px;
-      border-radius: 15px;
+    padding: 25px;
+    border-radius: 15px;
   }
 
   .Cost-btn-box button {
-      font-size: 18px;
-      padding: 5px 27px;
+    font-size: 18px;
+    padding: 5px 27px;
   }
 
   .Cost-list-box span h2 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .cost-btn-listing button h2 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .cost-btn-listing button {
-      padding: 5px 18px;
+    padding: 5px 18px;
   }
 
   .dash-site-list-1 {
-      width: 100%;
+    width: 100%;
   }
+
+
+  .section-best-img {
+    padding-top: 40px;
+  }
+
+
 }
