@@ -323,7 +323,7 @@
                                 <input type="number" placeholder="Type Here..." name="loan_term">
                             </div>
                             <div class="brayn-in-grouop part-2">
-                                <label for="#">APR</label>
+                                <label for="#">PERCENTAGE</label>
                                 <input type="number" placeholder="Type Here..." name="apr" >
                             </div>
                             <div class="brayn-in-grouop part-2">
@@ -408,7 +408,7 @@
                     </div>
 
                     <div class="brayn-btn-box">
-                        <button  type="submit">Generate Report</button>
+                        <button type="submit">Generate Report</button>
                     </div>
                 </form>
                 </div>
