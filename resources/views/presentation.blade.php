@@ -1406,7 +1406,7 @@
 
                                     <div class="part-25-list">
                                         <h3>Financed Amount</h3>
-                                        <h3 class="doler">{{$deal->total_finance}}</h3>
+                                        <h3 class="doler">{{$deal->system_cost - ($deal->rebate * $basic->size) * 1000 }}</h3>
                                     </div>
 
                                     @if ($basic->state =='NY')
@@ -1456,12 +1456,12 @@
                                     <div class="solar-list">
                                         <h2 class="with">Loan Payment</h2>
                                         <h2>$0</h2>
-                                        <h2 class="color-change">${{$monthly->Reamorization}}</h2>
+                                        <h2 class="color-change">${{$month->Reamorization}}</h2>
                                     </div>
                                     <div class="solar-list color">
                                         <h2 class="with">Average Monthly Payment</h2>
                                         <h2>${{$basic->average}}</h2>
-                                        <h2 class="color-change">${{$monthly->Reamorization + $basic->packeage}}</h2>
+                                        <h2 class="color-change">${{$month->Reamorization + $basic->packeage}}</h2>
                                     </div>
                                 </div>
                             </div>
@@ -1496,7 +1496,7 @@
 
                                     <div class="part-25-list">
                                         <h3>Financed Amount</h3>
-                                        <h3 class="doler">{{$deal->total_finance}}</h3>
+                                        <h3 class="doler">{{$deal->system_cost - ($deal->rebate * $basic->size) * 1000 }}</h3>
                                     </div>
 
 
@@ -1546,12 +1546,12 @@
                                     <div class="solar-list">
                                         <h2 class="with">Loan Payment</h2>
                                         <h2>$0</h2>
-                                        <h2 class="color-change">${{$monthly->Reamorization}}</h2>
+                                        <h2 class="color-change">${{$month->Reamorization}}</h2>
                                     </div>
                                     <div class="solar-list color">
                                         <h2 class="with">Average Monthly Payment</h2>
                                         <h2>${{$basic->average}}</h2>
-                                        <h2 class="color-change">${{$monthly->Reamorization + $basic->packeage}}</h2>
+                                        <h2 class="color-change">${{$month->Reamorization + $basic->packeage}}</h2>
                                     </div>
                                 </div>
                             </div>
@@ -1585,7 +1585,7 @@
 
                                     <div class="part-25-list">
                                         <h3>Financed Amount</h3>
-                                        <h3 class="doler">{{$deal->total_finance}}</h3>
+                                        <h3 class="doler">{{$deal->system_cost - ($deal->rebate * $basic->size) * 1000 }}</h3>
                                     </div>
 
 
@@ -1638,12 +1638,12 @@
                                     <div class="solar-list">
                                         <h2 class="with">Loan Payment</h2>
                                         <h2>$0</h2>
-                                        <h2 class="color-change">${{$monthly->Reamorization}}</h2>
+                                        <h2 class="color-change">${{$month->Reamorization}}</h2>
                                     </div>
                                     <div class="solar-list color">
                                         <h2 class="with">Average Monthly Payment</h2>
                                         <h2>${{$basic->average}}</h2>
-                                        <h2 class="color-change">${{$monthly->Reamorization + $basic->packeage}}</h2>
+                                        <h2 class="color-change">${{$month->Reamorization + $basic->packeage}}</h2>
                                     </div>
                                 </div>
                             </div>
