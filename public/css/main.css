@@ -4038,22 +4038,382 @@ section.section-sixty {
 
 
 
+
 /********* Proposed Financial Plan ***********/
 
 
 
+
+
+/********* Loan Monthly Payment Section Start ***********/
+
+
+
+.loan-montly-payment {
+  background: url(../images/loan-proposed-monthly-payment-img.png) no-repeat top center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 10px 50px 50px 50px;
+}
+
+
+
+.loan-montly-flex {
+  display: flex;
+  justify-content: end;
+}
+
+.loan-monthly-box {
+  width: 50%;
+}
+
+.monthly-dollar-txt h6 {
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.monthly-dollar-txt h4 {
+  color: #1226AA;
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.monthly-dollar-txt {
+  display: flex;
+  gap: 20px;
+}
+
+
+.monthly-paymen-txt h6 {
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.monthly-paymen-txt p {
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.monthly-dollar-txt {
+  display: flex;
+  gap: 20px;
+  margin: 0px 0px 15px 0px;
+}
+
+
+.monthly-paymen-txt {
+  display: flex;
+  gap: 20px;
+}
+
+
+.payment-italic {
+  font-style: italic;
+}
+
+
+.monthly-does-txt h6 {
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.monthly-does-txt {
+  display: flex;
+  gap: 20px;
+  padding: 0px 0px 7px 0px;
+}
+
+.loan-monthly-textbox {
+  margin: 0px 0px 30px 0px;
+  position: relative;
+}
+
+
+.monthly-does-txt h4 {
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 22px;
+  width: 465px;
+}
+
+
+.aicon-monthly-img {
+  position: absolute;
+  left: -70px;
+  top: 2px;
+}
+
+.aicon-monthly-flex {
+  position: relative;
+  padding: 10px 0px 0px 0px;
+}
+
+.loan-box-border {
+  border: 1px solid rgba(153, 153, 153, 0.91);
+  padding: 10px;
+}
+
+
+.loan-payment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payment-option-img {
+  width: auto;
+}
+
+.activecolor-img {
+  width: 80px;
+}
+
+
+.dummy-calculator-img img {
+  width: auto;
+}
+
+
+.aicon-before-bg {
+  position: relative;
+}
+
+.aicon-before-bg::before {
+  position: absolute;
+  content: "";
+  background: #DFDFDF;
+  height: 220px;
+  width: 730px;
+  left: -85px;
+  top: -10px;
+  z-index: 0;
+}
+
+
+.proposed-monthly-payment {
+  width: 40%;
+}
+
+.loan-proposed-flex {
+  justify-content: space-between;
+  padding: 30px 0px 0px 0px;
+}
+
+.proposed-monthly-payment-box {
+  margin: 0px 0px 0px 20px;
+  background: #fff;
+  padding: 0px;
+  border-radius: 20px;
+  box-shadow: 0 0 8px 5px #0000003d;
+}
+
+
+.proposed-monthly-payment-box h2 {
+  color: #0CBF65;
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: capitalize;
+  padding: 20px 0px 10px 20px;
+}
+
+.finance-amount-txt {
+  padding: 10px 100px 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.91);
+}
+
+.finance-amount-txt h4 {
+  color: #1226AA;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.finance-amount-txt h5 {
+  color: #1226AA;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.federal-txtbox h4 {
+  color: #0CBF65;
+  -webkit-text-stroke-width: 0.25;
+  -webkit-text-stroke-color: #000;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.federal-txtbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px 10px 40px;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.91);
+}
+
+.federal-txtbox h5 {
+  color: #0CBF65;
+  -webkit-text-stroke-width: 0.25;
+  -webkit-text-stroke-color: #000;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.totalcredit-txtbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px 10px 40px;
+  background: #0CBF65;
+  margin: 2px 0px 2px 0px;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.91);
+}
+
+.totalcredit-txtbox h4 {
+  color: #FFF;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.35);
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.totalcredit-txtbox h5 {
+  color: #FFF;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.35);
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+
+.netcost-txtbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 110px 10px 40px;
+  background: #1226AA;
+}
+
+.netcost-txtbox h4 {
+  color: #FFF;
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.netcost-txtbox h5 {
+  color: #FFF;
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+
+.planterms-txtbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 110px 10px 40px;
+}
+
+.planterms-txtbox h4 {
+  color: #1226AA;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.planterms-txtbox h5 {
+  color: #1226AA;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+} 
+
+
+/********* Loan Monthly Payment Section End ***********/
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1920px) {
-    .proposed-finance-flex {
-      height: 600px;
+  .proposed-finance-flex {
+    height: 600px;
   }
- }
+
+    .aicon-before-bg::before {
+      height: 230px;
+      width: 112%;
+      left: -85px;
+      top: -13px;
+  }
+}
 
 
 @media only screen and (max-width: 1440px) {
   .best-looking-system h3 {
     margin: 0px;
   }
-  
+
   .proposed-finance-flex {
     height: 500px;
   }
@@ -4082,6 +4442,19 @@ section.section-sixty {
   .map-child-1 {
     height: 50vh;
   }
+
+  .aicon-before-bg::before {
+    width: 116%;
+}
+
+}
+
+@media only screen and (max-width: 1366px) {
+
+    .aicon-before-bg::before {
+      width: 117%;
+  }
+
 }
 
 @media only screen and (max-width: 1300px) {
@@ -4112,6 +4485,11 @@ section.section-sixty {
   img.btn-4 {
     right: -130px;
   }
+
+  .aicon-before-bg::before {
+    height: 240px;  
+  }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -4798,83 +5176,156 @@ section.section-sixty {
     width: 100%;
     padding: 10px;
     margin: 70px 0px 0px 0px;
+  }
+
+  .financial-acountsolar-table {
+    width: 100%;
+    padding: 0px 0px;
+  }
+
+  .save-thousand-box {
+    padding: 10px 20px;
+    width: 350px;
+    top: -60px;
+  }
+
+  .save-thous-txt h4 {
+    font-size: 16px;
+  }
+
+  .save-thous-img img {
+    width: 60px;
+  }
+
+  .yearly-increase-box h3 {
+    font-size: 16px;
+    width: 190px;
+  }
+
+  .yearly-increase-box h4 {
+    font-size: 16px;
+    width: 200px;
+    line-height: 20px;
+  }
+
+  .yearly-increase-box h5 {
+    font-size: 16px;
+  }
+
+  .total-bill-box h3 {
+    font-size: 16px;
+    width: 240px;
+  }
+
+  .total-bill-box h4 {
+    font-size: 16px;
+  }
+
+  .total-bill-box h5 {
+    font-size: 16px;
+  }
+
+  .average-box h4 {
+    width: 240px;
+    font-size: 16px;
+  }
+
+  .average-box h5 {
+    font-size: 16px;
+  }
+
+  .average-box span {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .account-solar {
+    padding: 9px 15px;
+    width: 200px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .proposed-finance-table img {
+    margin: 0px 0px 10px 0px;
+    width: 260px;
+  }
+
+  .account-solar h6 {
+    font-size: 16px;
+  }
+
+  .loan-monthly-box {
+    width: 50%;
 }
 
-.financial-acountsolar-table {
-  width: 100%;
-  padding: 0px 0px;
+  .aicon-before-bg::before {
+    width: 122%;
 }
 
-.save-thousand-box {
-  padding: 10px 20px;
-  width: 350px;
-  top: -60px;
+.proposed-monthly-payment-box h2 {
+  font-size: 18px;
 }
 
-.save-thous-txt h4 {
+.finance-amount-txt {
+  padding: 8px 20px 8px 20px;
+}
+
+.finance-amount-txt h4 {
   font-size: 16px;
 }
 
-.save-thous-img img {
-  width: 60px;
-}
-
-.yearly-increase-box h3 {
-  font-size: 16px;
-  width: 190px;
-}
-
-.yearly-increase-box h4 {
-  font-size: 16px;
-  width: 200px;
-  line-height: 20px;
-}
-
-.yearly-increase-box h5 {
+.finance-amount-txt h5 {
   font-size: 16px;
 }
 
-.total-bill-box h3 {
-  font-size: 16px;
-  width: 240px;
+.federal-txtbox {
+  padding: 8px 20px 8px 20px;
 }
 
-.total-bill-box h4 {
-  font-size: 16px;
-}
-
-.total-bill-box h5 {
+.federal-txtbox h4 {
   font-size: 16px;
 }
 
-.average-box h4 {
-  width: 240px;
+.federal-txtbox h5 {
   font-size: 16px;
 }
 
-.average-box h5 {
+.totalcredit-txtbox {
+  padding: 8px 20px 8px 20px;
+}
+
+.totalcredit-txtbox h4 {
   font-size: 16px;
 }
 
-.average-box span {
-  font-size: 16px;
-  line-height: 18px;
-}
-
-.account-solar {
-  padding: 9px 15px;
-  width: 200px;
-  margin: 0px 0px 10px 0px;
-}
-
-.proposed-finance-table img {
-  margin: 0px 0px 10px 0px;
-  width: 260px;
-}
-
-.account-solar h6 {
+.totalcredit-txtbox h5 {
   font-size: 16px;
 }
+
+.netcost-txtbox {
+  padding: 8px 20px 8px 20px;
+}
+
+.netcost-txtbox h4 {
+  font-size: 16px;
+}
+
+.netcost-txtbox h5 {
+  font-size: 16px;
+}
+
+.planterms-txtbox {
+  padding: 8px 20px 8px 20px;
+}
+
+.planterms-txtbox h4 {
+  font-size: 16px;
+}
+
+.planterms-txtbox h5 {
+  font-size: 16px;
+}
+
 
 
 }
@@ -5426,51 +5877,103 @@ section.section-sixty {
     top: 30px;
     flex-direction: column;
     height: auto;
+  }
+
+  .finance-img img {
+    width: 100%;
+    padding: 0px;
+    margin: 130px 0px 0px 0px;
+  }
+
+
+  .proposed-finance-table {
+    width: 100%;
+    padding: 10px 10px;
+  }
+
+
+  .proposed-finance-graph {
+    width: 100%;
+  }
+
+  .save-thous-txt h4 {
+    font-size: 18px;
+  }
+
+  .save-thousand-box {
+    width: 100%;
+    top: 0px;
+  }
+
+  .proposed-finance-table {
+    width: 100%;
+    padding: 10px 10px;
+  }
+
+  .save-thousand-box {
+    padding: 10px 20px;
+    width: 100%;
+    top: 0px;
+  }
+
+  .account-solar {
+    padding: 12px 15px;
+    width: 240px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .loan-monthly-box {
+    width: 74%;
 }
 
-.finance-img img {
-  width: 100%;
-  padding: 0px;
-  margin: 130px 0px 0px 0px;
+  .monthly-does-txt h6 {
+    font-size: 18px;
+    width: 110px;
+  }
+
+  .monthly-dollar-txt h6 {
+    font-size: 18px;
+  }
+
+  .monthly-dollar-txt h4 {
+    font-size: 30px;
+  }
+
+  .loan-montly-payment {
+    padding: 10px 50px 50px 10px;
+  }
+
+  .payment-option-img {
+    width: 50%;
+  }
+
+  .dummy-calculator-img {
+    width: 50px;
+  }
+
+  .loan-payment-header {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .aicon-before-bg::before {
+    width: 120%;
+    left: -80px;
 }
 
+  .proposed-monthly-payment {
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+  }
 
-.proposed-finance-table {
-  width: 100%;
-  padding: 10px 10px;
+  .loan-proposed-flex {
+    flex-direction: column;
+  }
+
+
+  .loan-proposed-set {
+    width: 86%;
+    margin: 0px 0px 0px 80px;
 }
-
-
-.proposed-finance-graph {
-  width: 100%;
-}
-
-.save-thous-txt h4 {
-  font-size: 18px;
-}
-
-.save-thousand-box {
-  width: 100%;
-  top: 0px;
-}
-
-.proposed-finance-table {
-  width: 100%;
-  padding: 10px 10px;
-}
-
-.save-thousand-box {
-  padding: 10px 20px;
-  width: 100%;
-  top: 0px;
-}
-
-.account-solar {
-  padding: 12px 15px;
-  width: 240px;
-  margin: 0px 0px 10px 0px;
-}
-
 
 }
 
@@ -6445,103 +6948,165 @@ section.section-sixty {
     height: 100vh;
     width: 100%;
     padding: 20px;
-}
+  }
 
-.proposed-finance-table img {
-  width: 100%;
-  padding: 0px 0px 10px 0px;
-}
+  .proposed-finance-table img {
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+  }
 
-.average-box {
-  width: 100%;
-}
+  .average-box {
+    width: 100%;
+  }
 
-.save-thous-img img {
-  width: 50px;
-}
+  .save-thous-img img {
+    width: 50px;
+  }
 
-.save-thousand-box {
-  gap: 10px;
-  width: 340PX;
-  top: 0px;
-}
+  .save-thousand-box {
+    gap: 10px;
+    width: 340PX;
+    top: 0px;
+  }
 
-.save-thous-txt h4 {
-  font-size: 14px;
-}
+  .save-thous-txt h4 {
+    font-size: 14px;
+  }
 
-.finance-img img {
-  width: 100%;
-  padding: 0px;
-  margin: 100px 0px 0px 0px;
-}
+  .finance-img img {
+    width: 100%;
+    padding: 0px;
+    margin: 100px 0px 0px 0px;
+  }
 
-.yearly-increase-box h3 {
-  font-size: 14px;
-  width: auto;
-}
+  .yearly-increase-box h3 {
+    font-size: 14px;
+    width: auto;
+  }
 
-.yearly-increase-box h4 {
-  font-size: 14px;
-  width: auto;
-  line-height: 16px;
-}
-
-
-.account-solar h6 {
-  font-size: 14px;
-  line-height: 15px;
-}
-
-.account-solar {
-  padding: 10px 25px;
-  margin: 0px 0px 10px 0px;
-}
-
-.average-box h4 {
-  font-size: 14px;
-  line-height: 15px;
-  width: 170px;
-}
-
-.average-box h5 {
-  font-size: 14px;
-  line-height: 15px;
-}
-
-.average-box span {
-  font-size: 14px;
-  line-height: 15px;
-}
-
-.total-bill-box h4 {
-  font-size: 14px;
-  line-height: 15px;
-}
-
-.total-bill-box h5 {
-  font-size: 14px;
-  line-height: 15px;
-}
-
-.proposed-finance-table {
-  width: 100%;
-}
-
-.financial-acountsolar-table {
-  padding: 0px 0px;
-}
-
-.total-bill-box h3 {
-  font-size: 14px;
-  line-height: 15px;
-  width: 170px;
-}
+  .yearly-increase-box h4 {
+    font-size: 14px;
+    width: auto;
+    line-height: 16px;
+  }
 
 
-.yearly-increase-box h5 {
-  font-size: 14px;
-  line-height: 15px;
+  .account-solar h6 {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .account-solar {
+    padding: 10px 25px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .average-box h4 {
+    font-size: 14px;
+    line-height: 15px;
+    width: 170px;
+  }
+
+  .average-box h5 {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .average-box span {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .total-bill-box h4 {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .total-bill-box h5 {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .proposed-finance-table {
+    width: 100%;
+  }
+
+  .financial-acountsolar-table {
+    padding: 0px 0px;
+  }
+
+  .total-bill-box h3 {
+    font-size: 14px;
+    line-height: 15px;
+    width: 170px;
+  }
+
+
+  .yearly-increase-box h5 {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .loan-montly-payment {
+    padding: 10px 10px 50px 10px;
+  }
+
+  .activecolor-img {
+    width: 50px;
+  }
+
+  .dummy-calculator-img {
+    width: 40px;
+  }
+
+  .payment-option-img {
+    width: 60%;
+  }
+
+  .loan-monthly-box {
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+  .monthly-does-txt {
+    flex-direction: column;
+    gap: 10px;
+  } 
+
+  .monthly-does-txt h4 {
+    font-size: 14px;
+    width: auto;
+  }
+
+  .monthly-dollar-txt h4 {
+    font-size: 20px;
+  }
+
+  .monthly-paymen-txt p {
+    font-size: 18px;
+  }
+
+  .aicon-monthly-img {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin: 0px 0px 10px 0px;
+  }
+
+
+  .aicon-before-bg::before {
+    width: 104%;
+    left: -8px;
+    height: 360px;
+  }
+
+  .loan-proposed-set {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .proposed-monthly-payment-box {
+    margin: 0px 10px 0px 20px;
 }
 
 
