@@ -24,6 +24,8 @@ Route::post('/login', [AuthController::class ,'login'])->name('login');
 Route::post('/store', [AuthController::class ,'store'])->name('store');
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('/presentation/{basic}/{deal}/{history}/{month}', [AuthController::class, 'presentation'])->name('presentation');
+
 Route::get('/', function () {
     return view('auth.login');
 });

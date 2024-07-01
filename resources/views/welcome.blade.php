@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Active Solar</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -146,7 +147,7 @@
 
 
                 <div class="entry-form">
-                    <form action="{{ route('store') }}" method="post">
+                <form id="yourForm" action="{{ route('store') }}" method="post">
 
                     @csrf
 
@@ -165,7 +166,7 @@
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">State</label>
-                                <select name="state" id="cars">
+                                <select name="state" id="state">
                                     <option value="" disabled selected hidden>CT</option>
                                     <option value="CT">CT</option>
                                     <option value="NY">NY</option>
@@ -191,15 +192,15 @@
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">Average Monthly Utility Cost</label>
-                                <input type="number" placeholder="Type Here.." name='average'>
+                                <input type="text" placeholder="Type Here.." name='average'>
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">Basic Service Package</label>
-                                <input type="number" placeholder="Type Here..." name="packeage" >
+                                <input type="text" placeholder="Type Here..." name="packeage" >
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">System Size</label>
-                                <input type="number" placeholder="Type Here..." name="size" >
+                                <input type="text" placeholder="Type Here..." name="size" >
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">Panel Type</label>
@@ -211,7 +212,7 @@
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">System Production</label>
-                                <input type="text" placeholder="Type Here..." name="production">
+                                <input type="text" placeholder="Type Here..." name="production" id="production">
                             </div>
                         </div>
                     </div>
@@ -222,7 +223,7 @@
                     <div class="brayn-box">
                         <h1>Historic Information</h1>
                         <div class="brayn-form">
-                            <div class="brayn-in-grouop part-2">
+                            {{-- <div class="brayn-in-grouop part-2">
                                 <label for="#">January</label>
                                 <input type="number" placeholder="Type Here..." name="january" >
                             </div>
@@ -269,18 +270,25 @@
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">December</label>
                                 <input type="number" placeholder="Type Here..." name="december" >
+                            </div> --}}
+                            @foreach (['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] as $month)
+                            <div class="brayn-in-grouop part-2">
+                                <label for="#">{{ $month }}</label>
+                                <input type="number" placeholder="Type Here..." name="{{ strtolower($month) }}" id="{{ strtolower($month) }}" class="month-input">
                             </div>
+                        @endforeach
                             <div class="brayn-in-grouop">
                                 <label for="#">Estimated Yearly Consumption</label>
-                                <input type="number" placeholder="Type Here..." name="yearly_consumption">
+                                {{-- <input type="number" placeholder="Type Here..." name="yearly_consumption"> --}}
+                                <input type="number" placeholder="Type Here..." name="yearly_consumption" id="yearly_consumption" readonly>
                             </div>
                             <div class="brayn-in-grouop ">
                                 <label for="#">Estimated Yearly Production</label>
-                                <input type="number" placeholder="Type Here..." name="yearly_production" >
+                                <input type="text" placeholder="Type Here..." name="yearly_production" id="yearly_production" >
                             </div>
                             <div class="brayn-in-grouop ">
                                 <label for="#">Offset</label>
-                                <input type="number" placeholder="" name="offset" >
+                                <input type="text" placeholder="" name="offset" >
                             </div>
                         </div>
                     </div>
@@ -304,9 +312,9 @@
                                 <label for="#">Lender</label>
                                 <select name="lender" id="cars">
                                     <option value="" disabled selected hidden>Good Leap</option>
-                                    <option value="Loan1">Goodleap</option>
-                                    <option value="Loan2">Dividend</option>
-                                    <option value="Loan2">Sunnova</option>
+                                    <option value="Goodleap">Goodleap</option>
+                                    <option value="Dividend">Dividend</option>
+                                    <option value="Sunnova">Sunnova</option>
 
                                 </select>
                             </div>
@@ -320,7 +328,7 @@
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Cash Down</label>
-                                <input type="number" placeholder="0" name="cash" >
+                                <input type="number" placeholder="USD" name="cash" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Solar PPW</label>
@@ -328,35 +336,35 @@
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Total System Cost</label>
-                                <input type="number" placeholder="Type Here..."  name="system_cost">
+                                <input type="text" placeholder="USD"  name="system_cost">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Rebate Level</label>
-                                <input type="number" placeholder="0.2"  name="rebate">
+                                <input type="text" id="rebate" name="rebate" placeholder="0.2" value="0">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">State Rebate</label>
-                                <input type="number" placeholder="1,018.44" name="state_rebate">
+                                <input type="text" placeholder="$1,018.44" name="state_rebate">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Federal Tax Credit</label>
-                                <input type="number" placeholder="8,747.27" name="federal_tax" >
+                                <input type="text" placeholder="$8,747.27" name="federal_tax" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">State Tax Credit</label>
-                                <input type="number" placeholder="5000.00"  name="state_tax">
+                                <input type="text" placeholder="$5000.00"  name="state_tax">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Total Tax Credit</label>
-                                <input type="number" placeholder="13,747.27"  name="total_tax" >
+                                <input type="text" placeholder="$13,747.27"  name="total_tax" >
                             </div>
                             <div class="brayn-in-grouop part-3">
                                 <label for="#">Total Financed Amount</label>
-                                <input type="number" placeholder="29,157.56"  name="total_finance">
+                                <input type="text" placeholder="$29,157.56"  name="total_finance">
                             </div>
                             <div class="brayn-in-grouop part-3">
                                 <label for="#">Net Cost</label>
-                                <input type="number" placeholder="Type Here..."   name="net_cost">
+                                <input type="text" placeholder="USD"   name="net_cost">
                             </div>
                         </div>
                     </div>
@@ -384,7 +392,7 @@
                                 <label for="#">Option B - Allocate Tax Credit</label>
                                 <input type="number" placeholder="Type Here..."  name="allocate_tax_credit">
                             </div>
-                            <div class="brayn-in-grouop ">
+                            {{-- <div class="brayn-in-grouop ">
                                 <label for="#">Total Cost Staying with util</label>
                                 <input type="number" placeholder="0" name="total_cost_util">
                             </div>
@@ -395,14 +403,14 @@
                             <div class="brayn-in-grouop ">
                                 <label for="#">30 Year Savings</label>
                                 <input type="number" placeholder="Type Here..."  name="year_saving">
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
 
                     <div class="brayn-btn-box">
                         <button  type="submit">Generate Report</button>
                     </div>
-                    </form>
+                </form>
                 </div>
             </div>
         </div>
@@ -423,6 +431,74 @@
 
 
     <script>
+
+
+
+document.getElementById('yourForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        let formData = new FormData(this);
+
+        fetch('{{ route('store') }}', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                let url = `/presentation/${data.basic_id}/${data.deal_id}/${data.history_id}/${data.month_id}`;
+                window.open(url, '_blank');
+            } else {
+                // Handle error
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+
+document.getElementById('state').addEventListener('change', function() {
+        var state = this.value;
+        var rebateInput = document.getElementById('rebate');
+
+        if (state === 'NY') {
+            rebateInput.value = 0.2;
+        } else {
+            rebateInput.value = 0;
+        }
+    });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+        const monthInputs = document.querySelectorAll('.month-input');
+        const yearlyConsumptionInput = document.getElementById('yearly_consumption');
+        const productionInput = document.getElementById('production');
+        const yearlyProductionInput = document.getElementById('yearly_production');
+
+        monthInputs.forEach(input => {
+            input.addEventListener('input', calculateYearlyConsumption);
+        });
+
+        productionInput.addEventListener('input', function() {
+            yearlyProductionInput.value = productionInput.value;
+        });
+
+        function calculateYearlyConsumption() {
+            let total = 0;
+            monthInputs.forEach(input => {
+                total += parseFloat(input.value) || 0;
+            });
+            yearlyConsumptionInput.value = total;
+        }
+    });
+
+
     var theToggle = document.getElementById('toggle');
 
     // based on Todd Motto functions

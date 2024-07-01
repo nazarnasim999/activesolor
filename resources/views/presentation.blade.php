@@ -20,6 +20,7 @@
 
 
     <div class="slideshow-container">
+        {{-- {{dd($deal->lender)}} --}}
 
                 <div class="mySlides fade">
                     <section class="section-1">
@@ -27,12 +28,12 @@
 
 
                             <div class="section-1-tital">
-                                <a href="#"><img src="./images/section-1-logo.png" alt="" class="short-logo"></a>
-                                <img src="./images/section-tital.png" alt="">
+                                <a href="#"><img src="/images/section-1-logo.png" alt="" class="short-logo"></a>
+                                <img src="/images/section-tital.png" alt="">
                             </div>
 
                             <div class="section-1-imger">
-                                <img src="./images/section-1-img.png" alt="">
+                                <img src="/images/section-1-img.png" alt="">
                             </div>
                         </div>
                     </section>
@@ -43,9 +44,9 @@
                     <section class="section-3">
                         <div class="main-section-3">
                             <div class="section-3-logo">
-                       <a href="#">         <img src="./images/logo.png" alt=""></a>
+                       <a href="#">         <img src="/images/logo.png" alt=""></a>
 
-                               <a href="#"  class="Discovery"> <img src="./images/Discovery.png" alt=""></a>
+                               <a href="#"  class="Discovery"> <img src="/images/Discovery.png" alt=""></a>
                             </div>
 
                             <div class="section-3-box">
@@ -78,7 +79,7 @@
                     <section class="section-5">
                         <div class="main-section-5">
                             <div class="section-5-logo">
-                              <a href="#">  <img src="./images/a-logo.png" alt=""></a>
+                              <a href="#">  <img src="/images/a-logo.png" alt=""></a>
                             </div>
 
                             <div class="section-5-box">
@@ -91,10 +92,10 @@
                                     <p>We believe in a win-win philosophy: your success is our success. That's why we delve deep into understanding the intricacies of your property, ensuring that every solar installation we undertake is meticulously tailored to maximize your benefits.</p>
 
                                     <div class="section-5-list">
-                                        <img src="./images/google.png" alt="" class="google">
+                                        <img src="/images/google.png" alt="" class="google">
 
 
-                                        <img src="./images/rated.png" alt="">
+                                        <img src="/images/rated.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +111,7 @@
                         <div class="main-section-6">
 
                             <div class="section-6-logo">
-                           <a href="#">     <img src="./images/a-logo.png" alt=""></a>
+                           <a href="#">     <img src="/images/a-logo.png" alt=""></a>
                             </div>
 
                             <div class="section-6-box">
@@ -126,7 +127,7 @@
                                         <li>4.7/5 Online rating</li>
                                     </ul>
 
-                                    <img src="./images/google.png" alt="">
+                                    <img src="/images/google.png" alt="">
 
                                     <p>Solar energy contractor in Mahwah, New Jersey</p>
                                 </div>
@@ -144,7 +145,7 @@
                 <div class="mySlides fade">
                     <section class="section-7">
                         <div class="main-section-7">
-                            <img src="./images/section-7.png" alt="">
+                            <img src="/images/section-7.png" alt="">
                         </div>
                     </section>
                 </div>
@@ -153,7 +154,7 @@
                 <div class="mySlides fade">
                     <section class="section-8">
                         <div class="main-section-8">
-                            <img src="./images/section-8.png" alt="">
+                            <img src="/images/section-8.png" alt="">
                         </div>
                     </section>
                 </div>
@@ -163,7 +164,7 @@
                     <section class="section-9">
                         <div class="main-section-9">
                             <div class="section-9-logo">
-                      <a href="#"> <img src="./images/logo.png" alt=""></a>
+                      <a href="#"> <img src="/images/logo.png" alt=""></a>
                         </div>
 
 
@@ -189,7 +190,7 @@
 
                             <div class="section-11-box">
                                 <div class="section-11-logo">
-                                     <a href="#"><img src="./images/a-logo.png" alt=""></a>
+                                     <a href="#"><img src="/images/a-logo.png" alt=""></a>
                                 </div>
 
                                 <div class="section-11-box-card">
@@ -208,13 +209,13 @@
 
                             <div class="section-11-imger">
                                 <div class="section-bill">
-                                    <img src="./images/mb-4.png" alt="" class="images-with">
+                                    <img src="/images/mb-4.png" alt="" class="images-with">
 
                                 </div>
 
                                 <div class="section-bill  site">
-                                    <img src="./images/ele-2.png" alt="" class="images-with">
-                                    <img src="./images/mb-td.png" alt="" class="images-with">
+                                    <img src="/images/ele-2.png" alt="" class="images-with">
+                                    <img src="/images/mb-td.png" alt="" class="images-with">
 
 
                                 </div>
@@ -298,7 +299,7 @@
 
                             <div class="section-11-box">
                                 <div class="section-11-logo">
-                                     <a href="#"><img src="./images/a-logo.png" alt=""></a>
+                                     <a href="#"><img src="/images/a-logo.png" alt=""></a>
                                 </div>
 
                                 <div class="section-11-box-card">
@@ -312,14 +313,14 @@
 
                             <div class="section-11-imger">
                                 <div class="section-bill">
-                                    <img src="./images/ele.png" alt="">
+                                    <img src="/images/ele.png" alt="">
 
-                                    <img src="images/eleract.png" alt="">
+                                    <img src="/images/eleract.png" alt="">
                                 </div>
 
                                 <div class="section-bill ele">
-                                    <img src="./images/biller.png" alt="">
-                                    <img src="./images/bill.png" alt="">
+                                    <img src="/images/biller.png" alt="">
+                                    <img src="/images/bill.png" alt="">
                                 </div>
                             </div>
 
@@ -333,7 +334,7 @@
                     <section class="section-12">
                         <div class="main-section-12">
                             <div class="section-12-logo">
-                                <img src="./images/logo.png" alt="">
+                                <img src="/images/logo.png" alt="">
                             </div>
 
                             <div class="section-12-box">
@@ -375,7 +376,7 @@
 
 
                                 <div class="section-12-round">
-                                    <img src="./images/round.png" alt="">
+                                    <img src="/images/round.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -387,30 +388,30 @@
                     <section class="section-14">
                         <div class="main-section-14">
                             <div class="section-14-logo">
-                              <a href="#">  <img src="./images/logo.png" alt=""></a>
+                              <a href="#">  <img src="/images/logo.png" alt=""></a>
                             </div>
 
                             <div class="section-14-box">
                                 <div class="section-14-btn">
-                                    <a href="#"> <img src="./images/wher.png" alt=""></a>
+                                    <a href="#"> <img src="/images/wher.png" alt=""></a>
                                 </div>
 
                                 <div class="section-14-boxing">
                                     <div class="map-child-1">
-                                         <a href="#"><img src="./images/bt-1.png" alt="" class="btn-1"></a>
+                                         <a href="#"><img src="/images/bt-1.png" alt="" class="btn-1"></a>
 
-                                         <a href="#"><img src="./images/bt-2.png" alt="" class="btn-2"></a>
-
-
-                                         <a href="#"><img src="./images/bt-3.png" alt="" class="btn-3"></a>
+                                         <a href="#"><img src="/images/bt-2.png" alt="" class="btn-2"></a>
 
 
-                                        <a href="#"><img src="./images/bt-4.png" alt="" class="btn-4"></a>
+                                         <a href="#"><img src="/images/bt-3.png" alt="" class="btn-3"></a>
+
+
+                                        <a href="#"><img src="/images/bt-4.png" alt="" class="btn-4"></a>
                                     </div>
                                     <div class="map-child-2">
                                         <button>Transco Pipeline</button>
                                      <span class="border-space">
-                                        <img src="./images/map.png" alt="">
+                                        <img src="/images/map.png" alt="">
                                      </span>
                                     </div>
                                 </div>
@@ -424,7 +425,7 @@
                     <section class="section-15">
                         <div class="main-section-15">
                             <div class="section-15-logo">
-                                <img src="./images/logo.png" alt="">
+                                <img src="/images/logo.png" alt="">
 
                             </div>
                             <div class="section-15-btn-box">
@@ -451,7 +452,7 @@
                                 </div>
 
                                 <div class="section-15-imger">
-                                    <img src="./images/card-15.png" alt="">
+                                    <img src="/images/card-15.png" alt="">
                                 </div>
 
 
@@ -469,7 +470,7 @@
                     <section class="section-15">
                         <div class="main-section-15">
                             <div class="section-15-logo">
-                                <img src="./images/logo.png" alt="">
+                                <img src="/images/logo.png" alt="">
 
                             </div>
                             <div class="section-15-btn-box">
@@ -496,7 +497,7 @@
                                 </div>
 
                                 <div class="section-15-imger">
-                                    <img src="./images/card-16.png" alt="">
+                                    <img src="/images/card-16.png" alt="">
                                 </div>
 
 
@@ -514,7 +515,7 @@
                     <section class="section-15">
                         <div class="main-section-15">
                             <div class="section-15-logo">
-                                <img src="./images/logo.png" alt="">
+                                <img src="/images/logo.png" alt="">
 
                             </div>
                             <div class="section-15-btn-box">
@@ -541,7 +542,7 @@
                                 </div>
 
                                 <div class="section-15-imger">
-                                    <img src="./images/card-17.png" alt="">
+                                    <img src="/images/card-17.png" alt="">
                                 </div>
 
 
@@ -562,7 +563,7 @@
 
                                     <div class="main-section-15">
                                         <div class="section-15-logo">
-                                            <img src="./images/logo.png" alt="">
+                                            <img src="/images/logo.png" alt="">
 
                                         </div>
                             <div class="section-15-btn-box">
@@ -589,7 +590,7 @@
                                 </div>
 
                                 <div class="section-15-imger">
-                                    <img src="./images/card-18.png" alt="">
+                                    <img src="/images/card-18.png" alt="">
                                 </div>
 
 
@@ -610,7 +611,7 @@
                     <section class="section-15">
                         <div class="main-section-15">
                             <div class="section-15-logo">
-                                <img src="./images/logo.png" alt="">
+                                <img src="/images/logo.png" alt="">
 
                             </div>
                             <div class="section-15-btn-box">
@@ -637,7 +638,7 @@
                                 </div>
 
                                 <div class="section-15-imger">
-                                    <img src="./images/card-19.png" alt="">
+                                    <img src="/images/card-19.png" alt="">
                                 </div>
 
 
@@ -655,7 +656,7 @@
                     <section class="section-15">
                         <div class="main-section-15">
                             <div class="section-15-logo">
-                                <img src="./images/logo.png" alt="">
+                                <img src="/images/logo.png" alt="">
 
                             </div>
                         <div class="section-15-btn-box">
@@ -682,7 +683,7 @@
                                 </div>
 
                                 <div class="section-15-imger">
-                                    <img src="./images/card-20.png" alt="">
+                                    <img src="/images/card-20.png" alt="">
                                 </div>
 
 
@@ -700,7 +701,7 @@
                     <section class="section-15">
                         <div class="main-section-15">
                             <div class="section-15-logo">
-                                <img src="./images/logo.png" alt="">
+                                <img src="/images/logo.png" alt="">
 
                             </div>
                             <div class="section-15-btn-box">
@@ -727,7 +728,7 @@
                                 </div>
 
                                 <div class="section-15-imger">
-                                    <img src="./images/card-21.png" alt="">
+                                    <img src="/images/card-21.png" alt="">
                                 </div>
 
 
@@ -744,11 +745,11 @@
                     <section class="sec-1">
                         <div class="logo-main">
                             <div class="section-14-logo">
-                                <a href="#">  <img src="./images/a-logo.png" alt=""></a>
+                                <a href="#">  <img src="/images/a-logo.png" alt=""></a>
                               </div>
 
                         <div class="sec-1-cont">
-                            <img class="sec-img" src="./images/Group 247 (1).png" alt="">
+                            <img class="sec-img" src="/images/Group 247 (1).png" alt="">
                         </div>
                     </div>
 
@@ -762,7 +763,7 @@
                         <section class="section-go-2">
 
                             <div class="section-14-logo">
-                                <a href="#">  <img src="./images/a-logo.png" alt=""></a>
+                                <a href="#">  <img src="/images/a-logo.png" alt=""></a>
                             </div>
                             <div class="box-30">
 
@@ -773,7 +774,7 @@
                                 <p>The Federal tax Credit is a dollar-for-dollar credit for installing solar. The tax credit is 30% of your total gross system cost for your solar project!</p>
                                 <div class="inner-col">
                                     <div class="inn-col-1">
-                                        <img src="./images/calulator.png" alt="">
+                                        <img src="/images/calulator.png" alt="">
                                     </div>
                                     <div class="inn-col-2">
                                     <h6>Example</h6>
@@ -790,7 +791,7 @@
 
 
                             <div class="list-30-2">
-                                <img class="layer-img" src="./images/mubeen.png" alt="">
+                                <img class="layer-img" src="/images/mubeen.png" alt="">
                                 <p> Systems installed on or before December 31, 2019, were  also eligible for a 30% tax credit.</p>
                             </div>
 
@@ -806,7 +807,7 @@
 
 
                         <div class="section-14-logo">
-                            <a href="#">  <img src="./images/logo.png" alt=""></a>
+                            <a href="#">  <img src="/images/logo.png" alt=""></a>
                           </div>
 
 
@@ -845,7 +846,7 @@
 
 
                         <div class="section-14-logo">
-                            <a href="#">  <img src="./images/logo.png" alt=""></a>
+                            <a href="#">  <img src="/images/logo.png" alt=""></a>
                           </div>
 
 
@@ -882,7 +883,7 @@
 
 
                         <div class="section-14-logo">
-                            <a href="#">  <img src="./images/logo.png" alt=""></a>
+                            <a href="#">  <img src="/images/logo.png" alt=""></a>
                           </div>
 
 
@@ -919,7 +920,7 @@
 
 
                             <div class="logo-section-23">
-                                <img src="./images/logo.png" alt="">
+                                <img src="/images/logo.png" alt="">
                             </div>
 
                             <div class="section-23-box">
@@ -1011,7 +1012,7 @@
                         <div class="main-section-24">
 
                             <div class="logo-section-24">
-                                <img src="./images/logo.png" alt="">
+                                <img src="/images/logo.png" alt="">
                             </div>
 
                             <div class="section-23-para">
@@ -1051,7 +1052,7 @@
                             </div>
 
                             <div class="or-imger">
-                                <img src="./images/Layer.png" alt="">
+                                <img src="/images/Layer.png" alt="">
                             </div>
 
                         </div>
@@ -1067,7 +1068,7 @@
 
 
                             <div class="logo-section-22">
-                                <img src="./images/a-logo.png" alt="">
+                                <img src="/images/a-logo.png" alt="">
                             </div>
 
                             <div class="section-22-box">
@@ -1079,7 +1080,7 @@
                                 <div class="section-22-list-2">
 
                                     <div class="section-22-dashbord">
-                                        <img src="./images/dashbord.png" alt="">
+                                        <img src="/images/dashbord.png" alt="">
                                     </div>
 
                                     <div class="section-22-cards">
@@ -1165,10 +1166,10 @@
                 <div class="mySlides fade">
                     <div class="section-go-7">
                         <div class="section-14-logo">
-                            <a href="#">  <img src="./images/logo.png" alt=""></a>
+                            <a href="#">  <img src="/images/logo.png" alt=""></a>
                           </div>
                         <div class="competitors">
-                            <img src="./images/Group 219.png" alt="">
+                            <img src="/images/Group 219.png" alt="">
                         </div>
                 </div>
                 </div>
@@ -1178,26 +1179,26 @@
                     <section class="section-4">
                         <div class="main-section-4">
                             <div class="section-4-logo">
-                            <a href="#">    <img src="./images/logo.png" alt=""></a>
+                            <a href="#">    <img src="/images/logo.png" alt=""></a>
                             </div>
 
                             <div class="section-4-box">
                                 <div class="section-4-btn">
-                                    <a href="#"><img src="./images/process.png" alt=""></a>
+                                    <a href="#"><img src="/images/process.png" alt=""></a>
                                 </div>
 
                                 <div class="section-4-boxing">
 
 
                                    <div class="section-4-card">
-                                    <img src="./images/s4-1.png" alt="">
+                                    <img src="/images/s4-1.png" alt="">
                                     <h2>Soft Credit Check & Sign Service Agreement</h2>
                                         <span>1</span>
                                    </div>
 
 
                                    <div class="section-4-card">
-                                    <img src="./images/s4-1.png" alt="">
+                                    <img src="/images/s4-1.png" alt="">
                                     <h2>Site Survey</h2>
                                         <span>2</span>
                                    </div>
@@ -1205,7 +1206,7 @@
 
 
                                    <div class="section-4-card">
-                                    <img src="./images/s4-1.png" alt="">
+                                    <img src="/images/s4-1.png" alt="">
                                     <h2>Permits & <br>
                                         Utility Approvals</h2>
                                         <span>3</span>
@@ -1213,7 +1214,7 @@
 
 
                                    <div class="section-4-card">
-                                    <img src="./images/s4-1.png" alt="">
+                                    <img src="/images/s4-1.png" alt="">
                                     <h2>Installation</h2>
                                         <span>4</span>
                                    </div>
@@ -1221,7 +1222,7 @@
 
 
                                    <div class="section-4-card">
-                                    <img src="./images/s4-1.png" alt="">
+                                    <img src="/images/s4-1.png" alt="">
                                     <h2>Inspection &  <br>
                                         Activation</h2>
                                         <span>5</span>
@@ -1240,7 +1241,7 @@
                     <section class="section-35">
                         <div class="mian-section-35">
                             <div class="section-14-logo">
-                                <a href="#">  <img src="./images/logo.png" alt=""></a>
+                                <a href="#">  <img src="/images/logo.png" alt=""></a>
                               </div>
 
 
@@ -1254,7 +1255,7 @@
 
 
                                 <div class="section-35-list-2">
-                                    <img src="./images/before and after 1.png" alt="">
+                                    <img src="/images/before and after 1.png" alt="">
                                 </div>
 
                               </div>
@@ -1411,7 +1412,7 @@
                             <div class="list-28-1">
 
                         <div class="logo-section-25">
-                            <img src="./images/a-logo.png" alt="">
+                            <img src="/images/a-logo.png" alt="">
                         </div>
 
                         <div class="section-28-boxing">
@@ -1423,7 +1424,7 @@
                             <div class="box-btn-28">
                                 <div class="btn-28">
                                     <span>
-                                        <img src="./images/btn-28.png" alt="">
+                                        <img src="/images/btn-28.png" alt="">
                                     </span>
                                     <button><p>Bill amount this year</p> <h2>${{ $basic->average * 12 }}</h2></button>
                                 </div>
@@ -1431,7 +1432,7 @@
 
                                 <div class="btn-28">
                                     <span>
-                                        <img src="./images/btn-28.png" alt="">
+                                        <img src="/images/btn-28.png" alt="">
                                     </span>
                                     <button><p>In 10 years your annual bill will be</p> <h2>$3291/year</h2></button>
                                 </div>
@@ -1440,7 +1441,7 @@
 
                                 <div class="btn-28">
                                     <span>
-                                        <img src="./images/btn-28.png" alt="">
+                                        <img src="/images/btn-28.png" alt="">
                                     </span>
                                     <button><p>In 20 years your annual bill will be</p> <h2>$5361/year</h2></button>
                                 </div>
@@ -1453,11 +1454,11 @@
                             <div class="list-28-2">
 
                                 <div class="board">
-                                    <img src="./images/year.png" alt="">
+                                    <img src="/images/year.png" alt="">
                                 </div>
 
                                 <div class="dash">
-                                    <img src="./images/bord-28.png" alt="">
+                                    <img src="/images/bord-28.png" alt="">
                                 </div>
 
                                 <div class="dash-bol">
@@ -1545,7 +1546,7 @@
 
 
                         <div class="logo-section-25">
-                            <img src="./images/sunno.png" alt="">
+                            <img src="/images/sunno.png" alt="">
                         </div>
                         <div class="part-25-card">
                             <h2 >Proposed Financial Plan</h2>
@@ -1562,7 +1563,7 @@
                                 <div class="part-25-list">
                                     <h3>Financed Amount</h3>
 
-                                    <h3 class="doler">{{$deal->total_finance}}</h3>
+                                    <h3 class="doler">{{$deal->system_cost - ($deal->rebate * $basic->size) * 1000 }}</h3>
                                 </div>
 
 
@@ -1587,7 +1588,7 @@
                      <div class="part-25-box-2">
                         <div class="part-25-listing">
                             <p>Plan Provider</p>
-                            <img src="./images/a-logo.png" alt="">
+                            <img src="/images/a-logo.png" alt="">
                         </div>
 
                         <div class="part-25-listing-2">
@@ -1625,7 +1626,7 @@
                                 <div class="solar-list">
                                     <h2 class="with">Loan Payment</h2>
                                     <h2>$0</h2>
-                                    <h2 class="color-change">${{$monthly->Reamorization}}</h2>
+                                    <h2 class="color-change">${{$month->Reamorization}}</h2>
                                 </div>
 
 
@@ -1633,7 +1634,7 @@
                                 <div class="solar-list color">
                                     <h2 class="with">Average Monthly Payment</h2>
                                     <h2>${{$basic->average}}</h2>
-                                    <h2 class="color-change">${{$monthly->Reamorization + $basic->packeage}}</h2>
+                                    <h2 class="color-change">${{$month->Reamorization + $basic->packeage}}</h2>
                                 </div>
                             </div>
                         </div>
@@ -1665,7 +1666,7 @@
 
 
                         <div class="logo-section-25">
-                            <img src="./images/a-logo.png" alt="">
+                            <img src="/images/a-logo.png" alt="">
                         </div>
                         <div class="part-25-card">
                             <h2 >Proposed Financial Plan</h2>
@@ -1682,7 +1683,11 @@
                                 <div class="part-25-list">
                                     <h3>Financed Amount</h3>
 
-                                    <h3 class="doler">{{$deal->total_finance}}</h3>
+                                    {{-- <h3 class="doler">{{$deal->total_finance }}</h3> --}}
+                                    <h3 class="doler">{{$deal->system_cost - ($deal->rebate * $basic->size) * 1000 }}</h3>
+
+
+
                                 </div>
 
 
@@ -1706,7 +1711,7 @@
                      <div class="part-25-box-2">
                         <div class="part-25-listing">
                             <p>Plan Provider</p>
-                            <img src="./images/a-logo.png" alt="">
+                            <img src="/images/a-logo.png" alt="">
                         </div>
 
                         <div class="part-25-listing-2">
@@ -1744,7 +1749,7 @@
                                 <div class="solar-list">
                                     <h2 class="with">Loan Payment</h2>
                                     <h2>$0</h2>
-                                    <h2 class="color-change">${{$monthly->Reamorization}}</h2>
+                                    <h2 class="color-change">${{$month->Reamorization}}</h2>
                                 </div>
 
 
@@ -1752,7 +1757,7 @@
                                 <div class="solar-list color">
                                     <h2 class="with">Average Monthly Payment</h2>
                                     <h2>${{$basic->average}}</h2>
-                                    <h2 class="color-change">${{$monthly->Reamorization + $basic->packeage}}</h2>
+                                    <h2 class="color-change">${{$month->Reamorization + $basic->packeage}}</h2>
                                 </div>
                             </div>
                         </div>
@@ -1783,7 +1788,7 @@
 
 
                         <div class="logo-section-25">
-                            <img src="./images/divide.png" alt="">
+                            <img src="/images/divide.png" alt="">
                         </div>
                         <div class="part-25-card">
                             <h2 >Proposed Financial Plan</h2>
@@ -1800,7 +1805,7 @@
                                 <div class="part-25-list">
                                     <h3>Financed Amount</h3>
 
-                                    <h3 class="doler">{{$deal->total_finance}}</h3>
+                                    <h3 class="doler">{{$deal->system_cost - ($deal->rebate * $basic->size) * 1000 }}</h3>
                                 </div>
 
 
@@ -1826,7 +1831,7 @@
                      <div class="part-25-box-2">
                         <div class="part-25-listing">
                             <p>Plan Provider</p>
-                            <img src="./images/a-logo.png" alt="">
+                            <img src="/images/a-logo.png" alt="">
                         </div>
 
                         <div class="part-25-listing-2">
@@ -1864,7 +1869,7 @@
                                 <div class="solar-list">
                                     <h2 class="with">Loan Payment</h2>
                                     <h2>$0</h2>
-                                    <h2 class="color-change">${{$monthly->Reamorization}}</h2>
+                                    <h2 class="color-change">${{$month->Reamorization}}</h2>
                                 </div>
 
 
@@ -1872,7 +1877,7 @@
                                 <div class="solar-list color">
                                     <h2 class="with">Average Monthly Payment</h2>
                                     <h2>${{$basic->average}}</h2>
-                                    <h2 class="color-change">${{$monthly->Reamorization + $basic->packeage}}</h2>
+                                    <h2 class="color-change">${{$month->Reamorization + $basic->packeage}}</h2>
                                 </div>
                             </div>
                         </div>
@@ -1899,7 +1904,7 @@
 
                             <div class="dash-site-list-1">
                                 <div class="logo-section-25">
-                                    <img src="./images/a-logo.png" alt="">
+                                    <img src="/images/a-logo.png" alt="">
                                 </div>
 
                                 <div class="site-1-dash-p">
@@ -1916,7 +1921,7 @@
                                 <div class="site-box-card">
 
                                     <div class="Cost-btn-box ">
-                                        <img src="./images//freedowm.png" alt="">
+                                        <img src="/images//freedowm.png" alt="">
                                         <button>Solar Cost Breakdown</button>
                                     </div>
 

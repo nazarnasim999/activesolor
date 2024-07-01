@@ -8,6 +8,7 @@ use App\Models\Basicinfo;
 use App\Models\Dealtype;
 use App\Models\Historicinformation;
 use App\Models\Monthlypayment;
+use App\Models\Oliver;
 
 use Illuminate\Support\Facades\Auth;
 
@@ -83,6 +84,8 @@ class AuthController extends Controller
 
     public function store(Request $request){
 
+        // dd($request->all());
+
 
 
 
@@ -120,7 +123,16 @@ class AuthController extends Controller
        $history->save();
 
 
-       return view('presentation' ,['basic' => $basic, 'deal' => $deal, 'history' => $history , 'month' => $month]);
+    //    return view('presentation' ,['basic' => $basic, 'deal' => $deal, 'history' => $history , 'month' => $month]);
+
+
+    return response()->json([
+        'success' => true,
+        'basic_id' => $basic->id,
+        'deal_id' => $deal->id,
+        'history_id' => $history->id,
+        'month_id' => $month->id
+    ]);
 
 
 
@@ -134,6 +146,17 @@ class AuthController extends Controller
 
 
     }
+
+
+    public function presentation($basicId, $dealId, $historyId, $monthId)
+{
+    $basic = Basicinfo::find($basicId);
+    $deal = Dealtype::find($dealId);
+    $history = Historicinformation::find($historyId);
+    $month = Monthlypayment::find($monthId);
+
+    return view('presentation', ['basic' => $basic, 'deal' => $deal, 'history' => $history, 'month' => $month]);
+}
 
 
 
@@ -147,7 +170,16 @@ class AuthController extends Controller
     }
 
 
-    public function presentation(){
+    // public function presentation(){
+
+    // }
+
+
+    public function oliver(){
+
+        $data = Oliver::get();
+
+        return response()->json($data);
 
     }
 }
