@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
 * {
   padding: 0px;
   margin: 0px;
@@ -494,7 +497,7 @@ img.google {
 
 section.section-7 {
   width: 100%;
-  height: 99vh;
+  height: 100vh;
 }
 
 .main-section-7 {
@@ -1251,7 +1254,7 @@ section.section-22 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .section-22-dashbord img {
@@ -1572,7 +1575,6 @@ section.secton-25 {
   height: 100%;
 }
 
-.logo-section-23 {}
 
 .section-25-part-box {
   width: 100%;
@@ -3788,9 +3790,6 @@ section.section-sixty {
   text-transform: capitalize;
 }
 
-
-
-
 .section-infinite {
   width: 100%;
   background-image: url(../images/best-performing-system-bg.png);
@@ -3810,10 +3809,253 @@ section.section-sixty {
 }
 
 
+/********* Proposed Financial Plan ***********/
+
+.proposed-financial-sec {
+  background: url(../images/proposed-financial-bg.png) no-repeat top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  padding: 50px;
+}
+
+
+.proposed-finance-flex {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 20px;
+  border-radius: 30px;
+  justify-content: center;
+  height: 500px;
+  background: #fff;
+  border: 5px solid #0CBF65;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  position: relative;
+  top: 30px;
+}
+
+
+
+.proposed-finance-table {
+  width: 50%;
+  padding: 10px 10px;
+}
+
+.proposed-finance-graph {
+  width: 50%;
+  position: relative;
+}
+
+.account-solar {
+  padding: 12px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 312px;
+  gap: 60px;
+  border-radius: 25px;
+  background: #1226AA;
+  margin: 0px 0px 10px 0px;
+}
+
+.financial-acountsolar-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 0px 20px;
+}
+
+
+.account-solar h6 {
+  color: #FFF;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+
+.average-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid rgba(153, 153, 153, 0.91);
+  padding: 10px 10px;
+  margin: 0px 0px 10px 0px;
+}
+
+
+.average-box h4 {
+  color: #000;
+  width: 250px;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.average-box h5 {
+  color: #000;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.average-box span {
+  color: #019E50;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+
+.total-bill-box {
+  border-radius: 25px;
+  background: #1226AA;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.total-bill-box h3 {
+  color: #FFF;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  width: 260px;
+}
+
+.total-bill-box h4 {
+  color: #FFF;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.total-bill-box h5 {
+  color: #FFF;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.yearly-increase-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.yearly-increase-box h3 {
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  width: 220px;
+}
+
+.yearly-increase-box h4 {
+  color: #000;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  width: 250px;
+  line-height: 20px;
+}
+
+.yearly-increase-box h4 span {
+  display: block;
+}
+
+.yearly-increase-box h5 {
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+
+.finance-img img {
+  width: 100%;
+  padding: 30px;
+  margin: 20px 0px 0px 0px;
+}
+
+
+.save-thousand-box {
+  border-radius: 50px;
+  background: linear-gradient(0deg, #0CBF65 0%, #0CBF65 100%), #1226AA;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 410PX;
+  position: absolute;
+  top: -70px;
+}
+
+
+.save-thous-txt h4 {
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+
+
+
+
+/********* Proposed Financial Plan ***********/
+
+
+
+@media only screen and (max-width: 1920px) {
+    .proposed-finance-flex {
+      height: 600px;
+  }
+ }
+
 
 @media only screen and (max-width: 1440px) {
   .best-looking-system h3 {
     margin: 0px;
+  }
+  
+  .proposed-finance-flex {
+    height: 500px;
   }
 
   .site-1-dash-p h3 {
@@ -4550,6 +4792,88 @@ section.section-sixty {
 
   .section-best-img img {
     width: 400px;
+  }
+
+  .finance-img img {
+    width: 100%;
+    padding: 10px;
+    margin: 70px 0px 0px 0px;
+}
+
+.financial-acountsolar-table {
+  width: 100%;
+  padding: 0px 0px;
+}
+
+.save-thousand-box {
+  padding: 10px 20px;
+  width: 350px;
+  top: -60px;
+}
+
+.save-thous-txt h4 {
+  font-size: 16px;
+}
+
+.save-thous-img img {
+  width: 60px;
+}
+
+.yearly-increase-box h3 {
+  font-size: 16px;
+  width: 190px;
+}
+
+.yearly-increase-box h4 {
+  font-size: 16px;
+  width: 200px;
+  line-height: 20px;
+}
+
+.yearly-increase-box h5 {
+  font-size: 16px;
+}
+
+.total-bill-box h3 {
+  font-size: 16px;
+  width: 240px;
+}
+
+.total-bill-box h4 {
+  font-size: 16px;
+}
+
+.total-bill-box h5 {
+  font-size: 16px;
+}
+
+.average-box h4 {
+  width: 240px;
+  font-size: 16px;
+}
+
+.average-box h5 {
+  font-size: 16px;
+}
+
+.average-box span {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.account-solar {
+  padding: 9px 15px;
+  width: 200px;
+  margin: 0px 0px 10px 0px;
+}
+
+.proposed-finance-table img {
+  margin: 0px 0px 10px 0px;
+  width: 260px;
+}
+
+.account-solar h6 {
+  font-size: 16px;
 }
 
 
@@ -4664,18 +4988,23 @@ section.section-sixty {
   }
 
   img.btn-4 {
-    bottom: 75px;
+    bottom: 34px;
     right: -65px;
   }
 
+  .section-14-boxing {
+    gap: 140px;
+  }
+
+
   img.btn-3 {
-    bottom: 32px;
-    left: -34px;
+    bottom: 10px;
+    left: -39px;
   }
 
   .map-child-1 {
     width: 28%;
-    height: 25vh;
+    height: 36vh;
   }
 
   .map-child-2 button {
@@ -5092,7 +5421,55 @@ section.section-sixty {
     width: 400px;
   }
 
-  
+  .proposed-finance-flex {
+    padding: 20px 20px;
+    top: 30px;
+    flex-direction: column;
+    height: auto;
+}
+
+.finance-img img {
+  width: 100%;
+  padding: 0px;
+  margin: 130px 0px 0px 0px;
+}
+
+
+.proposed-finance-table {
+  width: 100%;
+  padding: 10px 10px;
+}
+
+
+.proposed-finance-graph {
+  width: 100%;
+}
+
+.save-thous-txt h4 {
+  font-size: 18px;
+}
+
+.save-thousand-box {
+  width: 100%;
+  top: 0px;
+}
+
+.proposed-finance-table {
+  width: 100%;
+  padding: 10px 10px;
+}
+
+.save-thousand-box {
+  padding: 10px 20px;
+  width: 100%;
+  top: 0px;
+}
+
+.account-solar {
+  padding: 12px 15px;
+  width: 240px;
+  margin: 0px 0px 10px 0px;
+}
 
 
 }
@@ -6054,6 +6431,119 @@ section.section-sixty {
   .section-best-img {
     padding-top: 40px;
   }
+
+  .proposed-finance-flex {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 20px;
+    height: auto;
+    top: 30px;
+    flex-direction: column;
+  }
+
+  .proposed-financial-sec {
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.proposed-finance-table img {
+  width: 100%;
+  padding: 0px 0px 10px 0px;
+}
+
+.average-box {
+  width: 100%;
+}
+
+.save-thous-img img {
+  width: 50px;
+}
+
+.save-thousand-box {
+  gap: 10px;
+  width: 340PX;
+  top: 0px;
+}
+
+.save-thous-txt h4 {
+  font-size: 14px;
+}
+
+.finance-img img {
+  width: 100%;
+  padding: 0px;
+  margin: 100px 0px 0px 0px;
+}
+
+.yearly-increase-box h3 {
+  font-size: 14px;
+  width: auto;
+}
+
+.yearly-increase-box h4 {
+  font-size: 14px;
+  width: auto;
+  line-height: 16px;
+}
+
+
+.account-solar h6 {
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.account-solar {
+  padding: 10px 25px;
+  margin: 0px 0px 10px 0px;
+}
+
+.average-box h4 {
+  font-size: 14px;
+  line-height: 15px;
+  width: 170px;
+}
+
+.average-box h5 {
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.average-box span {
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.total-bill-box h4 {
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.total-bill-box h5 {
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.proposed-finance-table {
+  width: 100%;
+}
+
+.financial-acountsolar-table {
+  padding: 0px 0px;
+}
+
+.total-bill-box h3 {
+  font-size: 14px;
+  line-height: 15px;
+  width: 170px;
+}
+
+
+.yearly-increase-box h5 {
+  font-size: 14px;
+  line-height: 15px;
+}
+
 
 
 }

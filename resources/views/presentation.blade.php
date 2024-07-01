@@ -165,7 +165,7 @@
         <div class="mySlides fade">
             <section class="section-7">
                 <div class="main-section-7">
-                    <img src="./images/section-7.png" alt="">
+                    <img src="./images/section-7-transformed.png" alt="">
                 </div>
             </section>
         </div>
@@ -1206,7 +1206,7 @@
                                 <h3>></h3>
                             </span>
                         </div>
-                        <div class="hold-div">
+                        <div class="hold-div">  
                             <span class="hold-1">
                                 <h2>AutoDesigner</h2>
                             </span>
@@ -1667,30 +1667,23 @@
         <div class="mySlides fade">
             <section class="section-sixty">
                 <div class="main-dasborad-site">
-
                     <div class="dash-site-list-1">
                         <div class="logo-section-25">
                             <img src="./images/a-logo.png" alt="">
                         </div>
-
                         <div class="site-1-dash-p">
                             <h3>Purchase
                                 <br>
-
                                 <span>Plan</span>
                             </h3>
                         </div>
                     </div>
-
-
                     <div class="dash-site-list-2">
                         <div class="site-box-card">
-
-                            <div class="Cost-btn-box ">
+                            <div class="Cost-btn-box">
                                 <img src="./images//freedowm.png" alt="">
                                 <button>Solar Cost Breakdown</button>
                             </div>
-
                             <div class="Cost-list-box">
                                 <span>
                                     <h2>Total Project Cost</h2>
@@ -1712,7 +1705,6 @@
                                     <h2>$19,168</h2>
                                 </span>
                             </div>
-
                             <div class="cost-btn-listing">
                                 <button>
                                     <h2>NET Cost</h2>
@@ -1721,13 +1713,95 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
         </div>
 
 
 
+
+
+
+        <div class="mySlides fade">
+            <section class="proposed-financial-sec">
+                <div class="proposed-finance-flex">
+                    <div class="proposed-finance-table">
+                       <img src="/images/igs-energy-img.png" alt="">
+                       <div class="financial-acountsolar-table">
+                          <div class="account-solar">
+                            <h6>Today</h6>
+                            <h6>Solar</h6>
+                          </div>
+                          <div class="average-box">
+                            <h4>Average Utility Payment</h4>
+                            <h5>$0.296</h5>
+                            <span>$.25</span>
+                          </div>
+                          <div class="average-box">
+                            <h4>Est Monthly Utility Bill</h4>
+                            <h5>$185</h5>
+                            <span>$9.62</span>
+                          </div>
+                          <div class="average-box">
+                            <h4>Monthly Solar Bill</h4>
+                            <span>$172.35</span>
+                          </div>
+                          <div class="total-bill-box">
+                            <h3>TOTAL BILL</h3>
+                            <h4>$186</h4>
+                            <h5>$181.97</h5>
+                          </div>
+                          <div class="yearly-increase-box">
+                            <h3>Yearly Increases</h3>
+                            <h4>??? <span>(National Average last year was 14%)</span></h4>
+                            <h5>2.9%</h5>
+                          </div>
+                       </div> 
+                    </div>
+                    <div class="proposed-finance-graph">
+                        <div class="save-thousand-box">
+                            <div class="save-thous-img">
+                               <img src="/images/light.png" alt="">
+                            </div>
+                            <div class="save-thous-txt">
+                                <h4>SAVE THOUSANDS OVER THE LIFETIME OF YOUR SYSTEM</h4>
+                            </div>
+                        </div>
+                        <div class="finance-img">
+                            <img src="/images/proposed-finance-graph.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <div class="mySlides fade">
+            <section class="section-7">
+                <div class="main-section-7">
+                    <img src="./images/proposed-financial-igs.png" alt="">
+                </div>
+            </section>
+        </div>
+
+        
+        <div class="mySlides fade">
+            <section class="section-7">
+                <div class="main-section-7">
+                    <img src="./images/financial-proposed-sunnova.png" alt="">
+                </div>
+            </section>
+        </div>
+
+
+        <div class="mySlides fade">
+            <section class="section-7">
+                <div class="main-section-7">
+                    <img src="./images/break-even-analysis.png" alt="">
+                </div>
+            </section>
+        </div>
 
 
 
