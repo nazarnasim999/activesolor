@@ -35,7 +35,7 @@
                 </div>
             </section>
         </div>
-
+        
 
 
 
@@ -1725,7 +1725,7 @@
                     <img src="/images/payment-options-img.png" class="payment-option-img" alt="">
                     <img src="/images/payment-dummy-calculator.png" class="dummy-calculator-img" alt="">
                 </div>
-                <div class="loan-montly-flex loan-proposed-flex">  
+                <div class="loan-montly-flex loan-proposed-flex">
                     <div class="proposed-monthly-payment">
                         <div class="proposed-monthly-payment-box">
                             <h2>Proposed Monthly Payment</h2>
@@ -1770,7 +1770,7 @@
                         </div>
                         <div class="loan-monthly-textbox loan-box-border">
                             <div class="monthly-does-txt">
-                                <h6>What does</h6>  
+                                <h6>What does</h6>
                                 <h4>Your loan will re-another on month 19. </h4>
                             </div>
                             <div class="monthly-does-txt">
@@ -1794,7 +1794,7 @@
                             </div>
                             <div class="loan-monthly-textbox loan-box-border">
                                 <div class="monthly-does-txt">
-                                    <h6>What does</h6>  
+                                    <h6>What does</h6>
                                     <h4>Your loan will re-another on month 19. </h4>
                                 </div>
                                 <div class="monthly-does-txt">
@@ -1819,7 +1819,7 @@
                             </div>
                             <div class="loan-monthly-textbox loan-box-border">
                                 <div class="monthly-does-txt">
-                                    <h6>What does</h6>  
+                                    <h6>What does</h6>
                                     <h4>Your loan will re-another on month 19. </h4>
                                 </div>
                                 <div class="monthly-does-txt">
@@ -1828,7 +1828,7 @@
                                 </div>
                          </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </section>
         </div>
@@ -1843,7 +1843,7 @@
                     <img src="/images/payment-options-img.png" class="payment-option-img" alt="">
                     <img src="/images/payment-dummy-calculator.png" class="dummy-calculator-img" alt="">
                 </div>
-                <div class="loan-montly-flex">  
+                <div class="loan-montly-flex">
                     <div class="loan-monthly-box">
                         <div class="loan-monthly-textbox">
                             <div class="monthly-dollar-txt">
@@ -1857,7 +1857,7 @@
                         </div>
                         <div class="loan-monthly-textbox loan-box-border">
                             <div class="monthly-does-txt">
-                                <h6>What does</h6>  
+                                <h6>What does</h6>
                                 <h4>Your loan will re-another on month 19. </h4>
                             </div>
                             <div class="monthly-does-txt">
@@ -1881,7 +1881,7 @@
                             </div>
                             <div class="loan-monthly-textbox loan-box-border">
                                 <div class="monthly-does-txt">
-                                    <h6>What does</h6>  
+                                    <h6>What does</h6>
                                     <h4>Your loan will re-another on month 19. </h4>
                                 </div>
                                 <div class="monthly-does-txt">
@@ -1906,7 +1906,7 @@
                             </div>
                             <div class="loan-monthly-textbox loan-box-border">
                                 <div class="monthly-does-txt">
-                                    <h6>What does</h6>  
+                                    <h6>What does</h6>
                                     <h4>Your loan will re-another on month 19. </h4>
                                 </div>
                                 <div class="monthly-does-txt">
@@ -1915,7 +1915,7 @@
                                 </div>
                          </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </section>
         </div>

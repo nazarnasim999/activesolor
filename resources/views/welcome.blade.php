@@ -127,18 +127,9 @@
                                 </svg>
                             </span>
                             <span class="span-2">
-                                <a href="#">Created 05/04/2025</a>
+                                <a href="#"> {{ auth()->user()->created_at->format('D, M d Y, H:i:s') }}</a>
                             </span>
-                            <span class="span-3">
-                                <a href="#">Last Edited 2 days ago </a>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <path
-                                        d="M12.5 5H7.5C6.83696 5 6.20107 5.26339 5.73223 5.73223C5.26339 6.20107 5 6.83696 5 7.5V22.5C5 23.163 5.26339 23.7989 5.73223 24.2678C6.20107 24.7366 6.83696 25 7.5 25H22.5C23.163 25 23.7989 24.7366 24.2678 24.2678C24.7366 23.7989 25 23.163 25 22.5V17.5M15 15L25 5M25 5V11.25M25 5H18.75"
-                                        stroke="white" stroke-width="2.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </span>
+
                         </div>
 
                     </div>
@@ -166,7 +157,7 @@
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">State</label>
-                                <select name="state" id="state">
+                                <select name="state" id="state" onchange="updateProviders()">
                                     <option value="" disabled selected hidden>CT</option>
                                     <option value="CT">CT</option>
                                     <option value="NY">NY</option>
@@ -175,10 +166,18 @@
                                 </select>
                             </div>
                             <div class="brayn-in-grouop">
-                                <label for="#">Utility Providers</label>
+
+                                <label for="providers">Utility Providers</label>
+                                <select name="providers" id="providers">
+                                    <option value="" disabled selected hidden>Select Provider</option>
+                                </select>
+                                {{-- <label for="#">Utility Providers</label>
                                 <select name="providers" id="cars">
                                     <option value="" disabled selected hidden>ConEd</option>
+
+
                                     <option value="ConEd">ConEd</option>
+
                                     <option value="National Grid">National Grid</option>
                                     <option value="O&R">O&R</option>
                                     <option value="Central Hudson">Central Hudson</option>
@@ -188,28 +187,28 @@
 
 
 
-                                </select>
+                                </select> --}}
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">Average Monthly Utility Cost</label>
                                 <input type="text" placeholder="Type Here.." name='average'>
                             </div>
                             <div class="brayn-in-grouop">
-                                <label for="#">Basic Service Package</label>
-                                <input type="text" placeholder="Type Here..." name="packeage" >
+                                <label for="#">Basic Service Charges</label>
+                                <input type="text" id="basicservice" placeholder="Type Here..." name="packeage" >
                             </div>
                             <div class="brayn-in-grouop">
                                 <label for="#">System Size</label>
-                                <input type="text" placeholder="Type Here..." name="size" >
+                                <input type="text" id="size"  placeholder="Type Here..." name="size" >
                             </div>
-                            <div class="brayn-in-grouop">
+                            {{-- <div class="brayn-in-grouop">
                                 <label for="#">Panel Type</label>
                                 <select name="panel" id="cars">
                                     <option value="" disabled selected hidden>SEG410</option>
                                     <option value="SEG410">SEG410</option>
 
                                 </select>
-                            </div>
+                            </div> --}}
                             <div class="brayn-in-grouop">
                                 <label for="#">System Production</label>
                                 <input type="text" placeholder="Type Here..." name="production" id="production">
@@ -274,13 +273,13 @@
                             @foreach (['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] as $month)
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">{{ $month }}</label>
-                                <input type="number" placeholder="Type Here..." name="{{ strtolower($month) }}" id="{{ strtolower($month) }}" class="month-input">
+                                <input type="text" placeholder="Type Here..." name="{{ strtolower($month) }}" id="{{ strtolower($month) }}" class="month-input">
                             </div>
                         @endforeach
                             <div class="brayn-in-grouop">
                                 <label for="#">Estimated Yearly Consumption</label>
                                 {{-- <input type="number" placeholder="Type Here..." name="yearly_consumption"> --}}
-                                <input type="number" placeholder="Type Here..." name="yearly_consumption" id="yearly_consumption" readonly>
+                                <input type="text" placeholder="Type Here..." name="yearly_consumption" id="yearly_consumption" readonly>
                             </div>
                             <div class="brayn-in-grouop ">
                                 <label for="#">Estimated Yearly Production</label>
@@ -288,7 +287,7 @@
                             </div>
                             <div class="brayn-in-grouop ">
                                 <label for="#">Offset</label>
-                                <input type="text" placeholder="" name="offset" >
+                                <input type="text" id="offsets" placeholder="" name="offset" >
                             </div>
                         </div>
                     </div>
@@ -320,23 +319,23 @@
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Loan Term</label>
-                                <input type="number" placeholder="Type Here..." name="loan_term">
+                                <input type="text" placeholder="Type Here..." name="loan_term">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">PERCENTAGE</label>
-                                <input type="number" placeholder="Type Here..." name="apr" >
+                                <input type="text" placeholder="Type Here..." name="apr" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Cash Down</label>
-                                <input type="number" placeholder="USD" name="cash" >
+                                <input type="text" placeholder="USD" name="cash" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Solar PPW</label>
-                                <input type="number" placeholder="Type Here..." name="solar" >
+                                <input type="text" placeholder="Type Here..." name="solar" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Total System Cost</label>
-                                <input type="text" placeholder="USD"  name="system_cost">
+                                <input type="text" id="system_cost" placeholder="USD"  name="system_cost">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Rebate Level</label>
@@ -344,27 +343,27 @@
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">State Rebate</label>
-                                <input type="text" placeholder="$1,018.44" name="state_rebate">
+                                <input type="text" id="state_rebate" placeholder="$1,018.44" name="state_rebate">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Federal Tax Credit</label>
-                                <input type="text" placeholder="$8,747.27" name="federal_tax" >
+                                <input type="text" id="federaltax"  placeholder="$8,747.27" name="federal_tax" >
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">State Tax Credit</label>
-                                <input type="text" placeholder="$5000.00"  name="state_tax">
+                                <input type="text" id="statetax" placeholder="$5000.00"  name="state_tax">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Total Tax Credit</label>
-                                <input type="text" placeholder="$13,747.27"  name="total_tax" >
+                                <input type="text" id="totaltax" placeholder="$13,747.27"  name="total_tax" >
                             </div>
                             <div class="brayn-in-grouop part-3">
                                 <label for="#">Total Financed Amount</label>
-                                <input type="text" placeholder="$29,157.56"  name="total_finance">
+                                <input type="text" id="financed_amount" placeholder="$29,157.56"  name="total_finance">
                             </div>
                             <div class="brayn-in-grouop part-3">
                                 <label for="#">Net Cost</label>
-                                <input type="text" placeholder="USD"   name="net_cost">
+                                <input type="text" id="netcost" placeholder="USD"   name="net_cost">
                             </div>
                         </div>
                     </div>
@@ -377,20 +376,20 @@
                         <div class="brayn-form">
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Reamorization Loan</label>
-                                <input type="number" placeholder="201.00"  name="Reamorization">
+                                <input type="text" id="rloan" placeholder="201.00"  name="Reamorization">
 
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Ream Loan + Basic Service Charge</label>
-                                <input type="number" placeholder="201.00"  name="basic_service_charge">
+                                <input type="text" id="loanbasic" placeholder="201.00"  name="basic_service_charge">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Option A - Keep Tax Credit</label>
-                                <input type="number" placeholder="Type Here..." name="keep_tax_credit">
+                                <input type="text" placeholder="Type Here..." name="keep_tax_credit">
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Option B - Allocate Tax Credit</label>
-                                <input type="number" placeholder="Type Here..."  name="allocate_tax_credit">
+                                <input type="text" placeholder="Type Here..."  name="allocate_tax_credit">
                             </div>
                             {{-- <div class="brayn-in-grouop ">
                                 <label for="#">Total Cost Staying with util</label>
@@ -433,6 +432,37 @@
     <script>
 
 
+function updateProviders() {
+            const state = document.getElementById('state').value;
+            const providers = document.getElementById('providers');
+
+            // Clear existing options
+            providers.innerHTML = '<option value="" disabled selected hidden>Select Provider</option>';
+
+            // Define providers based on state
+            const nyProviders = [
+                { value: 'ConEd', text: 'ConEd' },
+                { value: 'National Grid', text: 'National Grid' },
+                { value: 'O&R', text: 'O&R' },
+                { value: 'Central Hudson', text: 'Central Hudson' }
+            ];
+
+            const otherProviders = [
+                { value: 'EVERSOURCE', text: 'EVERSOURCE' },
+                { value: 'UI', text: 'UI' }
+            ];
+
+            // Populate providers based on selected state
+            let providersList = state === 'CT'  ? otherProviders : nyProviders;
+            providersList.forEach(provider => {
+                let option = document.createElement('option');
+                option.value = provider.value;
+                option.textContent = provider.text;
+                providers.appendChild(option);
+            });
+        }
+
+
 
 document.getElementById('yourForm').addEventListener('submit', function(event) {
         event.preventDefault();
@@ -469,7 +499,113 @@ document.getElementById('state').addEventListener('change', function() {
         } else {
             rebateInput.value = 0;
         }
+        calculateStateRebate();
     });
+
+
+    function calculateStateRebate() {
+            const rebateLevel = parseFloat(document.getElementById('rebate').value);
+            const systemSize = parseFloat(document.getElementById('size').value);
+            const systemCost = parseFloat(document.getElementById('system_cost').value);
+            console.log('yes' , systemCost);
+            const stateRebateInput = document.getElementById('state_rebate');
+            const financedAmountInput = document.getElementById('financed_amount');
+            const FederalTax = document.getElementById('federaltax');
+            const StateTax = document.getElementById('statetax');
+            const TotalTax = document.getElementById('totaltax');
+            const NetCost = document.getElementById('netcost');
+
+
+
+
+
+
+            if (!isNaN(rebateLevel) && !isNaN(systemSize)) {
+                const stateRebate = (rebateLevel * systemSize) * 1000;
+                const Finance = stateRebate - systemCost;
+                const FTax = Finance * 0.3;
+
+                const value = Math.min(Finance * 0.25, 5000);
+
+                const total = FTax + value;
+
+                const net = Finance - total
+
+                console.log(value)
+
+                stateRebateInput.value = `${stateRebate.toFixed(2)}`;
+                financedAmountInput.value = `${Finance.toFixed(2)}`
+                FederalTax.value = `${FTax.toFixed(2)}`
+                StateTax.value = `${value.toFixed(2)}`
+                TotalTax.value = `${total.toFixed(2)}`
+                NetCost.value = `${net.toFixed(2)}`
+
+
+
+
+            } else {
+                stateRebateInput.value = '$0.00';
+            }
+
+            // calculateFinancedAmount()
+        }
+
+        document.getElementById('size').addEventListener('input', calculateStateRebate);
+
+
+
+
+
+    function calculateReamorization() {
+
+            const rLoan = parseFloat(document.getElementById('rloan').value);
+            const BasicService = parseFloat(document.getElementById('basicservice').value);
+            const LoanBasic = document.getElementById('loanbasic');
+
+
+
+
+
+
+
+            if (!isNaN(rLoan) && !isNaN(BasicService)) {
+                const sums = rLoan + BasicService;
+                LoanBasic.value = `${sums.toFixed(2)}`;
+            } else {
+                LoanBasic.value = '0.00';
+            }
+        }
+
+
+
+        // function calculateOffset() {
+
+        //         const yearly_consumption = document.getElementById('yearly_consumption');
+        //         const yearly_production = document.getElementById('yearly_production');
+
+        //         console.log('hey', yearly_consumption , yearly_production )
+        //         // const LoanBasic = document.getElementById('loanbasic');
+
+
+
+
+
+
+
+        //         // if (!isNaN(rLoan) && !isNaN(BasicService)) {
+        //         //     const sums = rLoan + BasicService;
+        //         //     LoanBasic.value = `${sums.toFixed(2)}`;
+        //         // } else {
+        //         //     LoanBasic.value = '0.00';
+        //         // }
+        //         }
+
+
+
+        document.getElementById('system_cost').addEventListener('input', calculateStateRebate);
+        document.getElementById('rloan').addEventListener('input', calculateReamorization);
+
+
 
 
 
@@ -480,6 +616,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const yearlyConsumptionInput = document.getElementById('yearly_consumption');
         const productionInput = document.getElementById('production');
         const yearlyProductionInput = document.getElementById('yearly_production');
+        const percentageOutput = document.getElementById('offsets');
+
 
         monthInputs.forEach(input => {
             input.addEventListener('input', calculateYearlyConsumption);
@@ -487,6 +625,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         productionInput.addEventListener('input', function() {
             yearlyProductionInput.value = productionInput.value;
+
         });
 
         function calculateYearlyConsumption() {
@@ -495,7 +634,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 total += parseFloat(input.value) || 0;
             });
             yearlyConsumptionInput.value = total;
+            console.log('ahti' , yearlyProductionInput.value)
+
+            const percentage = (yearlyProductionInput.value / yearlyConsumptionInput.value) * 100;
+            percentageOutput.value = `${percentage.toFixed(2)}%`;
         }
+
+
+
+        // calculateOffset()
     });
 
 

@@ -1,50 +1,50 @@
 <?php
 
-namespace App\Models;
+    namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+    use Illuminate\Database\Eloquent\Factories\HasFactory;
+    use Illuminate\Database\Eloquent\Model;
 
-class Historicinformation extends Model
-{
-    use HasFactory;
+    class Historicinformation extends Model
+    {
+        use HasFactory;
 
 
 
-    protected $appends = ['january' , 
+        protected $appends = ['january' ,
+        'february',
+        'march',
+        'april',
+        'may',
+        'june',
+        'july',
+        'august',
+        'september',
+        'octobar',
+        'november',
+        'december',
+        'yearly_consumption',
+        'yearly_production',
+        'offset'
+    ];
+
+
+
+    protected $fillable = ['january' ,
     'february',
-    'march',
-    'april',
-    'may',
-    'june',
-    'july',
-    'august',
-    'september',
-    'octobar',
-    'november',
-    'december',
-    'yearly_consumption',
-    'yearly_production',
-    'offset'
-];
+        'march',
+        'april',
+        'may',
+        'june',
+        'july',
+        'august',
+        'september',
+        'octobar',
+        'november',
+        'december',
+        'yearly_consumption',
+        'yearly_production',
+        'offset'
+    ];
 
-
-
-protected $fillable = ['january' , 
-'february',
-    'march',
-    'april',
-    'may',
-    'june',
-    'july',
-    'august',
-    'september',
-    'octobar',
-    'november',
-    'december',
-    'yearly_consumption',
-    'yearly_production',
-    'offset'
-];
-
-}
+    }

@@ -138,7 +138,7 @@ section.brayn {
     width: 20%;
     padding: 40px;
     border-radius: 20px;
-    background: #0CBF65;
+    background: #1226aa;
 }
 
 .Version-box span {
@@ -212,7 +212,7 @@ span.span-2 {
 
 .brayn-btn-box button {
     border-radius: 20px;
-    background: #0CBF65;
+    background: #1226aa;
     padding: 15px 28px;
     color: #FFF;
     font-family: sans-serif;
@@ -220,7 +220,7 @@ span.span-2 {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    border: 1px solid #0cbf65;
+    border: 1px solid #1226aa;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -263,7 +263,7 @@ footer {
     width: 40px;
     margin: 0px;
   }
-  
+
   #toggle span:after,
   #toggle span:before {
     content: "";
@@ -278,7 +278,7 @@ footer {
     position: relative;
     display: block;
   }
-  
+
   #toggle span,
   #toggle span:after,
   #toggle span:before {
@@ -289,7 +289,7 @@ footer {
     backface-visibility: hidden;
     border-radius: 2px;
   }
-  
+
   /* on activation */
   #toggle.on span {
     background-color: transparent;
@@ -306,7 +306,7 @@ footer {
     left: 50px;
     top: 110px;
   }
-  
+
   /* menu appearance*/
   #menu {
     position: absolute;
@@ -349,7 +349,7 @@ footer {
   .brayn-in-grouop.part-3 {
     width: 49%;
 }
-  
+
   /* demo styles */
   body { margin-top: 3em; background: #eee; color: #555; font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif; }
   p, p a { font-size: 12px;text-align: center; color: #888; }
@@ -452,9 +452,9 @@ ul.dropdown-menu {
 
 button.part-2-btn-a {
     border-radius: 20px;
-    background: #0CBF65;
+    background: #1226aa ;
     padding: 15px 22px;
-    border: 1px solid #0cbf65;
+    border: 1px solid #1226aa;
     color: #FFF;
     font-family: sans-serif;
     font-size: 18px;
@@ -475,7 +475,7 @@ button.part-2-btn-a:hover {
 }
 
 .open>.dropdown-menu {
-    display: block !important; 
+    display: block !important;
 }
 
 .nav-2-box {
@@ -520,7 +520,7 @@ button.part-2-btn-a:hover {
     border-right: 1px solid #000;
     width: 55%;
 }
-/* 
+/*
 .brayn-box.aling-left form {
     justify-content: flex-start;
 } */
@@ -533,117 +533,117 @@ button.part-2-btn-a:hover {
     .Jessica-box h1 {
         font-size: 32px;
     }
-    
+
     section.brayn {
         padding-top: 40px;
     }
-    
+
     .Container {
         max-width: 1500px;
     }
-    
+
     .Jessica-card {
         padding-top: 24px;
         padding-bottom: 14px;
     }
-    
+
     .brayn-box h1 {
         font-size: 32px;
     }
-    
+
     .brayn-box {
         padding: 30px;
     }
-    
+
     .brayn-box form {
         padding-top: 34px;
         gap: 20px 12px;
     }
-    
+
     .brayn-in-grouop label {
         font-size: 16px;
     }
-    
+
     .brayn-in-grouop input {
         padding: 15px;
         font-size: 14px;
     }
-    
+
     .brayn-in-grouop select {
         padding: 15px;
         font-size: 14px;
     }
-    
+
     .main-brayn {
         gap: 25px;
     }
-    
+
     .brayn-btn-box button {
         padding: 12px 24px;
         font-size: 16px;
         border-radius: 14px;
     }
-    
+
     .brayn-btn-box {
         padding: 14px 0px 52px 0px;
     }
-    
+
     .main-footer a {
         font-size: 16px;
     }
-    
+
     footer {padding: 20px;}
-    
+
     .Version-box span h2 {
         font-size: 20px;
     }
-    
+
     .span-1 {
         padding-bottom: 12px;
     }
-    
+
     .Version-box span a {
         font-size: 16px;
     }
-    
+
     span.span-2 {
         padding-bottom: 8px;
     }
-    
+
     .Version-box span svg {
         width: 30px;
         height: 30px;
     }
-    
+
     .Version-box {
         padding: 34px;
     }
-    
+
     .nav-2-card h3 {
         font-size: 16px;
     }
-    
+
     .dropdown button p {
         font-size: 16px;
     }
-    
+
     button.part-2-btn-a {
         font-size: 16px;
         border-radius: 12px;
     }
-    
+
     .nav-part-2 {
         width: 48%;
     }
-    
+
     .left-boder {
         width: 50%;
     }
-    
+
     header {
         padding: 24px 0px;
     }
-    
+
     .logo-ul-list {
         width: 55%;
     }
@@ -653,7 +653,7 @@ button.part-2-btn-a:hover {
     .Container {
         max-width: 1300px;
     }
-    
+
     .Jessica-box h1 {
         font-size: 28px;
     }
@@ -661,92 +661,92 @@ button.part-2-btn-a:hover {
     .brayn-box .brayn-form {
         gap: 20px 10px;
     }
-    
+
     section.brayn {
         padding-top: 35px;
     }
-    
+
     .Jessica-card {
         padding-top: 18px;
         padding-bottom: 10px;
     }
-    
+
     .Version-box {
         padding: 20px;
     }
-    
+
     .brayn-box h1 {
         font-size: 28px;
     }
-    
+
     .brayn-box form {
         padding-top: 25px;
         gap: 15px 10px;
     }
-    
+
     .brayn-btn-box button {
         padding: 14px 20px;
         font-size: 14px;
         border-radius: 12px;
     }
-    
+
     .brayn-btn-box {
         padding: 10px 0px 32px 0px;
     }
-    
+
     .main-footer a {
         font-size: 14px;
     }
-    
+
     .brayn-in-grouop label {
         font-size: 14px;
     }
-    
+
     .main-brayn {
         gap: 18px;
     }
-    
+
     button.part-2-btn-a {
         font-size: 14px;
         border-radius: 8px;
         padding: 14px 15px;
     }
-    
+
     .nav-2-card h3 {
         font-size: 14px;
         line-height: 25px;
     }
-    
+
     .nav-2-card button {
         font-size: 14px;
         padding-right: 18px;
     }
-    
+
     .left-boder {
         width: 64% !important;
     }
-    
+
     .nav-part-2 {
         width: 42%;
     }
-    
+
     .nav-2-box {
         gap: 18px;
         width: 55%;
     }
-    
+
     .logo-ul-list {
         width: 60%;
     }
-    
+
     .nav-2-card {
         width: 34%;
     }
-    
+
     .dropdown button p {
         font-size: 14px;
     }
-    
+
     .logo-ul-list ul li a {
         font-size: 14px;
     }
@@ -756,94 +756,94 @@ button.part-2-btn-a:hover {
     .Container {
         max-width: 900px;
     }
-    
+
     .Jessica-box h1 {
         font-size: 24px;
     }
-    
+
     .Version-box {
         width: 30%;
     }
-    
+
     .Version-add-btn {
         width: 8%;
         border-radius: 12px;
     }
-    
+
     .brayn-box h1 {
         font-size: 24px;
     }
-    
+
     .brayn-in-grouop label {
         font-size: 12px;
     }
-    
+
     .brayn-box form {
         gap: 10px 10px;
         padding-top: 20px;
     }
-    
+
     section.brayn {
         padding-top: 30px;
     }
-    
+
     .logo-ul-list {
         width: 75%;
     }
-    
+
     .dropdown button p {
         font-size: 12px;
     }
-    
+
     .logo-ul-list ul li a {
         font-size: 12px;
     }
-    
+
     .logo-ul-list ul {
         gap: 10px;
     }
-    
+
     .dropdown button {
         gap: 8px;
     }
-    
+
     .dropdown button svg {
         width: 11px;
         height: 11px;
     }
-    
+
     .brayn-btn-box button {
         padding: 12px 14px;
         font-size: 12px;
     }
-    
+
     .brayn-btn-box {
         padding: 8px 0px 20px 0px;
     }
-    
+
     .nav-part-1 {
         width: 45%;
     }
-    
+
     a#toggle {
         width: 25px;
     }
-    
+
     .nav-part-2 {
         width: 52%;
     }
-    
+
     button.part-2-btn-a {
         font-size: 12px;
         border-radius: 6px;
         padding: 10px 10px;
     }
-    
+
     .nav-2-card h3 {
         font-size: 12px;
         line-height: 18px;
     }
-    
+
     header {
         padding: 18px 0px;
     }
@@ -853,95 +853,95 @@ button.part-2-btn-a:hover {
     .Jessica-box h1 {
         font-size: 20px;
     }
-    
+
     .Version-box span h2 {
         font-size: 18px;
     }
-    
+
     section.brayn {
         padding-top: 24px;
         padding-left: 3%;
         padding-right: 3%;
     }
-    
+
     .Version-box span a {
         font-size: 12px;
     }
-    
+
     .span-1 {
         padding-bottom: 5px;
     }
-    
+
     span.span-2 {
         padding-bottom: 3px;
     }
-    
+
     .Version-box span svg {
         width: 25px;
         height: 25px;
     }
-    
+
     .brayn-box h1 {
         font-size: 20px;
     }
-    
+
     .brayn-box form {
         gap: 8px 8px;
         padding-top: 15px;
     }
-    
+
     .brayn-in-grouop select {
         padding: 10px;
         font-size: 12px;
     }
-    
+
     .brayn-in-grouop input {
         padding: 10px;
         font-size: 12px;
         border-radius: 6px;
     }
-    
+
     nav {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .nav-part-1 {
         width: 100%;
     }
-    
+
     .nav-part-2 {
         width: 100%;
     }
-    
+
     header {
         padding: 18px 3%;
     }
-    
+
     .logo-ul-list ul li a {
         font-size: 16px;
     }
-    
+
     .dropdown button p {
         font-size: 16px;
     }
-    
+
     .logo-ul-list ul {
         gap: 40px;
     }
-    
+
     .left-boder {
         width: 50% !important;
     }
-    
+
     .nav-2-card {
         width: 24%;
     }
-    
+
     .nav-2-card h3 {
         font-size: 15px;
     }
-    
+
     .nav-2-card button {
         font-size: 16px;
         padding-right: 18px;
@@ -952,41 +952,41 @@ button.part-2-btn-a:hover {
     .brayn-in-grouop {
         width: 100%;
     }
-    
+
     .brayn-in-grouop.part-3 {
         width: 100%;
     }
-    
+
     .brayn-in-grouop.part-2 {
         width: 100%;
     }
-    
+
     .Version-box {
         width: 60%;
         border-radius: 15px;
     }
-    
 
-    
+
+
     .Version-add-btn {
         width: 18%;
         border-radius: 10px;
     }
-    
+
     .logo-ul-list ul {display: none;}
-    
+
     .nav-part-2 {
         display: none;
     }
-    
+
     .logo {
         width: 50%;
     }
-    
+
     .toogel-logo {
         width: 15%;
     }
-    
+
     #menu {
         width: 100%;
         left: 0px !important;
