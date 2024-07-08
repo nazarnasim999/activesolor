@@ -486,6 +486,10 @@
 
 
 
+       
+
+
+
 
 
 
@@ -527,9 +531,35 @@
         </div>
         @endif
 
+        <div class="mySlides fade">    
+            <section class="section-150">
+                <div class="main-section-150">
+                    <div class="section-15-logo">
+                        <img src="/images/logo.png" alt="">
+                    </div>
+
+                    <div class="section-150-box">
+                    <div class="section-150-part-1">
+                    <img src="/images/sec-150.png" alt="">
+                    </div>
+
+                    <div class="section-150-part-2"> 
+                        <div class="chart-part-150-btn">
+                            <button><img src="/images/long-btn.png" alt=""></button>
+                        </div>
+                        <div class="chart-part-150-box">
+                        <img src="/images/box-150.png" alt="">
+                        </div>
+                       
+                    </div>
+                    </div>
 
 
+                </div>
+            </section>
+        </div>
 
+        
 
         @if ($basic->providers =='O&R')
         <div class="mySlides fade">
@@ -988,7 +1018,7 @@
 
 
 
-
+<!-- 
         <div class="mySlides fade">
             <section class="section-24">
                 <div class="main-section-24">
@@ -1023,7 +1053,7 @@
                     </div>
                 </div>
             </section>
-        </div>
+        </div> -->
 
 
 
@@ -1111,6 +1141,38 @@
                     </div>
                 </div>
             </section>
+        </div>
+
+
+        <div class="mySlides fade"> 
+        <section class="section-220"> 
+            <div class="main-sec-220">
+            <div class="logo-section-22">
+                        <img src="/images/a-logo.png" alt="">
+            </div>
+            <div class="sec-220-box">
+            <div class="sec-220-box-btn">
+                <button class="bt-hl-box">
+                <img src="/images/hel-btn-box.png" alt="">
+                </button>
+                <button class="bt-hl-1">
+                <img src="/images/hel-btn-1.png" alt="">
+                </button>
+                <button class="bt-hl-2">
+                <img src="/images/hel-btn-2.png" alt="">
+                </button>
+                <button class="bt-hl-3">
+                <img src="/images/hel-btn-3.png" alt="">
+                </button>
+                <button class="bt-hl-4">
+                <img src="/images/hel-btn-4.png" alt="">
+                </button>
+
+                </div>
+            </div>
+
+            </div>
+        </section>
         </div>
 
 
@@ -1441,7 +1503,7 @@
                                 <div class="part-25-box-2">
                                     <div class="part-25-listing">
                                         <p>Plan Provider</p>
-                                        <img src="/images/a-logo.png" alt="">
+                                        <img src="/images/divide.png" alt="">
                                     </div>
                                     <div class="part-25-listing-2">
                                         <span>
@@ -1531,7 +1593,7 @@
                                 <div class="part-25-box-2">
                                     <div class="part-25-listing">
                                         <p>Plan Provider</p>
-                                        <img src="/images/a-logo.png" alt="">
+                                        <img src="/images/divide.png" alt="">
                                     </div>
                                     <div class="part-25-listing-2">
                                         <span>
@@ -1587,7 +1649,7 @@
                     <div class="section-25-part-box">
                         <div class="section-25-part-1">
                             <div class="logo-section-25">
-                                <img src="/images/divide.png" alt="">
+                            <img src="/images/a-logo.png" alt="">
                             </div>
                             <div class="part-25-card">
                                 <h2>Proposed Financial Plan</h2>
@@ -1621,7 +1683,7 @@
                                 <div class="part-25-box-2">
                                     <div class="part-25-listing">
                                         <p>Plan Provider</p>
-                                        <img src="/images/a-logo.png" alt="">
+                                        <img src="/images/divide.png" alt="">
                                     </div>
 
                                     <div class="part-25-listing-2">
