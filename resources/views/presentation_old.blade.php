@@ -2752,7 +2752,7 @@
                     <div class="section-25-part-box">
                         <div class="section-25-part-1">
                             <div class="logo-section-25">
-                                <img src="./images/divide.png" alt="">
+                            <img src="./images/a-logo.png" alt="">
                             </div>
                             <div class="part-25-card">
                                 <h2>Proposed Financial Plan</h2>
@@ -2966,7 +2966,7 @@
 
 
                         <div class="logo-section-25">
-                            <img src="/images/divide.png" alt="">
+                        <img src="./images/a-logo.png" alt="">
                         </div>
                         <div class="part-25-card">
                             <h2 >Proposed Financial Plan</h2>

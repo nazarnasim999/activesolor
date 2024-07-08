@@ -254,7 +254,7 @@ img.short-logo {
 }
 
 .section-4-card {
-  width: 18%;
+  width: 225px;
   height: 25vh;
   background-color: rgb(255, 255, 255);
   filter: drop-shadow(rgba(153, 153, 153, 0.75) 5px 4px 24px);
@@ -331,7 +331,7 @@ img.short-logo {
 }
 
 .section-5-card {
-  width: 46%;
+  width: 500px;
   border-radius: 6px;
   background-color: rgb(255, 255, 255);
   padding: 50px 18px 35px;
@@ -723,7 +723,7 @@ section.section-11 {
 }
 
 .section-11-box-card {
-  width: 95%;
+  width: 305px;
   background-color: rgb(255, 255, 255);
   border-radius: 6px;
   padding: 30px 15px 100px;
@@ -798,7 +798,7 @@ section.section-12 {
 }
 
 .section-12-list {
-  width: 60%;
+  width: 740px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -872,7 +872,7 @@ section.section-12 {
 }
 
 img.images-with {
-  width: 70% !important;
+  width: 100% !important;
 }
 
 .site {
@@ -880,12 +880,13 @@ img.images-with {
 }
 
 .jaduhe-box {
-  width: 46%;
+  width: 405px;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
   padding: 24px;
   position: relative;
+  height: 270px;
 }
 
 .jaduhe-box span {
@@ -1228,7 +1229,7 @@ section.section-22 {
 }
 
 .section-22-list-1 {
-  width: 27%;
+  width: 335px;
   border-radius: 6px;
   background-color: rgb(255, 255, 255);
   filter: drop-shadow(rgba(160, 160, 160, 0.75) 7px 7px 10px);
@@ -1269,7 +1270,8 @@ section.section-22 {
 }
 
 .section-22-card {
-  width: 32%;
+  width: 235px;
+  height: 17vh;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   padding: 15px;
@@ -1354,7 +1356,7 @@ section.section-23 {
 }
 
 .card-23 {
-  width: 34%;
+  width: 400px;
   height: 100%;
   background-color: rgb(255, 255, 255);
   padding: 20px;
@@ -1401,11 +1403,11 @@ section.section-23 {
 }
 
 .box-btn-23 span {
-  padding: 14px 10px;
+  padding: 10px 10px;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
   display: flex;
-  width: 5%;
+  width: 50px;
   align-items: center;
   justify-content: center;
   filter: drop-shadow(rgba(160, 160, 160, 0.75) 7px 7px 10px);
@@ -1433,7 +1435,7 @@ section.section-23 {
   line-height: normal;
   padding: 12px;
   border-radius: 50px;
-  width: 28%;
+  width: 295px ;
   background-color: rgb(255, 255, 255);
   border: none;
 }
@@ -1617,7 +1619,7 @@ section.secton-25 {
 }
 
 .part-25-card {
-  width: 33%;
+  width: 430px;
   background-color: rgb(255, 255, 255);
   filter: drop-shadow(rgba(160, 160, 160, 0.75) 7px 7px 10px);
   border-radius: 6px;
@@ -1714,7 +1716,7 @@ section.secton-25 {
 }
 
 .Solar-card {
-  width: 72%;
+  width:685px;
   background-color: rgb(255, 255, 255);
   filter: drop-shadow(rgba(160, 160, 160, 0.75) 7px 7px 10px);
   border-radius: 6px;
@@ -1810,7 +1812,7 @@ section.section-28 {
 }
 
 .list-28-1 {
-  width: 29%;
+  width: 410px;
   background-image: url("../images/section-11.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -1937,12 +1939,13 @@ section.section-28 {
 .dash-bol {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 20px;
+  gap: 30px;
 }
 
 .dash-list.black {
-  width: 48%;
+  width: 400px;
   border: 1px solid rgb(18, 38, 170);
   padding: 10px 20px;
 }
@@ -2012,7 +2015,7 @@ section.section-go-2 {
 
 .list-30-1 {
   height: 476px;
-  width: 38%;
+  width: 400px;
   background-color: rgb(255, 255, 255);
   border-radius: 6px;
   filter: drop-shadow(rgba(160, 160, 160, 0.75) 7px 7px 10px);
@@ -4036,14 +4039,123 @@ section.section-sixty {
 
 
 
+section.section-220 {
+  width: 100%;
+  height: 100vh;
+  padding: 2%;
+  background-image: url(../images/hel-btn-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
+.main-sec-220 {
+  width: 100%;
+}
 
+.sec-220-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
 
+.sec-220-box-btn {
+  width: 49%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  position: relative;
+  gap: 40px;
+}
+
+.sec-220-box-btn button {
+  background: transparent;
+  border: none;
+  position: absolute;
+
+}
+.sec-220-box-btn button img {
+    width: 100%;
+}
+button.bt-hl-box {
+  left: 0px;
+  width: 60%;
+}
+
+button.bt-hl-1 {top: 120px;right: 60px; width: 82%;}
+
+button.bt-hl-2 {top: 220px;right: 60px; width: 58%;}
+
+button.bt-hl-3 {top: 265px;right: 60px; width: 88%;}
+
+button.bt-hl-4 {top: 200px;right: 60px; width: 100%;}
 /********* Proposed Financial Plan ***********/
 
 
 
+section.section-150 {
+  width: 100%;
+  padding: 2%;
+  background-image: url(../images/bg-150.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
+.main-section-150 {
+  width: 100%;
+  position: relative;
+}
+
+.section-150-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.section-150-part-1 {
+  width: 32%;
+  height: 94vh;
+}
+
+.section-150-part-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-150-part-2 {
+  width: 45%;
+}
+
+.chart-part-150-box {
+  width: 100%;
+}
+
+.chart-part-150-box img {
+  width: 100%;
+}
+
+.chart-part-150-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-part-150-btn button {
+  border: none;
+  background: transparent;
+  width: 48%;
+}
+
+.chart-part-150-btn button img {
+  width: 100%;
+}
 
 /********* Loan Monthly Payment Section Start ***********/
 
@@ -4052,7 +4164,7 @@ section.section-sixty {
 .loan-montly-payment {
   background: url(../images/loan-proposed-monthly-payment-img.png) no-repeat top center;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   padding: 10px 50px 50px 50px;
 }
@@ -4214,7 +4326,7 @@ section.section-sixty {
 
 
 .proposed-monthly-payment {
-  width: 40%;
+  width: 480px;
 }
 
 .loan-proposed-flex {
@@ -4446,7 +4558,9 @@ section.section-sixty {
   .aicon-before-bg::before {
     width: 116%;
 }
-
+button.bt-hl-4 {
+  top: 220px;
+}
 }
 
 @media only screen and (max-width: 1366px) {
@@ -4539,6 +4653,19 @@ section.section-sixty {
     right: -100px;
   }
 
+
+
+  button.bt-hl-2 {
+    top: 170px;
+}
+
+button.bt-hl-3 {
+    top: 195px;
+}
+
+button.bt-hl-4 {
+    top: 160px;
+}
   .sec-38-btn button {
     padding: 8px 14px 8px 20%;
   }
@@ -5338,7 +5465,10 @@ section.section-sixty {
   .section-11-box-card ul li {
     font-size: 14px;
   }
-
+  .section-22-cards {
+    flex-direction: column;
+    gap: 15px;
+}
   .section-3-list p {
     font-size: 16px;
   }
@@ -5357,7 +5487,28 @@ section.section-sixty {
     padding-bottom: 40px;
     height: 100%;
   }
+  .section-22-cards {
+    flex-direction: column;
+    gap: 15px;
+}
 
+.sec-220-box-btn {
+    width: 75%;
+}
+
+button.bt-hl-box {}
+
+button.bt-hl-4 {
+    top: 154px;
+}
+
+button.bt-hl-3 {
+    top: 200px;
+}
+
+button.bt-hl-2 {
+    top: 175px;
+}
   .section-5-card {
     width: 100%;
   }
@@ -5991,11 +6142,64 @@ section.section-sixty {
   .section-1-imger {
     width: 100%;
   }
+  .section-150-box {
+    position: relative;
+    flex-direction: column;
+    top: 30px;
+}
 
+.section-150-part-1 {
+    width: 100%;
+    height: 60vh;
+}
+
+.section-150-part-2 {
+    width: 100%;
+}
+
+.chart-part-150-btn button {
+    width: 70%;
+}
   .section-1-tital {
     width: 100%;
   }
+  section.section-23 {
+    height: 100vh;
+}
 
+.sec-220-box-btn {
+    width: 100%;
+}
+
+button.bt-hl-box {
+    left: 70px;
+    width: 68%;
+}
+
+button.bt-hl-1 {
+    width: 92%;
+    right: 5px;
+}
+
+button.bt-hl-2 {
+    top: 170px;
+    right: 5px;
+    width: 64%;
+}
+
+button.bt-hl-3 {
+    top: 190px;
+    right: 5px;
+    width: 100%;
+}
+
+button.bt-hl-4 {
+    right: 5px;
+    width: 100%;
+    top: 155px;
+    max-width: 465px;
+    min-width: 465px;
+}
   .main-section-38 {
     flex-direction: column;
   }
