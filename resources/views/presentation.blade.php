@@ -1177,72 +1177,9 @@
 
 
 
-        <div class="mySlides fade">
-            <section class="section-4">
-                <div class="main-section-4">
-                    <div class="section-4-logo">
-                        <a href="#"> <img src="/images/logo.png" alt=""></a>
-                    </div>
-                    <div class="section-4-box">
-                        <div class="section-4-btn">
-                            <a href="#"><img src="/images/process.png" alt=""></a>
-                        </div>
-                        <div class="section-4-boxing">
-                            <div class="section-4-card">
-                                <img src="/images/s4-1.png" alt="">
-                                <h2>Soft Credit Check & Sign Service Agreement</h2>
-                                <span>1</span>
-                            </div>
-                            <div class="section-4-card">
-                                <img src="/images/s4-1.png" alt="">
-                                <h2>Site Survey</h2>
-                                <span>2</span>
-                            </div>
-                            <div class="section-4-card">
-                                <img src="/images/s4-1.png" alt="">
-                                <h2>Permits & <br>
-                                    Utility Approvals</h2>
-                                <span>3</span>
-                            </div>
-                            <div class="section-4-card">
-                                <img src="/images/s4-1.png" alt="">
-                                <h2>Installation</h2>
-                                <span>4</span>
-                            </div>
-                            <div class="section-4-card">
-                                <img src="/images/s4-1.png" alt="">
-                                <h2>Inspection & <br>
-                                    Activation</h2>
-                                <span>5</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
 
 
 
-
-
-        <div class="mySlides fade">
-            <section class="section-35">
-                <div class="mian-section-35">
-                    <div class="section-14-logo">
-                        <a href="#"> <img src="/images/logo.png" alt=""></a>
-                    </div>
-                    <div class="section-35-box">
-                        <div class="section-35-list-1">
-                            <button class="befor-and after">Before Solar </button>
-                            <button class="befor-and after">After Solar </button>
-                        </div>
-                        <div class="section-35-list-2">
-                            <img src="/images/before and after 1.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
 
 
 
@@ -2129,9 +2066,72 @@
 
 
 
+        <div class="mySlides fade">
+            <section class="section-35">
+                <div class="mian-section-35">
+                    <div class="section-14-logo">
+                        <a href="#"> <img src="/images/logo.png" alt=""></a>
+                    </div>
+                    <div class="section-35-box">
+                        <div class="section-35-list-1">
+                            <button class="befor-and after">Before Solar </button>
+                            <button class="befor-and after">After Solar </button>
+                        </div>
+                        <div class="section-35-list-2">
+                            <img src="/images/before and after 1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
 
 
+
+
+        <div class="mySlides fade">
+            <section class="section-4">
+                <div class="main-section-4">
+                    <div class="section-4-logo">
+                        <a href="#"> <img src="/images/logo.png" alt=""></a>
+                    </div>
+                    <div class="section-4-box">
+                        <div class="section-4-btn">
+                            <a href="#"><img src="/images/process.png" alt=""></a>
+                        </div>
+                        <div class="section-4-boxing">
+                            <div class="section-4-card">
+                                <img src="/images/s4-1.png" alt="">
+                                <h2>Soft Credit Check & Sign Service Agreement</h2>
+                                <span>1</span>
+                            </div>
+                            <div class="section-4-card">
+                                <img src="/images/s4-1.png" alt="">
+                                <h2>Site Survey</h2>
+                                <span>2</span>
+                            </div>
+                            <div class="section-4-card">
+                                <img src="/images/s4-1.png" alt="">
+                                <h2>Permits & <br>
+                                    Utility Approvals</h2>
+                                <span>3</span>
+                            </div>
+                            <div class="section-4-card">
+                                <img src="/images/s4-1.png" alt="">
+                                <h2>Installation</h2>
+                                <span>4</span>
+                            </div>
+                            <div class="section-4-card">
+                                <img src="/images/s4-1.png" alt="">
+                                <h2>Inspection & <br>
+                                    Activation</h2>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
 
 
