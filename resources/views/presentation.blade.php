@@ -1740,7 +1740,11 @@
                     <img src="/images/payment-options-img.png" class="payment-option-img" alt="">
                     <img src="/images/payment-dummy-calculator.png" class="dummy-calculator-img" alt="">
                 </div>
+
+
                 <div class="loan-montly-flex loan-proposed-flex">
+
+
                     <div class="proposed-monthly-payment">
                         <div class="proposed-monthly-payment-box">
                             <h2>Proposed Monthly Payment</h2>
@@ -1772,6 +1776,9 @@
                             </div>
                         </div>
                     </div>
+
+
+
                     <div class="loan-monthly-box loan-proposed-set">
                         <div class="loan-monthly-textbox">
                             <div class="monthly-dollar-txt">
@@ -1858,8 +1865,49 @@
                     <img src="/images/payment-options-img.png" class="payment-option-img" alt="">
                     <img src="/images/payment-dummy-calculator.png" class="dummy-calculator-img" alt="">
                 </div>
-                <div class="loan-montly-flex">
-                    <div class="loan-monthly-box">
+                <div class="loan-montly-flex loan-proposed-flex">
+                    
+
+
+
+                    <div class="proposed-monthly-payment">
+                        <div class="proposed-monthly-payment-box">
+                            <h2>Proposed Monthly Payment</h2>
+                            <div class="proposed-monthly-texbox">
+                                <div class="finance-amount-txt">
+                                    <h4>Financed & Amount</h4>
+                                    <h5>$29,157.56</h5>
+                                </div>
+                                <div class="federal-txtbox">
+                                    <h4>Federal Tax Credit</h4>
+                                    <h5>-$8,747</h5>
+                                </div>
+                                <div class="totalcredit-txtbox">
+                                    <h4>Total Tax Credit</h4>
+                                    <h5>-$13,747</h5>
+                                </div>
+                                <div class="netcost-txtbox">
+                                    <h4>Net Cost</h4>
+                                    <h5>$15,410</h5>
+                                </div>
+                                <div class="planterms-txtbox">
+                                    <h4>Plan Terms</h4>
+                                    <h5>25 Years</h5>
+                                </div>
+                                <div class="planterms-txtbox">
+                                    <h4>APR</h4>
+                                    <h5>8.99%</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                
+                    <div class="loan-monthly-box ">
                         <div class="loan-monthly-textbox">
                             <div class="monthly-dollar-txt">
                                 <h6>Monthly</h6>
@@ -1931,6 +1979,7 @@
                          </div>
                         </div>
                     </div>
+
                 </div>
             </section>
         </div>
