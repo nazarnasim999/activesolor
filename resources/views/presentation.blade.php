@@ -1984,12 +1984,6 @@
         </div>
 
 
-
-
-
-
-      
-
         <div class="mySlides fade">
             <section class="section-35">
                 <div class="mian-section-35">
@@ -2009,6 +2003,7 @@
             </section>
         </div>
 
+        
         <div class="mySlides fade">
             <section class="section-4">
                 <div class="main-section-4">
