@@ -486,7 +486,7 @@
 
 
 
-       
+
 
 
 
@@ -531,7 +531,7 @@
         </div>
         @endif
 
-        <div class="mySlides fade">    
+        <div class="mySlides fade">
             <section class="section-150">
                 <div class="main-section-150">
                     <div class="section-15-logo">
@@ -543,14 +543,14 @@
                     <img src="/images/sec-150.png" alt="">
                     </div>
 
-                    <div class="section-150-part-2"> 
+                    <div class="section-150-part-2">
                         <div class="chart-part-150-btn">
                             <button><img src="/images/long-btn.png" alt=""></button>
                         </div>
                         <div class="chart-part-150-box">
                         <img src="/images/box-150.png" alt="">
                         </div>
-                       
+
                     </div>
                     </div>
 
@@ -559,7 +559,7 @@
             </section>
         </div>
 
-        
+
 
         @if ($basic->providers =='O&R')
         <div class="mySlides fade">
@@ -1018,7 +1018,7 @@
 
 
 
-<!-- 
+<!--
         <div class="mySlides fade">
             <section class="section-24">
                 <div class="main-section-24">
@@ -1144,8 +1144,8 @@
         </div>
 
 
-        <div class="mySlides fade"> 
-        <section class="section-220"> 
+        <div class="mySlides fade">
+        <section class="section-220">
             <div class="main-sec-220">
             <div class="logo-section-22">
                         <img src="/images/a-logo.png" alt="">
@@ -2126,13 +2126,13 @@
         </div>
 
 
-        <div class="mySlides fade">
+        {{-- <div class="mySlides fade">
             <section class="section-7">
                 <div class="main-section-7">
                     <img src="/images/financial-proposed-sunnova.png" alt="">
                 </div>
             </section>
-        </div>
+        </div> --}}
 
 
         {{-- <div class="mySlides fade">
@@ -2252,26 +2252,20 @@ var ctx = document.getElementById('myChart').getContext('2d');
             }
         });
 
-        var productionData = @json($productionData);
+        var finalData = @json($finalData);
         var ctx = document.getElementById('myCharts').getContext('2d');
         var myCharts = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22',
+                    '23', '24', '25', '26' , '27' , '28' , '29' , '30'
+                ],
                 datasets: [
                     {
-                    label: 'Production',
-                    data: productionData,
-                    backgroundColor: '#D7300C',
-                    borderColor: '#D7300C',
-                    borderWidth: 1
-                },
-
-                {
-                    label: 'Consumption',
-                    data: data,
-                    backgroundColor: '#198FDC',
-                    borderColor: '#198FDC',
+                    label: 'Analysis',
+                    data: finalData,
+                    backgroundColor: '#2A9DE7',
+                    borderColor: '#2A9DE7',
                     borderWidth: 1
                 },
 
@@ -2345,6 +2339,6 @@ var ctx = document.getElementById('myChart').getContext('2d');
 <style>
 
 #myChart {
-            background-color: black;
+            background-color: #454849;
         }
     </style>
