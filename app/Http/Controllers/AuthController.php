@@ -612,10 +612,6 @@ class AuthController extends Controller
 
 
 
-
-
-
-
     return view('presentation', ['basic' => $basic, 'deal' => $deal, 'history' => $history, 'month' => $month,  'monthlyData' => $monthlyData,
     'productionData' => $productionData,
 
