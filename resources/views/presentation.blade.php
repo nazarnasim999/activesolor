@@ -35,7 +35,18 @@
                 </div>
             </section>
         </div>
-        
+
+        {{-- <div class="mySlides fade">
+            <div style="width: 50%; margin: auto;">
+                <canvas id="myChart"></canvas>
+            </div>
+
+
+        </div> --}}
+
+
+
+
 
 
 
@@ -1058,9 +1069,14 @@
                             <p>When you produce more electricity than you use it will be credited into your virtual energy bank with your utility company.</p>
                         </div>
                         <div class="section-22-list-2">
-                            <div class="section-22-dashbord">
+                            {{-- <div class="section-22-dashbord">
                                 <img src="/images/dashbord.png" alt="">
+                            </div> --}}
+
+                            <div style="width: 100%; margin: auto;">
+                                <canvas id="myChart" width="100%" height="50px"></canvas>
                             </div>
+                            <br>
                             <div class="section-22-cards">
                                 <div class="section-22-card">
                                     <span>
@@ -2056,12 +2072,19 @@
         </div>
 
 
+        {{-- <div class="mySlides fade">
+
+
+
+        </div> --}}
+
+
         <div class="mySlides fade">
-            <section class="section-7">
-                <div class="main-section-7">
-                    <img src="/images/break-even-analysis.png" alt="">
-                </div>
-            </section>
+            <div style="width: 100%; margin: auto;">
+                <canvas id="myCharts"></canvas>
+            </div>
+
+
         </div>
 
 
@@ -2169,9 +2192,120 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script>
+var data = @json($monthlyData);
+var productionData = @json($productionData);
+console.log(data)
+var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                datasets: [
+                    {
+                    label: 'Production',
+                    data: productionData,
+                    backgroundColor: '#D7300C',
+                    borderColor: '#D7300C',
+                    borderWidth: 1
+                },
+
+                {
+                    label: 'Consumption',
+                    data: data,
+                    backgroundColor: '#198FDC',
+                    borderColor: '#198FDC',
+                    borderWidth: 1
+                },
+
+
+
+
+            ]
+            },
+
+            options: {
+                scales: {
+                    y: {
+                        display: true,
+                        beginAtZero: true
+                    },
+                    x: {
+                        grid: {
+                            display: false,
+                            color: 'white'
+                        },
+                        ticks: {
+                            color: 'white'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'white'
+                        }
+                    }
+                }
+            }
+        });
+
+        var productionData = @json($productionData);
+        var ctx = document.getElementById('myCharts').getContext('2d');
+        var myCharts = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                datasets: [
+                    {
+                    label: 'Production',
+                    data: productionData,
+                    backgroundColor: '#D7300C',
+                    borderColor: '#D7300C',
+                    borderWidth: 1
+                },
+
+                {
+                    label: 'Consumption',
+                    data: data,
+                    backgroundColor: '#198FDC',
+                    borderColor: '#198FDC',
+                    borderWidth: 1
+                },
+
+
+
+
+            ]
+            },
+
+            options: {
+                scales: {
+                    y: {
+                        display: true,
+                        beginAtZero: true
+                    },
+                    x: {
+                        grid: {
+                            display: false,
+                            color: 'white'
+                        },
+                        ticks: {
+                            color: 'white'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'white'
+                        }
+                    }
+                }
+            }
+        });
         let slideIndex = 1;
         showSlides(slideIndex);
 
@@ -2207,3 +2341,10 @@
 
 
 </html>
+
+<style>
+
+#myChart {
+            background-color: black;
+        }
+    </style>
