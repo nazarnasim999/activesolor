@@ -151,7 +151,9 @@
                                     <option value="" disabled selected hidden>Infinity</option>
                                     <option value="Infinity">Infinity</option>
                                     <option value="Patriot">Patriot</option>
-                                    <option value="Skyline">Skyline</option>
+                                    <option value="SunPower">SunPower</option>
+                                    <option value="Freedom Forever">Freedom Forever</option>
+
 
                                 </select>
                             </div>
@@ -299,24 +301,62 @@
                         <div class="brayn-form">
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Deal Type</label>
-                                <select name="loan" id="cars">
-                                    <option value="" disabled selected hidden>Loan</option>
-                                    <option value="Loan1">Loan</option>
-                                    <option value="Loan2">PPA</option>
-                                    <option value="Loan2">Cash</option>
-
+                                <select name="loan" id="dealType" onchange="updateLenderOptions()">
+                                    <option value="" disabled selected hidden>Select Deal Type</option>
+                                    <option value="Loan">Loan</option>
+                                    <option value="PPA">PPA</option>
+                                    <option value="Cash">Cash</option>
                                 </select>
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Lender</label>
-                                <select name="lender" id="cars">
-                                    <option value="" disabled selected hidden>Good Leap</option>
-                                    <option value="Goodleap">Goodleap</option>
-                                    <option value="Dividend">Dividend</option>
-                                    <option value="Sunnova">Sunnova</option>
-
+                                <select name="lender" id="lender">
+                                    <option value="" disabled selected hidden>Select Lender</option>
                                 </select>
                             </div>
+
+
+                            <div class="brayn-in-grouop part-2" id="escalatorGroup" style="display: none;">
+                                <label for="#">Escalator</label>
+                                <input type="text" placeholder="Type Here..." name="escalator">
+                            </div>
+
+
+                            <div class="brayn-in-grouop part-2" id="PPW" style="display: none;">
+                                <label for="#">PPW Rate</label>
+                                <input type="text" placeholder="Type Here..." name="ppw">
+                            </div>
+
+                            {{-- <div class="brayn-in-grouop part-2" id="Average" style="display: none;">
+                                <label for="#">Average Utillity Payment</label>
+                                <input type="text" placeholder="Type Here..." name="averageutility">
+                            </div>
+
+
+                            <div class="brayn-in-grouop part-2" id="ppamonth" style="display: none;">
+                                <label for="#">PPA Monthly Bill</label>
+                                <input type="text" placeholder="Type Here..." name="ppamonth">
+                            </div>
+
+                            <div class="brayn-in-grouop part-2" id="totalbill" style="display: none;">
+                                <label for="#">TOTAL BILL</label>
+                                <input type="text" placeholder="Type Here..." name="totalbill">
+                            </div> --}}
+
+                            {{-- <div class="brayn-in-group part-2">
+                                <label for="dealType">Deal Type</label>
+                                <select name="lender" id="lender">
+                                    <option value="" disabled selected hidden>Select Lender</option>
+                                </select>
+                            </div> --}}
+                            {{-- <div class="brayn-in-group part-2">
+                                <label for="lender">Lender</label>
+                                <select name="lender" id="lender">
+                                    <option value="" disabled selected hidden>Select Lender</option>
+                                </select>
+                            </div> --}}
+
+
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Loan Term</label>
                                 <input type="text" placeholder="Type Here..." name="loan_term">
@@ -430,6 +470,52 @@
 
 
     <script>
+
+function updateLenderOptions() {
+        const dealType = document.getElementById("dealType").value;
+        const lenderDropdown = document.getElementById("lender");
+        const escalatorGroup = document.getElementById("escalatorGroup");
+        const PPW = document.getElementById("PPW");
+        const Average = document.getElementById("Average");
+        const ppamonth = document.getElementById("ppamonth");
+        const totalbill = document.getElementById("totalbill");
+
+
+
+
+
+        // Clear the existing options
+        lenderDropdown.innerHTML = '<option value="" disabled selected hidden>Select Lender</option>';
+
+        // Add options based on the selected deal type
+        if (dealType === "Loan") {
+            lenderDropdown.innerHTML += '<option value="Goodleap">Goodleap</option>';
+            lenderDropdown.innerHTML += '<option value="Dividend">Dividend</option>';
+            lenderDropdown.innerHTML += '<option value="Sunnova">Sunnova</option>';
+            escalatorGroup.style.display = 'none';
+            PPW.style.display = 'none';
+            Average.style.display = 'none';
+            ppamonth.style.display = 'none';
+            totalbill.style.display = 'none';
+
+
+
+
+
+        } else if (dealType === "PPA") {
+            lenderDropdown.innerHTML += '<option value="Sunnova">Sunnova</option>';
+            lenderDropdown.innerHTML += '<option value="IGS">IGS</option>';
+            escalatorGroup.style.display = 'block';
+
+            PPW.style.display = 'block';
+            Average.style.display = 'block';
+            ppamonth.style.display = 'block';
+            totalbill.style.display = 'block';
+        }
+        else {
+        escalatorGroup.style.display = 'none';
+    }
+    }
 
 
 function updateProviders() {

@@ -104,6 +104,11 @@ class AuthController extends Controller
        $deal = new Dealtype;
        $deal->fill($request->all());
        $deal->user_id = auth()->user()->id;
+       $forms1 = $request->yearly_consumption / 12;
+       $deal->averageutility = $request->average / $forms1;
+       $forms2 = $request->yearly_production * $request->ppw;
+       $deal->ppamonth = $forms2 / 12;
+       $deal->totalbill = $request->packeage + $deal->ppamonth;
 
 
 
@@ -150,12 +155,15 @@ class AuthController extends Controller
 
     public function presentation($basicId, $dealId, $historyId, $monthId)
 {
+
     $basic = Basicinfo::find($basicId);
     $deal = Dealtype::find($dealId);
     $history = Historicinformation::find($historyId);
     $month = Monthlypayment::find($monthId);
 
     $yearly_production = $history->yearly_production;
+    $systems = $basic->production;
+    $systemsfinal = $systems/ 12;
 
     $monthlyData = [
         $history->january,
@@ -176,18 +184,18 @@ class AuthController extends Controller
 
 
     $productionData = [
-        $yearly_production * 0.64806,
-        $yearly_production * 0.785053792,
-        $yearly_production * 1.07114734,
-        $yearly_production * 1.13546141,
-        $yearly_production * 1.37978349,
-        $yearly_production * 1.42329502,
-        $yearly_production * 1.40568593,
-        $yearly_production * 1.34389375,
-        $yearly_production * 1.05070765,
-        $yearly_production * 0.764052789,
-        $yearly_production * 0.552649515,
-        $yearly_production * 0.440487804,
+        $systemsfinal * 0.64806,
+        $systemsfinal * 0.785053792,
+        $systemsfinal * 1.07114734,
+        $systemsfinal * 1.13546141,
+        $systemsfinal * 1.37978349,
+        $systemsfinal * 1.42329502,
+        $systemsfinal * 1.40568593,
+        $systemsfinal * 1.34389375,
+        $systemsfinal * 1.05070765,
+        $systemsfinal * 0.764052789,
+        $systemsfinal * 0.552649515,
+        $systemsfinal * 0.440487804,
     ];
 
 

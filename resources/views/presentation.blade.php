@@ -1008,7 +1008,7 @@
                 </div>
             </section>
         </div>
-        
+
 
 
 
@@ -1150,7 +1150,7 @@
 
 
 
-        @if ($deal->lender =='Sunnova')
+        @if ( $deal->loan == 'Loan' &&  $deal->lender =='Sunnova')
         <div class="mySlides fade">
             <section class="secton-25">
                 <div class="main-section-25">
@@ -1328,8 +1328,13 @@
             </section>
         </div>
         @endif
-<!-- 
+<!--
        {hdvtyftydec} -->
+
+
+
+
+       @if ($deal->lender =='IGS')
        <div class="mySlides fade">
             <section class="proposed-financial-sec">
                 <div class="proposed-finance-flex">
@@ -1342,27 +1347,27 @@
                             </div>
                             <div class="average-box">
                                 <h4>Average Utility Payment</h4>
-                                <h5>$0.296</h5>
-                                <span>$.25</span>
+                                <h5>{{$deal->ppw ?? ''}}</h5>
+                                <span>{{$deal->ppw ?? ''}}</span>
                             </div>
                             <div class="average-box">
                                 <h4>Est Monthly Utility Bill</h4>
-                                <h5>$185</h5>
-                                <span>$9.62</span>
+                                <h5>{{$basic->average ?? ''}}</h5>
+                                <span>{{$basic->package ?? ''}}</span>
                             </div>
                             <div class="average-box">
                                 <h4>Monthly Solar Bill</h4>
-                                <span>$172.35</span>
+                                <span>{{$deal->ppamonth}}</span>
                             </div>
                             <div class="total-bill-box">
                                 <h3>TOTAL BILL</h3>
-                                <h4>$186</h4>
-                                <h5>$181.97</h5>
+                                <h4>{{$basic->average ?? ''}}</h4>
+                                <h5>{{$deal->totalbill}}</h5>
                             </div>
                             <div class="yearly-increase-box">
                                 <h3>Yearly Increases</h3>
                                 <h4>??? <span>(National Average last year was 14%)</span></h4>
-                                <h5>2.9%</h5>
+                                <h5>{{$deal->escalator}}</h5>
                             </div>
                         </div>
                     </div>
@@ -1383,7 +1388,12 @@
             </section>
         </div>
 
+        @endif
 
+
+
+
+        @if ($deal->loan == 'PPA' && $deal->lender =='Dividend')
         <div class="mySlides fade">
             <section class="proposed-financial-sec">
                 <div class="proposed-finance-flex">
@@ -1396,27 +1406,27 @@
                             </div>
                             <div class="average-box">
                                 <h4>Average Utility Payment</h4>
-                                <h5>$0.296</h5>
-                                <span>$.25</span>
+                                <h5>{{$deal->ppw ?? ''}}</h5>
+                                <span>{{$deal->ppw ?? ''}}</span>
                             </div>
                             <div class="average-box">
                                 <h4>Est Monthly Utility Bill</h4>
-                                <h5>$185</h5>
-                                <span>$9.62</span>
+                                <h5>{{$basic->average ?? ''}}</h5>
+                                <span>{{$basic->package ?? ''}}</span>
                             </div>
                             <div class="average-box">
                                 <h4>Monthly Solar Bill</h4>
-                                <span>$172.35</span>
+                                <span>{{$deal->ppamonth ?? ''}}</span>
                             </div>
                             <div class="total-bill-box">
                                 <h3>TOTAL BILL</h3>
-                                <h4>$186</h4>
-                                <h5>$181.97</h5>
+                                <h4>{{$basic->average ?? ''}}</h4>
+                                <h5>{{$deal->totalbill?? ''}}</h5>
                             </div>
                             <div class="yearly-increase-box">
                                 <h3>Yearly Increases</h3>
                                 <h4>??? <span>(National Average last year was 14%)</span></h4>
-                                <h5>2.9%</h5>
+                                <h5>{{$deal->escalator ?? ''}}</h5>
                             </div>
                         </div>
                     </div>
@@ -1437,12 +1447,14 @@
             </section>
         </div>
 
-<!-- 
+        @endif
+
+<!--
        {hdvtyftydec} -->
 
 
 
-       
+       @if ($deal->lender =='IGS')
        <div class="mySlides fade">
             <section class="section-7">
                 <div class="main-section-7">
@@ -1450,6 +1462,7 @@
                 </div>
             </section>
         </div>
+        @endif
 
         @if ($deal->lender =='Dividend')
         <div class="mySlides fade">
@@ -1544,6 +1557,9 @@
         @endif
 
 
+
+
+
         <div class="mySlides fade">
             <section class="section-sixty">
                 <div class="main-dasborad-site">
@@ -1561,34 +1577,41 @@
                     <div class="dash-site-list-2">
                         <div class="site-box-card">
                             <div class="Cost-btn-box">
-                                <img src="/images//freedowm.png" alt="">
+                                @if ($basic->installer == 'Freedom Forever')
+                                <img src="/images/freedowm.png" alt="">
+                                @elseif ($basic->installer == 'SunPower')
+                                <img src="/images/sunpower.png" alt="">
+
+                                @elseif ($basic->installer == 'Infinity')
+                                <img src="/images/infinity.png" alt="">
+                                @endif
                                 <button>Solar Cost Breakdown</button>
                             </div>
                             <div class="Cost-list-box">
                                 <span>
                                     <h2>Total Project Cost</h2>
-                                    <h2>$19,168</h2>
+                                    <h2>{{$deal->total_finance ??  ''}}</h2>
                                 </span>
 
                                 <span>
                                     <h2>Federal Tax Credit</h2>
-                                    <h2>$19,168</h2>
+                                    <h2>{{$deal->federal_tax ??  ''}}</h2>
                                 </span>
 
                                 <span>
                                     <h2>State Tax Credit</h2>
-                                    <h2>$19,168</h2>
+                                    <h2>{{$deal->state_tax ??  ''}}</h2>
                                 </span>
 
                                 <span>
                                     <h2>Total Tax Credit</h2>
-                                    <h2>$19,168</h2>
+                                    <h2>{{$deal->total_tax ??  ''}}</h2>
                                 </span>
                             </div>
                             <div class="cost-btn-listing">
                                 <button>
                                     <h2>NET Cost</h2>
-                                    <h2>$19,168</h2>
+                                    <h2>{{$deal->net_cost ??  ''}}</h2>
                                 </button>
                             </div>
                         </div>
@@ -1596,6 +1619,10 @@
                 </div>
             </section>
         </div>
+
+
+
+        @if ($deal->loan == 'Loan' && $basic->state == 'NY')
 
 
         <div class="mySlides fade">
@@ -1616,27 +1643,31 @@
                             <div class="proposed-monthly-texbox">
                                 <div class="finance-amount-txt">
                                     <h4>Financed & Amount</h4>
-                                    <h5>$29,157.56</h5>
+                                    <h5>{{$deal->total_finance ?? ''}}</h5>
                                 </div>
                                 <div class="federal-txtbox">
                                     <h4>Federal Tax Credit</h4>
-                                    <h5>-$8,747</h5>
+                                    <h5>{{$deal->federal_tax ?? ''}}</h5>
+                                </div>
+                                <div class="totalcredit-txtbox">
+                                    <h4>State Tax Credit</h4>
+                                    <h5>{{$deal->state_tax ?? ''}}</h5>
                                 </div>
                                 <div class="totalcredit-txtbox">
                                     <h4>Total Tax Credit</h4>
-                                    <h5>-$13,747</h5>
+                                    <h5>{{$deal->total_tax ?? ''}}</h5>
                                 </div>
                                 <div class="netcost-txtbox">
                                     <h4>Net Cost</h4>
-                                    <h5>$15,410</h5>
+                                    <h5>{{$deal->net_cost ?? ''}}</h5>
                                 </div>
                                 <div class="planterms-txtbox">
                                     <h4>Plan Terms</h4>
-                                    <h5>25 Years</h5>
+                                    <h5>{{$deal->loan_term}} Years</h5>
                                 </div>
                                 <div class="planterms-txtbox">
                                     <h4>APR</h4>
-                                    <h5>8.99%</h5>
+                                    <h5>{{$deal->apr}}%</h5>
                                 </div>
                             </div>
                         </div>
@@ -1648,7 +1679,7 @@
                         <div class="loan-monthly-textbox">
                             <div class="monthly-dollar-txt">
                                 <h6>Monthly</h6>
-                                <h4>$181</h4>
+                                <h4>${{$month->Reamorization}}</h4>
                             </div>
                             <div class="monthly-paymen-txt">
                                 <h6>Payment</h6>
@@ -1672,7 +1703,7 @@
                             <div class="loan-monthly-textbox">
                                 <div class="monthly-dollar-txt">
                                     <h6>Monthly</h6>
-                                    <h4>$181</h4>
+                                    <h4>${{$month->basic_service_charge}}</h4>
                                 </div>
                                 <div class="monthly-paymen-txt">
                                     <h6>Payment</h6>
@@ -1697,7 +1728,7 @@
                             <div class="loan-monthly-textbox">
                                 <div class="monthly-dollar-txt">
                                     <h6>Monthly</h6>
-                                    <h4>$181</h4>
+                                    <h4>${{$month->basic_service_charge}}</h4>
                                 </div>
                                 <div class="monthly-paymen-txt">
                                     <h6>Payment</h6>
@@ -1719,7 +1750,11 @@
                 </div>
             </section>
         </div>
+        @endif
 
+
+
+        @if ($deal->loan == 'Loan' && $basic->state == 'CT')
         <div class="mySlides fade">
             <section class="loan-montly-payment">
                 <div class="loan-payment-header">
@@ -1728,11 +1763,45 @@
                     <img src="/images/payment-dummy-calculator.png" class="dummy-calculator-img" alt="">
                 </div>
                 <div class="loan-montly-flex loan-proposed-flex">
-                    
 
 
 
                     <div class="proposed-monthly-payment">
+                        <div class="proposed-monthly-payment-box">
+                            <h2>Proposed Monthly Payment</h2>
+                            <div class="proposed-monthly-texbox">
+                                <div class="finance-amount-txt">
+                                    <h4>Financed & Amount</h4>
+                                    <h5>{{$deal->total_finance ?? ''}}</h5>
+                                </div>
+                                <div class="federal-txtbox">
+                                    <h4>Federal Tax Credit</h4>
+                                    <h5>{{$deal->federal_tax ?? ''}}</h5>
+                                </div>
+                                <div class="totalcredit-txtbox">
+                                    <h4>Total Tax Credit</h4>
+                                    <h5>{{$deal->state_tax ?? ''}}</h5>
+                                </div>
+                                <div class="netcost-txtbox">
+                                    <h4>Net Cost</h4>
+                                    <h5>{{$deal->net_cost ?? ''}}</h5>
+                                </div>
+                                <div class="planterms-txtbox">
+                                    <h4>Plan Terms</h4>
+                                    <h5>{{$deal->loan_term}} Years</h5>
+                                </div>
+                                <div class="planterms-txtbox">
+                                    <h4>APR</h4>
+                                    <h5>{{$deal->apr}}%</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    {{-- <div class="proposed-monthly-payment">
                         <div class="proposed-monthly-payment-box">
                             <h2>Proposed Monthly Payment</h2>
                             <div class="proposed-monthly-texbox">
@@ -1762,18 +1831,18 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
 
 
 
 
-                
+
                     <div class="loan-monthly-box ">
                         <div class="loan-monthly-textbox">
                             <div class="monthly-dollar-txt">
                                 <h6>Monthly</h6>
-                                <h4>$181</h4>
+                                <h4>${{$monh->Reamorization}}</h4>
                             </div>
                             <div class="monthly-paymen-txt">
                                 <h6>Payment</h6>
@@ -1790,31 +1859,7 @@
                                 <h4 class="payment-italic">This will be your payment for 18 months prior to re-amortization</h4>
                             </div>
                         </div>
-                        <div class="aicon-monthly-flex">
-                            <div class="aicon-monthly-img">
-                            <img src="/images/monthly-payment-select.png" alt="">
-                            </div>
-                            <div class="loan-monthly-textbox">
-                                <div class="monthly-dollar-txt">
-                                    <h6>Monthly</h6>
-                                    <h4>$181</h4>
-                                </div>
-                                <div class="monthly-paymen-txt">
-                                    <h6>Payment</h6>
-                                    <p>Initial Term (18 Months)</p>
-                                </div>
-                            </div>
-                            <div class="loan-monthly-textbox loan-box-border">
-                                <div class="monthly-does-txt">
-                                    <h6>What does</h6>
-                                    <h4>Your loan will re-another on month 19. </h4>
-                                </div>
-                                <div class="monthly-does-txt">
-                                    <h6>this mean</h6>
-                                    <h4 class="payment-italic">This will be your payment for 18 months prior to re-amortization</h4>
-                                </div>
-                         </div>
-                        </div>
+
                         <div class="aicon-monthly-flex aicon-before-bg">
                             <div class="aicon-monthly-img">
                             <img src="/images/monthly-bee-img.png" alt="">
@@ -1822,7 +1867,7 @@
                             <div class="loan-monthly-textbox">
                                 <div class="monthly-dollar-txt">
                                     <h6>Monthly</h6>
-                                    <h4>$181</h4>
+                                    <h4>${{$month->allocate_tax_credit}}</h4>
                                 </div>
                                 <div class="monthly-paymen-txt">
                                     <h6>Payment</h6>
@@ -1845,6 +1890,9 @@
                 </div>
             </section>
         </div>
+
+
+        @endif
 
 
 
@@ -1861,7 +1909,7 @@
         </div> --}}
 
 
-        {{-- <div class="mySlides fade"> 
+        {{-- <div class="mySlides fade">
         </div> --}}
 
 
@@ -2003,7 +2051,7 @@
             </section>
         </div>
 
-        
+
         <div class="mySlides fade">
             <section class="section-4">
                 <div class="main-section-4">

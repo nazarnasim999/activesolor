@@ -12,7 +12,7 @@ class Dealtype extends Model
 
 
 
-    protected $appends = ['loan' , 
+    protected $appends = ['loan' ,
     'lender',
     'loan_term',
     'apr',
@@ -25,12 +25,17 @@ class Dealtype extends Model
     'state_tax',
     'total_tax',
     'total_finance',
-    'net_cost'
+    'net_cost',
+    'escalator',
+    'ppw',
+    'averageutility',
+    'ppamonth',
+    'totalbill'
 ];
 
 
 
-protected $fillable = ['loan' , 
+protected $fillable = ['loan' ,
 'lender',
 'loan_term',
 'apr',
@@ -43,7 +48,12 @@ protected $fillable = ['loan' ,
 'state_tax',
 'total_tax',
 'total_finance',
-'net_cost'
+'net_cost',
+'escalator',
+'ppw',
+'averageutility',
+'ppamonth',
+'totalbill'
 ];
 
 
