@@ -165,6 +165,135 @@ class AuthController extends Controller
     $systems = $basic->production;
     $systemsfinal = $systems/ 12;
 
+
+
+    $ppamonth1 = $basic->average;
+    $f125 = $ppamonth1 * 12;
+
+    $first = $ppamonth1 * 1.05;
+    $f126 = $first * 12;
+    $second = $first * 1.05;
+    $f127 = $second * 12;
+    $third = $second * 1.05;
+    $f128 = $third * 12;
+
+    $fourth = $third * 1.05;
+    $f129 = $fourth * 12;
+
+    $five = $fourth * 1.05;
+
+    $f130 = $five * 12;
+
+    $six = $five * 1.05;
+    $f131 = $six * 12;
+
+    $seven = $six * 1.05;
+
+    $f132 = $seven * 12;
+
+    $eight = $seven * 1.05;
+    $f133 = $eight * 12;
+
+    $nine = $eight * 1.05;
+    $f134 = $nine * 12;
+
+
+    $tenyear = $nine * 12;
+
+
+
+
+    $ten = $nine * 1.05;
+    $f135 = $ten * 12;
+
+    $eleven = $ten * 1.05;
+
+    $f136 = $eleven * 12;
+
+    $twe = $eleven * 1.05;
+    $f137 = $twe * 12;
+
+    $thri = $twe * 1.05;
+
+    $f138 = $thri * 12;
+
+    $forthteen = $thri * 1.05;
+    $f139 = $forthteen * 12;
+
+
+    $fivteen = $forthteen * 1.05;
+    $f140 = $fivteen * 12;
+
+    $sixteen = $fivteen * 1.05;
+
+    $f141 = $sixteen * 12;
+
+    $seventeen = $sixteen * 1.05;
+    $f142 = $seventeen * 12;
+
+    $eightteen = $seventeen * 1.05;
+    $f143 = $eightteen * 12;
+
+    $nineteen = $eightteen * 1.05;
+
+    $f144 = $nineteen * 12;
+
+
+
+    $tweentyyear = $nineteen * 12;
+
+    // $f144 = $tweentyyear * 12;
+
+
+
+
+    $tweenty = $nineteen * 1.05;
+    $f145 = $tweenty * 12;
+
+    $tweetyone = $tweenty * 1.05;
+    $f146 = $tweetyone * 12;
+
+    $tweetysecond = $tweetyone * 1.05;
+    $f147 = $tweetysecond * 12;
+
+    $tweetythird = $tweetysecond * 1.05;
+    $f148 = $tweetythird * 12;
+
+    $tweetyfour = $tweetythird * 1.05;
+
+
+
+    $f149 = $tweetyfour * 12;
+
+    $f150 = $f125 + $f126 + $f127 + $f128 + $f129 + $f130 + $f131 + $f132 + $f133 + $f134 + $f135 + $f136 + $f137 + $f138
+    $f139 + $f140 + $f141 + $f142 + $f143 + $f144 + $f145 + $f146 + $f147 + $f148 + $f149;
+
+    $j150 =  54,731;
+
+    $tweentyfive = $f150 - $j150;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     $monthlyData = [
         $history->january,
         $history->february,
@@ -620,10 +749,15 @@ class AuthController extends Controller
 
 
 
+
+
+
+
     return view('presentation', ['basic' => $basic, 'deal' => $deal, 'history' => $history, 'month' => $month,  'monthlyData' => $monthlyData,
     'productionData' => $productionData,
 
-'finalData' => $finalData]);
+'finalData' => $finalData, '25year' => $tweentyfive, '10year' => $tenyear, '20year' => $tweentyyear,
+'billamount' => $f125, 'totalcostutility' => $f125 , 'totalcostsolar' => $j150 ]);
 }
 
 

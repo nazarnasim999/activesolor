@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <title>Main </title>
 
@@ -1559,7 +1559,7 @@
 
 
 
-
+        @if ($deal->loan == 'Cash')
         <div class="mySlides fade">
             <section class="section-sixty">
                 <div class="main-dasborad-site">
@@ -1619,6 +1619,7 @@
                 </div>
             </section>
         </div>
+        @endif
 
 
 
@@ -1921,6 +1922,9 @@
 
         </div>
 
+
+        @if ($deal->loan == 'PPA')
+
         <div class="mySlides fade">
             <section class="section-28">
                 <div class="main-section-28">
@@ -2030,6 +2034,8 @@
                 </div>
             </section>
         </div>
+
+        @endif
 
 
         <div class="mySlides fade">
