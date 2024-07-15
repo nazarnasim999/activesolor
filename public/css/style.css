@@ -524,6 +524,31 @@ button.part-2-btn-a:hover {
 .brayn-box.aling-left form {
     justify-content: flex-start;
 } */
+/* Container for the input field */
+.input-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 0px ;
+}
+
+/* Fixed dollar sign styling */
+.dollar-sign {
+    position: absolute;
+    left: 5px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Input field styling */
+input[type="text"] {
+    padding-left: 20px; /* Adjust to make room for the dollar sign */
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
 
 
 
