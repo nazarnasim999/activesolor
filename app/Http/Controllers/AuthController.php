@@ -195,6 +195,9 @@ class AuthController extends Controller
     $f133 = $eight * 12;
 
     $nine = $eight * 1.05;
+
+
+
     $f134 = $nine * 12;
 
 
@@ -265,10 +268,10 @@ class AuthController extends Controller
 
     $f149 = $tweetyfour * 12;
 
-    $f150 = $f125 + $f126 + $f127 + $f128 + $f129 + $f130 + $f131 + $f132 + $f133 + $f134 + $f135 + $f136 + $f137 + $f138
+    $f150 = $f125 + $f126 + $f127 + $f128 + $f129 + $f130 + $f131 + $f132 + $f133 + $f134 + $f135 + $f136 + $f137 + $f138 +
     $f139 + $f140 + $f141 + $f142 + $f143 + $f144 + $f145 + $f146 + $f147 + $f148 + $f149;
 
-    $j150 =  54,731;
+    $j150 =  54731;
 
     $tweentyfive = $f150 - $j150;
 
@@ -710,6 +713,9 @@ class AuthController extends Controller
     $final30 = $last30 + $netutility30;
 
 
+    $allutility = $utility + $utility2 + $utility3 + $utility4 + $utility5 + $utility6 + $utility7 + $utility8 + $utility9 + $utility10 +
+                  $utility11 + $utility12 + $utility13 + $utility14 + $utility15 + $utility16 + $utility17 + $utility18 + $utility19 + $utility20 +
+                  $utility21 + $utility22 + $utility23 + $utility24 + $utility25 + $utility26 + $utility27 + $utility28 + $utility29 + $utility30;
 
 
     $finalData = [
@@ -747,6 +753,325 @@ class AuthController extends Controller
     ];
 
 
+    $saving1 = $h69;
+    $saving2 = $saving1 * 1.05;
+    $saving3 = $saving2 * 1.05;
+    $saving4 = $saving3 * 1.05;
+    $saving5 = $saving4 * 1.05;
+    $saving6 = $saving5 * 1.05;
+    $saving7 = $saving6 * 1.05;
+    $saving8 = $saving7 * 1.05;
+    $saving9 = $saving8 * 1.05;
+    $saving10 = $saving9 * 1.05;
+    $saving11 = $saving10 * 1.05;
+    $saving12 = $saving11 * 1.05;
+    $saving13 = $saving12 * 1.05;
+    $saving14 = $saving13 * 1.05;
+    $saving15 = $saving14 * 1.05;
+    $saving16 = $saving15 * 1.05;
+    $saving17 = $saving16 * 1.05;
+    $saving18 = $saving17 * 1.05;
+    $saving19 = $saving18 * 1.05;
+    $saving20 = $saving19 * 1.05;
+    $saving21 = $saving20 * 1.05;
+    $saving22 = $saving21 * 1.05;
+    $saving23 = $saving22 * 1.05;
+    $saving24 = $saving23 * 1.05;
+    $saving25 = $saving24 * 1.05;
+
+
+
+    $consumptions = $history->yearly_consumption;
+    $productions = $history->yearly_production;
+
+
+
+    $util1 = $saving1 * $consumptions;
+    $util2 = $saving2 * $consumptions;
+    $util3 = $saving3 * $consumptions;
+    $util4 = $saving4 * $consumptions;
+    $util5 = $saving5 * $consumptions;
+    $util6 = $saving6 * $consumptions;
+    $util7 = $saving7 * $consumptions;
+    $util8 = $saving8 * $consumptions;
+    $util9 = $saving9 * $consumptions;
+    $util10 = $saving10 * $consumptions;
+    $util11 = $saving11 * $consumptions;
+    $util12 = $saving12 * $consumptions;
+    $util13 = $saving13 * $consumptions;
+    $util14 = $saving14 * $consumptions;
+    $util15 = $saving15 * $consumptions;
+    $util16 = $saving16 * $consumptions;
+    $util17 = $saving17 * $consumptions;
+    $util18 = $saving18 * $consumptions;
+    $util19 = $saving19 * $consumptions;
+    $util20 = $saving20 * $consumptions;
+    $util21 = $saving21 * $consumptions;
+    $util22 = $saving22 * $consumptions;
+    $util23 = $saving23 * $consumptions;
+    $util24 = $saving24 * $consumptions;
+    $util25 = $saving25 * $consumptions;
+
+
+    $coststaying = $util1 + $util2 + $util3 + $util4 + $util5 + $util6 + $util7 + $util8 + $util9 + $util10 +
+                   $util11 + $util12 + $util13 + $util14 + $util15 + $util16 + $util17 + $util18 + $util19 + $util20 +
+                   $util21 + $util22 + $util23 + $util24 + $util25;
+
+
+
+    $solarcost1 = $month->Reamorization;
+    $solarcost2 = $month->allocate_tax_credit;
+
+
+    $g1 = 0;
+    $g2 = 0.005;
+    $g3 = $g2 + $g2;
+    $g4 = $g3 + 0.005;
+    $g5 = $g4 + 0.005;
+    $g6 = $g5 + 0.005;
+    $g7 = $g6 + 0.005;
+    $g8 = $g7 + 0.005;
+
+    $g9 = $g8 + 0.005;
+    $g10 = $g9 + 0.005;
+    $g11 = $g10 + 0.005;
+    $g12 = $g11 + 0.005;
+    $g13 = $g12 + 0.005;
+    $g14 = $g13 + 0.005;
+    $g15 = $g14 + 0.005;
+    $g16 = $g15 + 0.005;
+    $g17 = $g16 + 0.005;
+    $g18 = $g17 + 0.005;
+    $g19 = $g18 + 0.005;
+    $g20 = $g19 + 0.005;
+    $g21 = $g20 + 0.005;
+    $g22 = $g20 + 0.005;
+    $g23 = $g22 + 0.005;
+    $g24 = $g23 + 0.005;
+    $g25 = $g24 + 0.005;
+
+
+
+    $bodmas = $g1 * $productions;
+    $bodmas2 = $g2 * $productions;
+    $bodmas3 = $g3 * $productions;
+    $bodmas4 = $g4 * $productions;
+    $bodmas5 = $g5 * $productions;
+    $bodmas6 = $g6 * $productions;
+    $bodmas7 = $g7 * $productions;
+    $bodmas8 = $g8 * $productions;
+    $bodmas9 = $g9 * $productions;
+    $bodmas10 = $g10 * $productions;
+    $bodmas11 = $g11 * $productions;
+    $bodmas12 = $g12 * $productions;
+    $bodmas13 = $g13 * $productions;
+    $bodmas14 = $g14 * $productions;
+    $bodmas15 = $g15 * $productions;
+    $bodmas16 = $g16 * $productions;
+    $bodmas17 = $g17 * $productions;
+    $bodmas18 = $g18 * $productions;
+    $bodmas19 = $g19 * $productions;
+    $bodmas20 = $g20 * $productions;
+    $bodmas21 = $g21 * $productions;
+    $bodmas22 = $g22 * $productions;
+    $bodmas23 = $g23 * $productions;
+    $bodmas24 = $g24 * $productions;
+    $bodmas25 = $g25 * $productions;
+
+
+    $h1 = $productions - $bodmas;
+    $h2 = $productions - $bodmas2;
+    $h3 = $productions - $bodmas3;
+    $h4 = $productions - $bodmas4;
+    $h5 = $productions - $bodmas5;
+    $h6 = $productions - $bodmas6;
+    $h7 = $productions - $bodmas7;
+    $h8 = $productions - $bodmas8;
+    $h9 = $productions - $bodmas9;
+    $h10 = $productions - $bodmas10;
+    $h11 = $productions - $bodmas11;
+    $h12 = $productions - $bodmas12;
+    $h13 = $productions - $bodmas13;
+    $h14 = $productions - $bodmas14;
+    $h15 = $productions - $bodmas15;
+    $h16 = $productions - $bodmas16;
+    $h17 = $productions - $bodmas17;
+    $h18 = $productions - $bodmas18;
+    $h19 = $productions - $bodmas19;
+    $h20 = $productions - $bodmas20;
+    $h21 = $productions - $bodmas21;
+    $h22 = $productions - $bodmas22;
+    $h23 = $productions - $bodmas23;
+    $h24 = $productions - $bodmas24;
+    $h25 = $productions - $bodmas25;
+
+
+
+    $j1 = max(0, $consumptions - $h1);
+    $j2 = max(0, $consumptions - $h2);
+    $j3 = max(0, $consumptions - $h3);
+    $j4 = max(0, $consumptions - $h4);
+    $j5 = max(0, $consumptions - $h5);
+    $j6 = max(0, $consumptions - $h6);
+    $j7 = max(0, $consumptions - $h7);
+    $j8 = max(0, $consumptions - $h8);
+    $j9 = max(0, $consumptions - $h9);
+    $j10 = max(0, $consumptions - $h10);
+    $j11 = max(0, $consumptions - $h11);
+    $j12 = max(0, $consumptions - $h12);
+    $j13 = max(0, $consumptions - $h13);
+    $j14 = max(0, $consumptions - $h14);
+    $j15 = max(0, $consumptions - $h15);
+    $j16 = max(0, $consumptions - $h16);
+    $j17 = max(0, $consumptions - $h17);
+    $j18 = max(0, $consumptions - $h18);
+    $j19 = max(0, $consumptions - $h19);
+    $j20 = max(0, $consumptions - $h20);
+    $j21 = max(0, $consumptions - $h21);
+    $j22 = max(0, $consumptions - $h22);
+    $j23 = max(0, $consumptions - $h23);
+    $j24 = max(0, $consumptions - $h24);
+    $j25 = max(0, $consumptions - $h25);
+
+
+    $i1 = $basic->average * 12;
+    $i2 = $i1 * 1.05;
+    $i3 = $i2 * 1.025;
+    $i4 = $i3 * 1.025;
+    $i5 = $i4 * 1.025;
+    $i6 = $i5 * 1.025;
+    $i7 = $i6 * 1.025;
+    $i8 = $i7 * 1.025;
+    $i9 = $i8 * 1.025;
+    $i10 = $i9 * 1.025;
+    $i11 = $i10 * 1.025;
+    $i12 = $i11 * 1.025;
+    $i13 = $i12 * 1.025;
+    $i14 = $i13 * 1.025;
+    $i15 = $i14 * 1.025;
+    $i16 = $i15 * 1.025;
+    $i17 = $i16 * 1.025;
+    $i18 = $i17 * 1.025;
+    $i19 = $i18 * 1.025;
+    $i20 = $i19 * 1.025;
+    $i21 = $i20 * 1.025;
+    $i22 = $i21 * 1.025;
+    $i23 = $i22 * 1.025;
+    $i24 = $i23 * 1.025;
+    $i25 = $i24 * 1.025;
+
+
+    $multi1 = $j1 * $saving1;
+    $multi2 = $j2 * $saving2;
+    $multi3 = $j3 * $saving3;
+    $multi4 = $j4 * $saving4;
+    $multi5 = $j5 * $saving5;
+    $multi6 = $j6 * $saving6;
+    $multi7 = $j7 * $saving7;
+    $multi8 = $j8 * $saving8;
+    $multi9 = $j9 * $saving9;
+    $multi10 = $j10 * $saving10;
+    $multi11 = $j11 * $saving11;
+    $multi12 = $j12 * $saving12;
+    $multi13 = $j13 * $saving13;
+    $multi14 = $j14 * $saving14;
+    $multi15 = $j15 * $saving15;
+    $multi16 = $j16 * $saving16;
+    $multi17 = $j17 * $saving17;
+    $multi18 = $j18 * $saving18;
+    $multi19 = $j19 * $saving19;
+    $multi20 = $j20 * $saving20;
+    $multi21 = $j21 * $saving21;
+    $multi22 = $j22 * $saving22;
+    $multi23 = $j23 * $saving23;
+    $multi24 = $j24 * $saving24;
+    $multi25 = $j25 * $saving25;
+
+
+    $k1 = $multi1 + $i1;
+    $k2 = $multi2 + $i2;
+    $k3 = $multi3 + $i3;
+    $k4 = $multi4 + $i4;
+    $k5 = $multi5 + $i5;
+    $k6 = $multi6 + $i6;
+    $k7 = $multi7 + $i7;
+    $k8 = $multi8 + $i8;
+    $k9 = $multi9 + $i9;
+    $k10 = $multi10 + $i10;
+    $k11 = $multi11 + $i11;
+    $k12 = $multi12 + $i12;
+    $k13 = $multi13 + $i13;
+    $k14 = $multi14 + $i14;
+    $k15 = $multi15 + $i15;
+    $k16 = $multi16 + $i16;
+    $k17 = $multi17 + $i17;
+    $k18 = $multi18 + $i18;
+    $k19 = $multi19 + $i19;
+    $k20 = $multi20 + $i20;
+    $k21 = $multi21 + $i21;
+    $k22 = $multi22 + $i22;
+    $k23 = $multi23 + $i23;
+    $k24 = $multi24 + $i24;
+    $k25 = $multi25 + $i25;
+
+
+    $solarcost1 = $month->Reamorization;
+    $solarcost2 = $month->allocate_tax_credit;
+
+    $m1 = $solarcost1 + $k1;
+    $m2 = $solarcost2 + $k2;
+    $m3 = $solarcost2 + $k3;
+    $m4 = $solarcost2 + $k4;
+    $m5 = $solarcost2 + $k5;
+    $m6 = $solarcost2 + $k6;
+    $m7 = $solarcost2 + $k7;
+    $m8 = $solarcost2 + $k8;
+    $m9 = $solarcost2 + $k9;
+    $m10 = $solarcost2 + $k10;
+    $m11 = $solarcost2 + $k11;
+    $m12 = $solarcost2 + $k12;
+    $m13 = $solarcost2 + $k13;
+    $m14 = $solarcost2 + $k14;
+    $m15 = $solarcost2 + $k15;
+    $m16 = $solarcost2 + $k16;
+    $m17 = $solarcost2 + $k17;
+    $m18 = $solarcost2 + $k18;
+    $m19 = $solarcost2 + $k19;
+    $m20 = $solarcost2 + $k20;
+    $m21 = $solarcost2 + $k21;
+    $m22 = $solarcost2 + $k22;
+    $m23 = $solarcost2 + $k23;
+    $m24 = $solarcost2 + $k24;
+    $m25 = $solarcost2 + $k25;
+
+
+    $costsolar = $m1 + $m2 + $m3 + $m4 + $m5 + $m6 + $m7 + $m8 + $m9 + $m10 +
+    $m11 + $m12 + $m13 + $m14 + $m15 + $m16 + $m17 + $m18 + $m19 + $m20 +
+    $m21 + $m22 + $m23 + $m24 + $m25;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -756,8 +1081,9 @@ class AuthController extends Controller
     return view('presentation', ['basic' => $basic, 'deal' => $deal, 'history' => $history, 'month' => $month,  'monthlyData' => $monthlyData,
     'productionData' => $productionData,
 
-'finalData' => $finalData, '25year' => $tweentyfive, '10year' => $tenyear, '20year' => $tweentyyear,
-'billamount' => $f125, 'totalcostutility' => $f125 , 'totalcostsolar' => $j150 ]);
+'finalData' => $finalData, 'twinfiveyear' => $tweentyfive, 'tenyear' => $tenyear, 'twinyear' => $tweentyyear,
+'billamount' => $f125, 'totalcostutility' => $f150 , 'totalcostsolar' => $j150 , 'allutility' => $allutility ,
+'cashtenyear' => $nine, 'cashtwinyear' => $nineteen, 'coststaying' => $coststaying, 'costsolar' => $costsolar ]);
 }
 
 

@@ -17,6 +17,7 @@
 <body>
 
 
+
     <div class="slideshow-container">
 
 
@@ -1214,7 +1215,7 @@
                                     <div class="solar-list">
                                         <h2 class="with">Average Utility Payment</h2>
                                         <h2>${{$basic->average}}</h2>
-                                        <h2 class="color-change">$27</h2>
+                                        <h2 class="color-change">${{$basic->packeage}}</h2>
                                     </div>
                                     <div class="solar-list">
                                         <h2 class="with">Loan Payment</h2>
@@ -1234,9 +1235,6 @@
             </section>
         </div>
         @endif
-
-
-
 
 
 
@@ -1308,7 +1306,7 @@
                                     <div class="solar-list">
                                         <h2 class="with">Average Utility Payment</h2>
                                         <h2>${{$basic->average}}</h2>
-                                        <h2 class="color-change">$27</h2>
+                                        <h2 class="color-change">${{$basic->packeage}}</h2>
                                     </div>
                                     <div class="solar-list">
                                         <h2 class="with">Loan Payment</h2>
@@ -1533,7 +1531,7 @@
                                     <div class="solar-list">
                                         <h2 class="with">Average Utility Payment</h2>
                                         <h2>${{$basic->average}}</h2>
-                                        <h2 class="color-change">$27</h2>
+                                        <h2 class="color-change">${{$basic->packeage}}</h2>
                                     </div>
                                     <div class="solar-list">
                                         <h2 class="with">Loan Payment</h2>
@@ -1967,7 +1965,7 @@
                                     </span>
                                     <button>
                                         <p>In 10 years your annual bill will be</p>
-                                        <h2>$3291/year</h2>
+                                        <h2>${{$tenyear}}</h2>
                                     </button>
                                 </div>
                                 <div class="btn-28">
@@ -1976,7 +1974,7 @@
                                     </span>
                                     <button>
                                         <p>In 20 years your annual bill will be</p>
-                                        <h2>$5361/year</h2>
+                                        <h2>${{$twinyear}}</h2>
                                     </button>
                                 </div>
                             </div>
@@ -2012,13 +2010,13 @@
                                     <span>
                                         <p>At the rate of consumption, your 30 year cost of not switching to solar is:</p>
                                         <h3>
-                                            $140957</h3>
+                                            ${{$totalcostutility}}</h3>
                                     </span>
                                 </div>
                             </div>
 
                             <div class="dash-list black">
-                                <h2>Total Cost of staying with your Utility</h2>
+                                <h2>Total Cost after switching to solar</h2>
                                 <div class="dash-box">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="73" height="68" viewBox="0 0 73 68" fill="none">
                                         <g clip-path="url(#clip0_1295_117)">
@@ -2039,10 +2037,221 @@
                                     <span>
                                         <p>At the rate of consumption, your 30 year cost of not switching to solar is:</p>
                                         <h3>
-                                            $63951</h3>
+                                            ${{$totalcostsolar}}</h3>
                                     </span>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        @endif
+
+
+
+
+
+        @if ($deal->loan == 'Cash')
+
+        <div class="mySlides fade">
+            <section class="section-28">
+                <div class="main-section-28">
+                    <div class="list-28-1">
+                        <div class="logo-section-25">
+                            <img src="/images/a-logo.png" alt="">
+                        </div>
+                        <div class="section-28-boxing">
+                            <div class="card-28">
+                                <h2>Long-Term Cost Analysis</h2>
+                                <p>Do nothing and watch your bill rise</p>
+                            </div>
+                            <div class="box-btn-28">
+                                <div class="btn-28">
+                                    <span>
+                                        <img src="/images/btn-28.png" alt="">
+                                    </span>
+                                    <button>
+                                        <p>Bill amount this year</p>
+                                        <h2>${{ $basic->average * 12 }}</h2>
+                                    </button>
+                                </div>
+                                <div class="btn-28">
+                                    <span>
+                                        <img src="/images/btn-28.png" alt="">
+                                    </span>
+                                    <button>
+                                        <p>In 10 years your annual bill will be</p>
+                                        <h2>${{$cashtenyear}}</h2>
+                                    </button>
+                                </div>
+                                <div class="btn-28">
+                                    <span>
+                                        <img src="/images/btn-28.png" alt="">
+                                    </span>
+                                    <button>
+                                        <p>In 20 years your annual bill will be</p>
+                                        <h2>${{$cashtwinyear}}</h2>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-28-2">
+                        <div class="board">
+                            <img src="/images/year.png" alt="">
+                        </div>
+                        <div class="dash">
+                            <img src="/images/bord-28.png" alt="">
+                        </div>
+                        <div class="dash-bol">
+                            <div class="dash-list black">
+                                <h2>Total Cost of staying with your Utility</h2>
+                                <div class="dash-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60" fill="none">
+                                        <g clip-path="url(#clip0_1282_11)">
+                                            <path d="M64 58.9081C64 59.4384 63.5387 59.8707 62.9682 59.8707H0V57.9476H14.4513V47.3649C14.4513 46.8345 14.9125 46.4022 15.483 46.4022H21.6758C22.2462 46.4022 22.7075 46.8323 22.7075 47.3649V57.9476H24.771V37.7448C24.771 37.2145 25.2323 36.7822 25.8028 36.7822H31.9955C32.566 36.7822 33.0273 37.2122 33.0273 37.7448V57.9476H35.0908V28.1248C35.0908 27.5944 35.5521 27.1621 36.1226 27.1621H42.3153C42.8858 27.1621 43.3471 27.5922 43.3471 28.1248V57.9476H45.4106V18.5047C45.4106 17.9744 45.8719 17.5421 46.4423 17.5421H52.6351C53.2056 17.5421 53.6669 17.9721 53.6669 18.5047V57.9454H61.9254" fill="#1226AA" />
+                                            <path d="M20.6468 48.3253H16.5176V57.9454H20.6468V48.3253Z" fill="#0CBF65" />
+                                            <path d="M30.9691 38.7053H26.8398V57.9454H30.9691V38.7053Z" fill="#0CBF65" />
+                                            <path d="M41.2894 29.0853H37.1602V57.9454H41.2894V29.0853Z" fill="#0CBF65" />
+                                            <path d="M51.6117 19.4652H47.4824V57.9454H51.6117V19.4652Z" fill="#0CBF65" />
+                                            <path d="M43.9979 3.15098L46.2976 6.40669L47.5789 5.50196L43.9288 0.332041C43.7884 0.131484 43.5611 0.00892094 43.3182 7.29383e-06C43.0731 -0.00890636 42.8391 0.095829 42.6831 0.285244L38.4447 5.42396L39.6547 6.42229L42.4246 3.06185C40.6152 18.5226 30.2441 31.9599 15.6436 37.5666L13.5645 38.3666L14.1282 39.8329L16.2074 39.0329C31.3806 33.2056 42.1483 19.2267 43.9956 3.14875L43.9979 3.15098Z" fill="#1226AA" />
+                                            <path d="M2.16312 1.21893V5.0674H8.35588V6.99052H2.16312V10.839H8.35588V12.7621H2.16312V16.6106H8.35588V18.5337H2.16312V22.3822H8.35588V24.3053H2.16312V28.1537H8.35588V30.0769H2.16312V33.9253H8.35588V35.8485H2.16312V39.6969H8.35588V41.62H2.16312V45.4685H8.35588V47.3916H2.16312V58.9348H0.0996094V0.256256" fill="#1226AA" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1282_11">
+                                                <rect width="64" height="59.8708" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>
+                                        <p>At the rate of consumption, your 30 year cost of staying with the utility:</p>
+                                        <h3>
+                                            ${{$allutility}}</h3>
+                                    </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        @endif
+
+
+
+        @if ($deal->loan == 'Loan')
+
+        <div class="mySlides fade">
+            <section class="section-28">
+                <div class="main-section-28">
+                    <div class="list-28-1">
+                        <div class="logo-section-25">
+                            <img src="/images/a-logo.png" alt="">
+                        </div>
+                        <div class="section-28-boxing">
+                            <div class="card-28">
+                                <h2>Long-Term Cost Analysis</h2>
+                                <p>Do nothing and watch your bill rise</p>
+                            </div>
+                            <div class="box-btn-28">
+                                <div class="btn-28">
+                                    <span>
+                                        <img src="/images/btn-28.png" alt="">
+                                    </span>
+                                    <button>
+                                        <p>Bill amount this year</p>
+                                        <h2>${{ $basic->average * 12 }}</h2>
+                                    </button>
+                                </div>
+                                <div class="btn-28">
+                                    <span>
+                                        <img src="/images/btn-28.png" alt="">
+                                    </span>
+                                    <button>
+                                        <p>In 10 years your annual bill will be</p>
+                                        <h2>${{$cashtenyear}}</h2>
+                                    </button>
+                                </div>
+                                <div class="btn-28">
+                                    <span>
+                                        <img src="/images/btn-28.png" alt="">
+                                    </span>
+                                    <button>
+                                        <p>In 20 years your annual bill will be</p>
+                                        <h2>${{$cashtwinyear}}</h2>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-28-2">
+                        <div class="board">
+                            <img src="/images/year.png" alt="">
+                        </div>
+                        <div class="dash">
+                            <img src="/images/graph.png" alt="">
+                        </div>
+                        <div class="dash-bol">
+                            <div class="dash-list black">
+                                <h2>Total Cost of staying with your Utility</h2>
+                                <div class="dash-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60" fill="none">
+                                        <g clip-path="url(#clip0_1282_11)">
+                                            <path d="M64 58.9081C64 59.4384 63.5387 59.8707 62.9682 59.8707H0V57.9476H14.4513V47.3649C14.4513 46.8345 14.9125 46.4022 15.483 46.4022H21.6758C22.2462 46.4022 22.7075 46.8323 22.7075 47.3649V57.9476H24.771V37.7448C24.771 37.2145 25.2323 36.7822 25.8028 36.7822H31.9955C32.566 36.7822 33.0273 37.2122 33.0273 37.7448V57.9476H35.0908V28.1248C35.0908 27.5944 35.5521 27.1621 36.1226 27.1621H42.3153C42.8858 27.1621 43.3471 27.5922 43.3471 28.1248V57.9476H45.4106V18.5047C45.4106 17.9744 45.8719 17.5421 46.4423 17.5421H52.6351C53.2056 17.5421 53.6669 17.9721 53.6669 18.5047V57.9454H61.9254" fill="#1226AA" />
+                                            <path d="M20.6468 48.3253H16.5176V57.9454H20.6468V48.3253Z" fill="#0CBF65" />
+                                            <path d="M30.9691 38.7053H26.8398V57.9454H30.9691V38.7053Z" fill="#0CBF65" />
+                                            <path d="M41.2894 29.0853H37.1602V57.9454H41.2894V29.0853Z" fill="#0CBF65" />
+                                            <path d="M51.6117 19.4652H47.4824V57.9454H51.6117V19.4652Z" fill="#0CBF65" />
+                                            <path d="M43.9979 3.15098L46.2976 6.40669L47.5789 5.50196L43.9288 0.332041C43.7884 0.131484 43.5611 0.00892094 43.3182 7.29383e-06C43.0731 -0.00890636 42.8391 0.095829 42.6831 0.285244L38.4447 5.42396L39.6547 6.42229L42.4246 3.06185C40.6152 18.5226 30.2441 31.9599 15.6436 37.5666L13.5645 38.3666L14.1282 39.8329L16.2074 39.0329C31.3806 33.2056 42.1483 19.2267 43.9956 3.14875L43.9979 3.15098Z" fill="#1226AA" />
+                                            <path d="M2.16312 1.21893V5.0674H8.35588V6.99052H2.16312V10.839H8.35588V12.7621H2.16312V16.6106H8.35588V18.5337H2.16312V22.3822H8.35588V24.3053H2.16312V28.1537H8.35588V30.0769H2.16312V33.9253H8.35588V35.8485H2.16312V39.6969H8.35588V41.62H2.16312V45.4685H8.35588V47.3916H2.16312V58.9348H0.0996094V0.256256" fill="#1226AA" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1282_11">
+                                                <rect width="64" height="59.8708" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>
+                                        <p>At the rate of consumption, your 30 year cost of staying with the utility:</p>
+                                        <h3>
+                                            ${{$coststaying}}</h3>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="dash-list black">
+                                <h2>Total Cost after switching to solar</h2>
+                                <div class="dash-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="73" height="68" viewBox="0 0 73 68" fill="none">
+                                        <g clip-path="url(#clip0_1295_117)">
+                                            <path d="M73.0051 66.9044C73.0051 67.5094 72.4789 68.0025 71.8282 68.0025H0V65.8088H16.4846V20.9076C16.4846 20.3026 17.0108 19.8095 17.6615 19.8095H24.7257C25.3764 19.8095 25.9026 20.3001 25.9026 20.9076V65.8038H28.2564V31.3373C28.2564 30.7323 28.7826 30.2392 29.4334 30.2392H36.4975C37.1482 30.2392 37.6744 30.7298 37.6744 31.3373V65.8063H40.0283V42.2881C40.0283 41.6831 40.5544 41.1899 41.2052 41.1899H48.2693C48.92 41.1899 49.4462 41.6805 49.4462 42.2881V65.8063H51.8001V53.9328C51.8001 53.3278 52.3263 52.8347 52.977 52.8347H60.0411C60.6919 52.8347 61.218 53.3253 61.218 53.9328V65.8063H70.6385" fill="#1226AA" />
+                                            <path d="M58.6634 54.8326H53.9531V65.8063H58.6634V54.8326Z" fill="#0CBF65" />
+                                            <path d="M47.2415 43.859H42.5312V65.8063H47.2415V43.859Z" fill="#0CBF65" />
+                                            <path d="M35.3938 32.8854H30.6836V65.8063H35.3938V32.8854Z" fill="#0CBF65" />
+                                            <path d="M23.3353 21.9117H18.625V65.8063H23.3353V21.9117Z" fill="#0CBF65" />
+                                            <path d="M60.1753 44.9571L62.7148 40.9637L64.5501 41.8203L60.5185 48.16C60.3634 48.4066 60.0813 48.5743 59.761 48.6175C59.4382 48.6608 59.1128 48.5718 58.8764 48.3786L52.4757 43.1167L53.9221 41.8254L58.1062 45.2647C53.3222 27.987 37.529 14.1359 17.3535 9.71538L14.4785 9.08498L14.9971 7.34882L17.872 7.97922C38.8407 12.5751 55.2465 26.988 60.1728 44.9597L60.1753 44.9571Z" fill="#1226AA" />
+                                            <path d="M2.46909 1.09813V5.48555H9.53574V7.68181H2.46909V12.0718H9.53574V14.2655H2.46909V18.6555H9.53574V20.8492H2.46909V25.2391H9.53574V27.4328H2.46909V31.8228H9.53574V34.0191H2.46909V38.4065H9.53574V40.6027H2.46909V44.9902H9.53574V47.1864H2.46909V51.5764H9.53574V53.7701H2.46909V66.9375H0.115234V0" fill="#1226AA" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1295_117">
+                                                <rect width="73.0051" height="68" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>
+                                        <p>At the rate of consumption, your 30 year cost of not switching to solar is:</p>
+                                        <h3>
+                                            ${{$costsolar}}</h3>
+                                    </span>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
