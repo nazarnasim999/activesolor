@@ -1913,13 +1913,30 @@
         </div> --}}
 
 
+    
         <div class="mySlides fade">
-            <div style="width: 100%; margin: auto;">
-                <canvas id="myCharts"></canvas>
-            </div>
+            <section class="proposed-financial-sec ">
+                <div class="proposed-finance-flex chart-bg-add">
 
-
+                <div class="save-thousand-box more-box-class" >
+                            <div class="save-thous-img">
+                                <img src="/images/light.png" alt="">
+                            </div>
+                            <div class="save-thous-txt">
+                                <h2>30-Year Savings Analysis</h2>
+                            </div>
+                        </div>
+                    <div class="proposed-finance-table more-next-with" >
+                        <div class="chart-my-class"  style="width: 100%; margin: auto;">
+                            <canvas id="myCharts"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+
+
+
 
         <div class="mySlides fade">
             <section class="section-28">

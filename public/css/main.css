@@ -2812,7 +2812,14 @@ section.section-37 {
   line-height: normal;
   text-transform: uppercase;
 }
+.chart-my-class {
+  height: 100% !important;
+}
 
+.chart-my-class  canvas {
+  height: 100% !important;
+  width: 100% !important;
+}
 .section-37-card h3 {
   color: rgb(18, 38, 170);
   font-family: Ubuntu;
@@ -2822,7 +2829,29 @@ section.section-37 {
   line-height: normal;
   padding: 10px 0px;
 }
+.proposed-finance-flex.chart-bg-add{
+  background-image: url(../images/chart-logo-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.save-thousand-box.more-box-class {
+  width: 28%;
+}
+.save-thous-txt h2 {
+  color: #FFF;
+  font-family: Ubuntu;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 83.333% */
+  letter-spacing: 1.44px;
+}
 
+.proposed-finance-table.more-next-with {
+  width: 100% !important;
+  height: 100% !important;
+}
 .section-37-card p {
   color: rgb(0, 0, 0);
   font-family: Ubuntu;
