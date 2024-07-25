@@ -4643,7 +4643,27 @@ button.bt-hl-4 {
 .state p {
     font-size: 18px;
 }
+.section-4-card h2 {
+  line-height: 18px;
+  font-size: 18px;
+}
 
+.section-4-card {
+  height: 26vh;
+}
+.save-thous-txt h2 {
+  font-size: 20px;
+}
+
+.save-thous-img {
+  width: 45px;
+  height: 40px;
+}
+
+.save-thous-img img {
+  width: 100%;
+  height: 100%;
+}
 }
 
 @media screen and (max-width: 1024px) {
