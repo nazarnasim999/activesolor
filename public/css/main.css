@@ -4498,7 +4498,6 @@ section.section-150 {
   line-height: 38px;
 }
 
-
 .planterms-txtbox {
   display: flex;
   align-items: center;
@@ -4548,7 +4547,6 @@ section.section-150 {
       top: -13px;
   }
 }
-
 
 @media only screen and (max-width: 1440px) {
   .best-looking-system h3 {
@@ -4601,8 +4599,10 @@ button.bt-hl-4 {
 }
 
 @media only screen and (max-width: 1300px) {
+
   .map-child-1 {
     height: 45vh;
+    width: 24%;
   }
 
   img.btn-1 {
@@ -4632,6 +4632,17 @@ button.bt-hl-4 {
   .aicon-before-bg::before {
     height: 240px;  
   }
+  .state-2-child h3 {
+    font-size: 18px;
+}
+
+.state-2 p {
+    font-size: 18px;
+}
+
+.state p {
+    font-size: 18px;
+}
 
 }
 
