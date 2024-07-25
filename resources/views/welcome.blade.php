@@ -383,6 +383,7 @@
                                 <input type="text" id="system_cost" placeholder="USD"  name="system_cost">
                                 </div>
                             </div>
+                            </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Rebate Level</label>
                                 <input type="text" id="rebate" name="rebate" placeholder="0.2" value="0">
@@ -394,12 +395,14 @@
                                 <input type="text" id="state_rebate" placeholder="1,018.44" name="state_rebate">
                                 </div>
                             </div>
+                            </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Federal Tax Credit</label>
                                 <div class="input-container">
                                 <span class="dollar-sign">$</span>
                                 <input type="text" id="federaltax"  placeholder="8,747.27" name="federal_tax" >
                                 </div>
+                            </div>
                             </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">State Tax Credit</label>
@@ -408,12 +411,14 @@
                                 <input type="text" id="statetax" placeholder="5000.00"  name="state_tax">
                                 </div>
                             </div>
+                            </div>
                             <div class="brayn-in-grouop part-2">
                                 <label for="#">Total Tax Credit</label>
                                 <div class="input-container">
                                 <span class="dollar-sign">$</span>
                                 <input type="text" id="totaltax" placeholder="13,747.27"  name="total_tax" >
                                 </div>
+                            </div>
                             </div>
                             <div class="brayn-in-grouop part-3">
                                 <label for="#">Total Financed Amount</label>
@@ -422,12 +427,14 @@
                                 <input type="text" id="financed_amount" placeholder="29,157.56"  name="total_finance">
                                 </div>
                             </div>
+                            </div>
                             <div class="brayn-in-grouop part-3">
                                 <label for="#">Net Cost</label>
                                 <div class="input-container">
                                 <span class="dollar-sign">$</span>
                                 <input type="text" id="netcost" placeholder="USD"   name="net_cost">
                                 </div>
+                            </div>
                             </div>
                         </div>
                     </div>
