@@ -4548,6 +4548,101 @@ section.section-150 {
   }
 }
 
+
+@media only screen and (max-width: 1550px) {
+  .main-section-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.main-section-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+
+}
+
+.main-section-5 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-section-infinite {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-section-12 {
+  justify-content: center;
+}
+.main-section-14 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-section-15 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-section-23 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-22-list-2 {
+  width: 68%;
+}
+
+.section-22-card {
+  width: 290px;
+  height: 12vh;
+}
+
+.proposed-financial-sec {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-22-list-2 {
+  width: 67%;
+}
+
+.section-22-card {
+  width: 290px;
+  height: 12vh;
+}
+
+.section-4-card {
+  width: 230px;
+  height: 18vh;
+}
+.map-child-1 {
+  height: 45vh;
+}
+}
+
+
+
 @media only screen and (max-width: 1440px) {
   .best-looking-system h3 {
     margin: 0px;
