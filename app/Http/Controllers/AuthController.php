@@ -86,6 +86,51 @@ class AuthController extends Controller
 
         // dd($request->all());
 
+        $validated = $request->validate([
+            'installer' => 'required|string',
+            'state' => 'required|string',
+            'providers' => 'required|string',
+            'average' => 'required|numeric',
+            'packeage' => 'required|numeric',
+            'size' => 'required|numeric',
+            'production' => 'required|numeric',
+            'january' => 'required|numeric',
+            'february' => 'required|numeric',
+            'march' => 'required|numeric',
+            'april' => 'required|numeric',
+            'may' => 'required|numeric',
+            'june' => 'required|numeric',
+            'july' => 'required|numeric',
+            'august' => 'required|numeric',
+            'september' => 'required|numeric',
+            'october' => 'required|numeric',
+            'november' => 'required|numeric',
+            'december' => 'required|numeric',
+            'yearly_consumption' => 'required|numeric',
+            'yearly_production' => 'required|numeric',
+            'offset' => 'required|string',
+            'loan' => 'required|string',
+            'lender' => 'required|string',
+            'escalator' => 'nullable|numeric',
+            'ppw' => 'nullable|numeric',
+            'loan_term' => 'required|numeric',
+            'apr' => 'required|numeric',
+            'cash' => 'required|numeric',
+            'solar' => 'required|numeric',
+            'system_cost' => 'required|numeric',
+            'rebate' => 'required|numeric',
+            'state_rebate' => 'required|numeric',
+            'federal_tax' => 'required|numeric',
+            'state_tax' => 'required|numeric',
+            'total_tax' => 'required|numeric',
+            'total_finance' => 'required|numeric',
+            'net_cost' => 'required|numeric',
+            'Reamorization' => 'required|numeric',
+            'basic_service_charge' => 'required|numeric',
+            'keep_tax_credit' => 'required|numeric',
+            'allocate_tax_credit' => 'required|numeric',
+        ]);
+
 
 
 
